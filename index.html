@@ -8,8 +8,7 @@
   </head>
 
   <body>
-    <div id="main"> <!--Start of main body-->
-      <div class="container">
+    <div id="main"> <!--Start of main body-->>
         <header id="head-nav"> <!--Start of header navigation-->
           <div class="help-nav"> <!--Top of site support navigation-->
             <div class="container">
@@ -26,25 +25,28 @@
           </div> <!--End of support navigation-->
 
           <div class="main-nav"> <!--Start of main navigation-->
-            <button>Web Design</button>
-            <button>It Support</button>
-            <button>Telecoms Services</button>
-            <button>Bespoke Software</button>
-            <button>Digital Marketing</button>
-            <button>Cyber Security</button>
+              <ul>
+                <li class="web-li"><a href="#">Web<br>Design</a></li>
+                <li class="it-li"><a href="#">It<br>Support</a></li>
+                <li class="telecom-li"><a href="#">Telecoms<br>Services</a></li>
+                <li class="bespoke-li"><a href="#">Bespoke<br>Software</a></li>
+                <li class="digital-li"><a href="#">Digital<br>Marketing</a></li>
+                <li class="cyber-li"><a href="#">Cyber<br>Security</a></li>
+              </ul>
           </div> <!--End of main navigation-->
         </header>
-      </div>
 
       <div class="content-main"> <!--Start of main banner-->
-        <img src="images/web-design.jpg" alt="A web designer hard at work">
-        <h1>WEB DESIGN</h1> 
-        <p>For businesses looking to make a strong and effective first impression.</p>
-        <button class="fom_btn">FIND OUT MORE</button>
+        <img class="head-image" src="images/web-design.jpg" alt="A web designer hard at work">
+        <div class="container">
+          <h1>WEB DESIGN</h1> 
+          <p>For businesses looking to make a strong and effective first impression.</p>
+          <button class="fom_btn">FIND OUT MORE</button>
+        </div>
       </div> <!--End of main banner-->
 
       <div id="middle"> <!--Start of middle section-->
-        <div class="container-section"> <!--Start of containers-->
+        <div class="container section"> <!--Start of containers-->
           <div class="service-list">
             <div class="software-column"> <!--Software container-->
               <a href="#" class="block-software">
@@ -107,7 +109,7 @@
         
         <div id="main-info"> <!--Start of Netmatters information-->
           <div class="brand-background">
-            <div class="info-container">
+            <div class="info container">
               <h1>NETMATTERS</h1>
               <p>Netmatters Ltd is a leading web design, IT support and digital marketing agency based in Wymondham, Norfolk.</p>
               <p>Founded in 2008, we work with businesses from a variety of industries to gain new prospects, nurture existing leads and further grow their sales.</p>
@@ -119,13 +121,13 @@
 
         <div class="latest-articles"> <!--Start of articles-->
           <div class="bar">
-            <div class="bar-container">
+            <div class="container">
               <h2>Latest</h2>
             </div>
           </div>
           <div class="article-section">
             <div class="articles">
-              <div class="articles-container"> <!--Start of articles container-->
+              <div class="container"> <!--Start of articles container-->
                 <div class="articles-list">
                  <div class="col-1"> <!--Start of article 1-->
                   <div class="item-web">
@@ -202,7 +204,7 @@
         </div> <!--End of articles-->
 
         <div class="clients-section"> <!--Start of Clients section-->
-          <div class="clients-container">
+          <div class="clients container">
             <div="client-list">
               <div class="item"> <!--Client - Busseys-->
                 <div class="description">
@@ -253,7 +255,7 @@
         </div> <!--End of Clients section-->
 
         <div class="newsletter-full-width"> <!--Start of Newsletter-->
-          <div class="newsletter-container">
+          <div class="newsletter container">
             <form method="POST" id="sign-up" class="sign-up">
               <label class="name-label">Your Name</label>
               <input type="text" class="name-textbox">

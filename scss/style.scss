@@ -1,7 +1,14 @@
+// partial imports
+@import 'partials/header';
+
+
+
 //Body styles
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 div {
@@ -22,17 +29,6 @@ body {
     padding-right: 15px;
 }
 
-//Header styles 
-.help-nav {
-    background-color: #ffffff;
-    padding: 1.25rem;
-}
-
-.main-nav {
-    background-color: #333645;
-}
-
-.actions {
-    float: right;
-    padding: 7px;
+.head-image {
+    width: 100vw;
 }
