@@ -1,22 +1,58 @@
 //Header styles 
 #head-nav {
     width: 100%;
+}
 
+img {
+    float: left;
+    max-width: 100%;
+    display: block;
 }
 
 .help-nav {
+    max-height: 21vh;
     background-color: #ffffff;
     padding: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .main-nav {
     background-color: #333645;
     color: #fff;
+    @media (max-width: $break-m) {
+        display: none;
+    }
 }
 
 .actions {
     float: right;
     padding: 7px;
+    font-size: 1.125rem;
+}
+
+.support {
+    background-color: #286abd;
+    @media (max-width: $break-m) {
+        display: none;
+    }
+}
+
+.contact {
+    background-color: #999aa2;
+    @media (max-width: $break-m) {
+        display: none;
+    }
+}
+
+.search-bar {
+    background-color: rgba(0,0,0,.1);
+    outline: 1px solid hsla(0,0%,100%,.2);
+    border: 2px solid rgba(0,0,0,.1);
+    width: 100%;
+    padding-right: 40px;
+    height: 56px;
 }
 
 ul {
