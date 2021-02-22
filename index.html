@@ -9,26 +9,32 @@
 
   <body>
     <div id="main"> <!--Start of main body-->
-      <header id="head-nav"> <!--Start of header navigation-->
-        <div class="help-nav"> <!--Top of site support navigation-->
-          <a class="logo" href="#">
-          <img src="images/f-logo.png" alt="Netmatters logo">
-          </a>
-          <button class="support_btn"><a href="#">Support</a></button>
-          <button class="contact_btn"><a href="#">Contact</a></button>
-          <input type="text" class="search-bar" placeholder="Search..">
-          <button class="menu-burger">Menu</button>
-        </div> <!--End of support navigation-->
+      <div class="container">
+        <header id="head-nav"> <!--Start of header navigation-->
+          <div class="help-nav"> <!--Top of site support navigation-->
+            <div class="container">
+              <a class="logo" href="#">
+              <img src="images/f-logo.png" alt="Netmatters logo">
+              </a>
+              <div class="actions">
+                <button class="support_btn"><a href="#">Support</a></button>
+                <button class="contact_btn"><a href="#">Contact</a></button>
+                <input type="text" class="search-bar" placeholder="Search..">
+                <button class="menu-burger">Menu</button>
+              </div>
+            </div>
+          </div> <!--End of support navigation-->
 
-        <div class="main-nav"> <!--Start of main navigation-->
-          <button>Web Design</button>
-          <button>It Support</button>
-          <button>Telecoms Services</button>
-          <button>Bespoke Software</button>
-          <button>Digital Marketing</button>
-          <button>Cyber Security</button>
-        </div> <!--End of main navigation-->
-      </header>
+          <div class="main-nav"> <!--Start of main navigation-->
+            <button>Web Design</button>
+            <button>It Support</button>
+            <button>Telecoms Services</button>
+            <button>Bespoke Software</button>
+            <button>Digital Marketing</button>
+            <button>Cyber Security</button>
+          </div> <!--End of main navigation-->
+        </header>
+      </div>
 
       <div class="content-main"> <!--Start of main banner-->
         <img src="images/web-design.jpg" alt="A web designer hard at work">
@@ -294,7 +300,8 @@
       </div> <!--End of awards section-->
 
       <div class="side-bar"> <!--Start of side bar-->
-
+        <div class="nav visible-xs visible-sm">
+        </div>
       </div> <!--End of side bar-->
     </div>
   </body>

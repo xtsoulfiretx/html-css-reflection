@@ -1,6 +1,37 @@
-.help-nav {
-  font-family: "Poppins", sans-serif;
+* {
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+}
+
+body {
+  font-family: Poppins, sans-serif;
   font-size: 1rem;
+  letter-spacing: 0.4px;
+  color: #666;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.help-nav {
+  background-color: #ffffff;
+  padding: 1.25rem;
+}
+
+.main-nav {
+  background-color: #333645;
+}
+
+.actions {
+  float: right;
+  padding: 7px;
 }
 
 /*# sourceMappingURL=style.css.map */
