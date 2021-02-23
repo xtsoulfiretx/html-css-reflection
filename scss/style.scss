@@ -1,7 +1,8 @@
 // partial imports
 @import 'partials/variables',
         'partials/header',
-        'partials/body';
+        'partials/body',
+        'partials/icons';
 
 
 //Body styles
@@ -44,9 +45,14 @@ body {
     }
 }
 
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
 .hero-image {
     height: 80vh;
-    background-image: url(../images/web-design.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/web-design.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,7 +60,41 @@ body {
 }
 
 .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #fff;
+
+    h1 {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 3rem;
+        margin: 0 0 25px;
+    }
+
+    p {
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        margin: 0 0 35px;
+    }
+
+    button {
+        color: #fff;
+        background-color: #926fb1;
+        border-color: #926fb1;
+        line-height: 50px;
+        height: auto;
+        padding: 5px 20px;
+        font-size: 1.25rem;
+        border-radius: 3px;
+        white-space: normal;
+    }
+}
+
+h1 {
+    line-height: 1.1;
 }
 
 .btn {
@@ -74,4 +114,28 @@ body {
 .btn a {
     text-decoration: none;
     color: #fff;
+}
+
+.block {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 30px;
+    box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
+
+    span {
+        display: block;
+    }
+
+    span.icon {
+        height: 60px;
+        width: 60px;
+        margin: 0 auto 17px;
+        color: #fff;
+        border-radius: 50%;
+    }
+
+    span.h2 {
+        font-size: 1.125rem;
+    }
 }

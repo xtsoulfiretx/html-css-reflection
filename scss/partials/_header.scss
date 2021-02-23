@@ -10,9 +10,9 @@ img {
 }
 
 .help-nav {
-    max-height: 21vh;
+    min-height: 21vh;
     background-color: #ffffff;
-    padding: 1.25rem;
+    padding: 20px 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -52,7 +52,8 @@ img {
     border: 2px solid rgba(0,0,0,.1);
     width: 100%;
     padding-right: 40px;
-    height: 56px;
+    height: 47px;
+
 }
 
 ul {
@@ -82,4 +83,9 @@ li>a {
     font-size: 1.125rem;
     text-decoration: none;
     line-height: 1;
+}
+
+.menu-burger {
+    background-color: #333645;
+    color: #fff;
 }

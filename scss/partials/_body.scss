@@ -1,3 +1,10 @@
+.section {
+    padding: 50px 0;
+}
+
+.service-list {
+    margin-top: -30px;
+}
 
 #main-info {
     background-color: #333645;
@@ -27,4 +34,10 @@
     line-height: 1.875rem;
     margin-bottom: 25px;
     display: block;
+}
+
+.column {
+    position: relative;
+    min-height: 1px;
+    padding: 0 15px;
 }
