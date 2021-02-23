@@ -138,10 +138,70 @@ li > a {
   padding: 0 15px;
 }
 
+i {
+  font-size: 1.4rem;
+}
+
 .software span.icon {
   background-color: #67809f;
-  font-size: 1.438rem;
   line-height: 58px;
+}
+.software span.btn-container {
+  color: #fff;
+  background-color: #67809f;
+  border-color: #67909f;
+}
+
+.it span.icon {
+  background-color: #4183d7;
+  line-height: 58px;
+}
+.it span.btn-container {
+  color: #fff;
+  background-color: #4183d7;
+  border-color: #4183d7;
+}
+
+.digital span.icon {
+  background-color: #2ecc71;
+  line-height: 58px;
+}
+.digital span.btn-container {
+  color: #fff;
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+
+.telecoms span.icon {
+  background-color: #d64541;
+  line-height: 58px;
+}
+.telecoms span.btn-container {
+  color: #fff;
+  background-color: #d64541;
+  border-color: #d64541;
+}
+
+.cyber span.icon {
+  background-color: #f62459;
+  line-height: 58px;
+}
+.cyber span.btn-container {
+  color: #fff;
+  background-color: #f62459;
+  border-color: #f62459;
+}
+
+.web span.icon,
+.developer span.icon {
+  background-color: #926fb1;
+  line-height: 58px;
+}
+.web span.btn-container,
+.developer span.btn-container {
+  color: #fff;
+  background-color: #926fb1;
+  border-color: #926fb1;
 }
 
 * {
@@ -264,6 +324,7 @@ h1 {
   border-radius: 3px;
   padding: 30px;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 .block span {
   display: block;
@@ -274,9 +335,45 @@ h1 {
   margin: 0 auto 17px;
   color: #fff;
   border-radius: 50%;
+  font-weight: 400;
 }
 .block span.h2 {
   font-size: 1.125rem;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 17px;
+  margin: 0 0 11px;
+  color: #333645;
+  text-decoration: none;
+}
+.block span.h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 28px;
+  height: 3px;
+  display: block;
+  background-color: #333645;
+}
+.block span.p {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+  font-weight: 400;
+}
+.block span.btn-container {
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+  display: inline-block;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
