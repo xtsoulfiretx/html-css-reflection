@@ -12,32 +12,60 @@
 
 .brand-background {
     background-image: url(/netmatters_site/images/branded.png);
-}
-
-#info {
-    width: 50%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: auto 100%;
 }
 
 .info {
     color: #fff;
     padding: 15px 50px;
-}
+    font-family: Poppins, sans-serif;
 
-.info h1 {
-    text-transform: uppercase;
-    font-size: 2.25rem;
-    font-weight: 400;
-    margin: 0 0 28px;
-}
+    h1 {
+        text-transform: uppercase;
+        font-size: 2.25rem;
+        font-weight: 400;
+        margin: 0 0 28px;
+    }
 
-.info p {
-    line-height: 1.875rem;
-    margin-bottom: 25px;
-    display: block;
+    p {
+        line-height: 1.875rem;
+        margin-bottom: 25px;
+        display: block;
+    }
+
+    button {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        height: auto;
+        line-height: 35px;
+        padding: 5px 15px;
+        text-transform: uppercase;
+        font-size: 1.063rem;
+        background-color: #fff;
+        border-color: #fff;
+        border-radius: 3px;
+        white-space: normal;
+    }
+
+    svg {
+        margin-right: -4px;
+        margin-left: 12px;
+        color: #333645;
+    }
+
 }
 
 .column {
     position: relative;
     min-height: 1px;
     padding: 0 15px;
+}
+
+.newsletter-full-width {
+    background-color: #ddd;
 }
