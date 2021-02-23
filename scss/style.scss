@@ -121,8 +121,11 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 3px;
     padding: 30px;
+    margin-top: 30px;
     box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
     text-align: center;
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
 
     span {
         display: block;
@@ -165,6 +168,7 @@ h1 {
         line-height: 1.375rem;
         margin-bottom: 13px;
         font-weight: 400;
+        color: #333645;
     }
 
     span.btn-container {
