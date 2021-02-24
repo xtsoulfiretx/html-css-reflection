@@ -2,62 +2,14 @@
   width: 100%;
 }
 
-img {
-  float: left;
-  max-width: 100%;
-  display: block;
-}
-
-.help-nav {
-  min-height: 21vh;
-  background-color: #ffffff;
-  padding: 20px 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
 .main-nav {
   background-color: #333645;
   color: #fff;
 }
 @media (max-width: 992px) {
   .main-nav {
-    display: none;
+    display: hidden;
   }
-}
-
-.actions {
-  float: right;
-  padding: 7px;
-  font-size: 1.125rem;
-}
-
-.support {
-  background-color: #286abd;
-}
-@media (max-width: 992px) {
-  .support {
-    display: none;
-  }
-}
-
-.contact {
-  background-color: #999aa2;
-}
-@media (max-width: 992px) {
-  .contact {
-    display: none;
-  }
-}
-
-.search-bar {
-  background-color: rgba(0, 0, 0, 0.1);
-  outline: 1px solid rgba(255, 255, 255, 0.2);
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  width: 100%;
-  padding-right: 40px;
-  height: 47px;
 }
 
 ul {
