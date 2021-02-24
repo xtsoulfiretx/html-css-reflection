@@ -76,6 +76,40 @@
         font-size: .8125rem;
         margin-top: 30px;
     }
+
+    .category {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        color: #fff;
+        font-size: .75rem;
+        padding: 0 10px;
+        line-height: 1.438rem;
+        text-transform: uppercase;
+        z-index: 1;
+    }
+
+    .image-container {
+        display: block;
+        border-radius: 3px 3px 0 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+        border: 0;
+    }
+
+    .block {
+        margin-top: 0;
+    }
+}
+
+.tooltip {
+    background-color: #926fb1;
 }
 
 .newsletter-full-width {
