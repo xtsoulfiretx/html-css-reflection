@@ -66,6 +66,30 @@
   color: #fff;
 }
 
+.burger-box .burger {
+  content: "";
+  display: block;
+  top: 50%;
+  margin-top: 1.5px;
+  width: 33px;
+  height: 3px;
+  position: absolute;
+  background-color: #fff;
+}
+.burger-box span:not(.title) {
+  font-size: 1.438rem;
+  line-height: 45px;
+}
+
+.title {
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1;
+  position: relative;
+  top: 5px;
+  margin-bottom: 0;
+}
+
 ul {
   display: flex;
   flex-direction: row;
@@ -156,6 +180,11 @@ li > a {
   position: relative;
   min-height: 1px;
   padding: 0 15px;
+}
+
+.articles-list .item {
+  font-size: 0.8125rem;
+  margin-top: 30px;
 }
 
 .newsletter-full-width {
