@@ -70,10 +70,14 @@
 }
 
 // Latest articles styles
+ .active {
+    
+    float: left;
+    padding: 0; 
+    text-align: left;
 
-.latest-bar {
-
-    .active {
+     span {
+        font-family: Poppins, sans-serif;
         display: block;
         padding: 40px 0;
         color: #333645;
@@ -90,8 +94,18 @@
             right: 0;
             background-color: #333645;
             height: 5px;
-        }
+            width: 4.5rem;
+         }
     }
+ }
+
+.latest-list {
+    padding-left: 0;
+    border: 0;
+}
+
+.latest-bar {
+    box-shadow: 0 5px 35px rgb(0 0 0 / 10%);
 }
 
 .articles-list {

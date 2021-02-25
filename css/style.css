@@ -184,7 +184,13 @@ li > a {
   padding: 0 15px;
 }
 
-.latest-bar .active {
+.active {
+  float: left;
+  padding: 0;
+  text-align: left;
+}
+.active span {
+  font-family: Poppins, sans-serif;
   display: block;
   padding: 40px 0;
   color: #333645;
@@ -193,7 +199,7 @@ li > a {
   font-weight: 600;
   position: relative;
 }
-.latest-bar .active::after {
+.active span::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -201,6 +207,16 @@ li > a {
   right: 0;
   background-color: #333645;
   height: 5px;
+  width: 4.5rem;
+}
+
+.latest-list {
+  padding-left: 0;
+  border: 0;
+}
+
+.latest-bar {
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
 }
 
 .articles-list .item {
