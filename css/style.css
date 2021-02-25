@@ -1,22 +1,19 @@
 #head-nav {
   width: 100%;
 }
-
-.main-nav {
+#head-nav .main-nav {
   background-color: #333645;
   color: #fff;
 }
 @media (max-width: 992px) {
-  .main-nav {
+  #head-nav .main-nav {
     display: hidden;
   }
 }
-
-.help-nav {
+#head-nav .help-nav {
   padding: 20px 0;
 }
-
-.header-row {
+#head-nav .header-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -24,50 +21,44 @@
   margin-right: -15px;
   align-items: center;
 }
-
-.logo-img {
+#head-nav .logo-img {
   max-width: 100%;
   width: 18.6875rem;
 }
-
-.actions {
+#head-nav .actions {
   height: 56px;
   line-height: 46px;
   font-size: 1.125rem;
   font-family: Poppins, sans-serif;
 }
-.actions button {
+#head-nav .actions button {
   text-transform: uppercase;
   padding: 5px 15px;
   border-radius: 3px;
   white-space: normal;
 }
-
-.btn-support {
+#head-nav .btn-support {
   background-color: #4183d7;
   border-color: #4183d7;
 }
-.btn-support a {
+#head-nav .btn-support a {
   color: #fff;
   text-decoration: none;
 }
-
-.btn-contact {
+#head-nav .btn-contact {
   background-color: #999aa2;
   border-color: #999aa2;
 }
-.btn-contact a {
+#head-nav .btn-contact a {
   color: #fff;
   text-decoration: none;
 }
-
-.menu-burger {
+#head-nav .menu-burger {
   background-color: #333645;
   border-color: #333645;
   color: #fff;
 }
-
-.burger-box .burger {
+#head-nav .burger-box .burger {
   content: "";
   display: block;
   top: 50%;
@@ -77,12 +68,11 @@
   position: absolute;
   background-color: #fff;
 }
-.burger-box span:not(.title) {
+#head-nav .burger-box span:not(.title) {
   font-size: 1.438rem;
   line-height: 45px;
 }
-
-.title {
+#head-nav .title {
   display: block;
   font-size: 0.75rem;
   line-height: 1;
@@ -90,8 +80,7 @@
   top: 5px;
   margin-bottom: 0;
 }
-
-ul {
+#head-nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -101,15 +90,13 @@ ul {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.25);
 }
-
-li {
+#head-nav li {
   text-align: center;
   flex-grow: 1;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.25);
 }
-
-li > a {
+#head-nav li > a {
   position: relative;
   display: block;
   color: #fff;
@@ -232,7 +219,11 @@ li > a {
   padding: 0 10px;
   line-height: 1.438rem;
   text-transform: uppercase;
+  opacity: 1;
   z-index: 1;
+}
+.articles-list .tooltip {
+  background-color: #926fb1;
 }
 .articles-list .image-container {
   display: block;
@@ -248,10 +239,56 @@ li > a {
 }
 .articles-list .block {
   margin-top: 0;
+  font-family: Poppins, sans-serif;
+  text-align: left;
+}
+.articles-list .block p {
+  line-height: 1.375rem;
+  font-size: 0.8125rem;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.articles-list .block h3 {
+  font-weight: 400;
+  margin: 0 0 15px;
+}
+.articles-list .user {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #ccc;
+  font-size: 0.875rem;
+  color: #333645;
+  text-decoration: none;
+}
+.articles-list .user .avatar {
+  display: inline-block;
+  height: 47px;
+  width: 47px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.articles-list .user .details {
+  display: inline-block;
+  padding-left: 20px;
+  line-height: 1.375rem;
 }
 
-.tooltip {
+.web .block h3 {
+  color: #926fb1;
+}
+.web .article-btn-web {
+  font-weight: 400;
+  color: #fff;
   background-color: #926fb1;
+  border-color: #926fb1;
+  height: auto;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  text-decoration: none;
 }
 
 .newsletter-full-width {
@@ -270,7 +307,7 @@ i {
 .software span.btn-container {
   color: #fff;
   background-color: #67809f;
-  border-color: #67909f;
+  border-color: #67809f;
 }
 
 .it span.icon {
@@ -504,6 +541,30 @@ h1 {
   white-space: normal;
   display: inline-block;
   margin-bottom: 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: auto;
+  padding: 0;
+}
+
+li {
+  text-align: center;
+  flex-grow: 1;
+}
+li > a {
+  position: relative;
+  display: block;
+  color: #fff;
+  padding: 18px 0 18px;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  text-decoration: none;
+  line-height: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

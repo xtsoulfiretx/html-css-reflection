@@ -123,7 +123,12 @@
         padding: 0 10px;
         line-height: 1.438rem;
         text-transform: uppercase;
+        opacity: 1;
         z-index: 1;
+    }
+
+    .tooltip {
+        background-color: $purple;
     }
 
     .image-container {
@@ -142,11 +147,66 @@
 
     .block {
         margin-top: 0;
+        font-family: Poppins, sans-serif;
+        text-align: left;
+
+        p {
+            line-height: 1.375rem;
+            font-size: .8125rem;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        h3 {
+            font-weight: 400;
+            margin: 0 0 15px;
+        }
+    }
+
+    .user {
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 1px solid #ccc;
+        font-size: .875rem;
+        color: #333645;
+        text-decoration: none;
+
+        .avatar {
+            display: inline-block;
+            height: 47px;
+            width: 47px;
+            border-radius: 50%;
+            overflow: hidden;
+        }   
+
+        .details {
+            display: inline-block;
+            padding-left: 20px;
+            line-height: 1.375rem;
+        }
     }
 }
 
-.tooltip {
-    background-color: #926fb1;
+.web {
+    .block {
+        h3 {
+            color: $purple;
+        }
+    }
+    .article-btn-web {
+        font-weight: 400;
+        color: #fff;
+        background-color: $purple;
+        border-color: $purple;
+        height: auto;
+        padding: 5px 15px;
+        text-transform: uppercase;
+        font-size: 1.063rem;
+        border-radius: 3px;
+        text-decoration: none;
+    }
 }
 
 .newsletter-full-width {
