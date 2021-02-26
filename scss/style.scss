@@ -215,3 +215,11 @@ li {
         line-height: 1;
     }
 }
+
+.grayscale {
+    @include grayscale_element(100%);
+    transition: all 200ms ease-in-out;
+    &:hover {
+        @include grayscale_element(0);
+    }
+}
