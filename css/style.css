@@ -372,9 +372,60 @@ footer .row {
   margin-right: -15px;
 }
 footer .f-column {
+  display: flex;
+  flex-direction: column;
   position: relative;
   min-height: 1px;
   padding: auto 15px;
+  margin-bottom: 30px;
+}
+footer .f-column h4 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 26px;
+  font-weight: 400;
+  margin: 0 0 15px;
+}
+footer .f-column ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer .f-column ul li {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  text-align: left;
+  white-space: nowrap;
+}
+footer .f-column ul li a {
+  display: inline-block;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  color: #fff;
+  padding: 0;
+}
+footer .social-media {
+  margin-top: -24px;
+}
+footer .social-media .social-box {
+  display: flex;
+}
+footer .social-media a {
+  width: 45%;
+  margin-top: 30px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.25);
+  font-size: 1.75rem;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.98;
+}
+footer .social-media .icon {
+  position: relative;
+  top: 4px;
 }
 
 i {
