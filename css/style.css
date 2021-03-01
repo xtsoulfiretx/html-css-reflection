@@ -1,8 +1,22 @@
+@media (min-width: 576px) {
+  .container {
+    width: 483px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
 @media (max-width: 768px) {
   .hidden-s {
     display: none !important;
   }
 }
+.bugfix {
+  border: 1px solid red;
+}
+
 #head-nav {
   width: 100%;
 }
@@ -433,16 +447,27 @@ footer .social-media .icon {
   top: 4px;
 }
 
+.awards-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
 .awards-list {
   display: flex;
   flex-direction: row;
   text-align: center;
+  width: 720px;
+  height: 88px;
 }
 .awards-list .award-item {
   flex-grow: 1;
   vertical-align: middle;
   padding: 0 20px;
   position: relative;
+}
+
+.badgemain img {
+  height: 82px;
 }
 
 i {
@@ -536,26 +561,6 @@ body {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-@media (min-width: 1260px) {
-  .container {
-    width: 1200px;
-  }
-}
-@media (max-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (max-width: 576px) {
-  .container {
-    width: 483px;
-  }
 }
 
 .row {

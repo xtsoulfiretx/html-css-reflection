@@ -81,10 +81,17 @@
     }
  }
 
+    .awards-section {
+        padding: 50px 0;
+        text-align: center;
+    }
+
     .awards-list {
         display: flex;
         flex-direction: row;
         text-align: center;
+        width: 720px;
+        height: 88px;
 
         .award-item {
             flex-grow: 1;
@@ -92,4 +99,10 @@
             padding: 0 20px;
             position: relative;
         }
+    }
+
+    .badgemain {
+            img {
+                height: 82px;
+            }
     }

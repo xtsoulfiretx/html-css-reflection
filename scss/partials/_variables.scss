@@ -25,9 +25,30 @@ $pink: #f62459;
 
 //Media Queries
 
+
+@media (min-width: $break-xs) {
+
+    .container {
+        width: 483px;
+    }
+}
+
+@media (min-width: $break-s) {
+
+    .container {
+        width: 750px;
+    }
+}
+
 @media (max-width: $break-s) {
 
     .hidden-s {
         display: none!important;
     }
 }
+
+// bug fixing 
+
+ .bugfix {
+     border: 1px solid red;
+ }
