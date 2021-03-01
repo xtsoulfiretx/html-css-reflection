@@ -411,9 +411,14 @@ footer .social-media {
 }
 footer .social-media .social-box {
   display: flex;
+  width: 50%;
+}
+footer .social-media i {
+  font-size: 1.7rem;
+  vertical-align: baseline;
 }
 footer .social-media a {
-  width: 45%;
+  width: 100%;
   margin-top: 30px;
   display: block;
   background-color: rgba(0, 0, 0, 0.25);
@@ -426,6 +431,18 @@ footer .social-media a {
 footer .social-media .icon {
   position: relative;
   top: 4px;
+}
+
+.awards-list {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.awards-list .award-item {
+  flex-grow: 1;
+  vertical-align: middle;
+  padding: 0 20px;
+  position: relative;
 }
 
 i {
