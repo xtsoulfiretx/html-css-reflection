@@ -292,3 +292,92 @@
 .newsletter-full-width {
     background-color: #ddd;
 }
+
+.sign-up {
+    margin: 0;
+    padding: 50px 30px;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin: 0 0 15px;
+        color: #333645;
+    }
+
+    .sign-up-inputs-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+
+.sign-up-input {
+    flex: 1 1 450px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .form-group {
+        margin-bottom: 15px;
+
+        label {
+            display: inline-block;
+            font-weight: 600;
+            color: #333645;
+            margin-bottom: 5px;
+        }
+
+        .form-control {
+            height: 47px;
+            padding: 5px 15px;
+            border-color: #ccc;
+            width: 100%;
+        }
+    }
+}
+
+.required {
+    ::after {
+        content: " *";
+        color: #d24d57;
+    }
+}
+
+.cb {
+    display: flex;
+}
+
+.fancy-checkbox {
+    line-height: 32px;
+    cursor: pointer;
+    font-weight: 600;
+    color:#333645;
+    width: 400px;
+    
+    .button {
+        border-radius: 3px;
+        border: 3px solid #333645;
+        height: 32px;
+        width: 32px;
+        position: relative;
+        margin-right: 20px;
+    }
+
+    .media-body {
+        display: block;
+        width: 400px;
+    }
+}
+
+.newsletter-button {
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 1.063rem;
+    border-radius: 3px;
+    white-space: normal;
+    color: #fff;
+    background-color: #333645;
+    border-color: #333645;
+}
