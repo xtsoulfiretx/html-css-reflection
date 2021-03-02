@@ -15,6 +15,29 @@ i {
         background-color: $gray;
         border-color: $gray;
     }
+
+    &:hover {
+        background-color: $gray;
+        
+        span.icon {
+            background-color: #fff;
+            color: $gray;
+        }
+
+        span.block-text {
+            color: #fff;
+        }
+
+        span.btn-container {
+            color: $gray;
+            background-color: #fff;
+            border-color: #fff;
+        }
+
+        span.h2::after {
+            background-color: #fff;
+        }
+    }
 }
 
 .it {
@@ -28,6 +51,29 @@ i {
         color: #fff;
         background-color: $blue;
         border-color: $blue;
+    }
+
+    &:hover {
+        background-color: $blue;
+        
+        span.icon {
+            background-color: #fff;
+            color: $blue;
+        }
+
+        span.block-text {
+            color: #fff;
+        }
+
+        span.btn-container {
+            color: $blue;
+            background-color: #fff;
+            border-color: #fff;
+        }
+
+        span.h2::after {
+            background-color: #fff;
+        }
     }
 }
 
@@ -43,6 +89,29 @@ i {
         background-color: $green;
         border-color: $green;
     }
+
+    &:hover {
+        background-color: $green;
+        
+        span.icon {
+            background-color: #fff;
+            color: $green;
+        }
+
+        span.block-text {
+            color: #fff;
+        }
+
+        span.btn-container {
+            color: $green;
+            background-color: #fff;
+            border-color: #fff;
+        }
+
+        span.h2::after {
+            background-color: #fff;
+        }
+    }
 }
 
 .telecoms {
@@ -56,6 +125,29 @@ i {
         color: #fff;
         background-color: $red;
         border-color: $red;
+    }
+
+    &:hover {
+        background-color: $red;
+        
+        span.icon {
+            background-color: #fff;
+            color: $red;
+        }
+
+        span.block-text {
+            color: #fff;
+        }
+
+        span.btn-container {
+            color: $red;
+            background-color: #fff;
+            border-color: #fff;
+        }
+
+        span.h2::after {
+            background-color: #fff;
+        }
     }
 }
 
@@ -71,6 +163,29 @@ i {
         background-color: $pink;
         border-color: $pink;
     }
+
+    &:hover {
+        background-color: $pink;
+        
+        span.icon {
+            background-color: #fff;
+            color: $pink;
+        }
+
+        span.block-text {
+            color: #fff;
+        }
+
+        span.btn-container {
+            color: $pink;
+            background-color: #fff;
+            border-color: #fff;
+        }
+
+        span.h2::after {
+            background-color: #fff;
+        }
+    }
 }
 
 .web,
@@ -85,5 +200,28 @@ i {
         color: #fff;
         background-color: $purple;
         border-color: $purple;
+    }
+
+    &:hover {
+        background-color: $purple;
+        
+        span.icon {
+            background-color: #fff;
+            color: $purple;
+        }
+
+        span.block-text {
+            color: #fff;
+        }
+
+        span.btn-container {
+            color: $purple;
+            background-color: #fff;
+            border-color: #fff;
+        }
+
+        span.h2::after {
+            background-color: #fff;
+        }
     }
 }

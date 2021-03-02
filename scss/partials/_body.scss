@@ -21,7 +21,7 @@
     
     .info {
         color: #fff;
-        padding: 15px 50px;
+        padding: 50px 15px;
         font-family: Poppins, sans-serif;
     
         h1 {
@@ -160,8 +160,8 @@
             margin-inline-end: 0px;
         }
 
-        h3 {
-            font-weight: 400;
+        span {
+            font-weight: 600;
             margin: 0 0 15px;
         }
     }
@@ -192,7 +192,7 @@
 
 .web {
     .block {
-        h3 {
+        span {
             color: $purple;
         }
     }
@@ -345,28 +345,67 @@
 
 .cb {
     display: flex;
+    flex-direction: row;
 }
 
-.fancy-checkbox {
-    line-height: 32px;
+.marketing-label {
+    position: relative;
     cursor: pointer;
-    font-weight: 600;
-    color:#333645;
-    width: 400px;
-    
-    .button {
-        border-radius: 3px;
-        border: 3px solid #333645;
-        height: 32px;
-        width: 32px;
-        position: relative;
-        margin-right: 20px;
+    display: inline-block;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+
+    .marketing-label::before {
+            content: "";
+            width: 32px;
+            height: 32px;
+            background-color: #ddd;
+            border: 3px solid #333645;
+            border-radius: 3px;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
     }
 
-    .media-body {
-        display: block;
-        width: 400px;
+.marketing-label #marketing-optin:checked {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        background-color: #333645;
+        left: 0;
+        top: 0;
+        border-radius: 3px;
     }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 15px;
+        height: 5px;
+        border-left: 2.8px solid #ddd;
+        border-bottom: 2.8px solid #ddd;
+        transform: rotate(-45deg);
+        top: 11px;
+        left: 8px;
+    }
+}
+
+.media-body {
+    font-weight: 600;
+    color: #333645;
+    display: inline-block;
+    margin: 0;
+    padding-left: 50px;
+    margin-top: -32px;
+
+        a {
+            color:#333645;
+        }
 }
 
 .newsletter-button {

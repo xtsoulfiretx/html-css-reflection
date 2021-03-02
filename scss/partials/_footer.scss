@@ -4,6 +4,10 @@
      color: #fff;
      padding: 47px 0 43px;
 
+     a:hover {
+         text-decoration: underline;
+     }
+
      .row {
          margin-left: -15px;
          margin-right: -15px;
@@ -46,6 +50,11 @@
             line-height: 1.375rem;
             color: #fff;
             padding: 0;
+            text-transform: capitalize;
+        }
+
+        .netmatters-email {
+            text-transform: lowercase;
         }
     }
 
