@@ -53,6 +53,11 @@
             border-radius: 3px;
             white-space: normal;
         }
+
+        button:hover {
+            background-color: #ebebeb;
+            border-color: #e0e0e0;
+        }
     
         svg {
             line-height: 35px;
@@ -106,6 +111,11 @@
 
 .latest-bar {
     box-shadow: 0 5px 35px rgb(0 0 0 / 10%);
+}
+
+.article-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .articles-list {
@@ -190,7 +200,7 @@
     }
 }
 
-.web {
+.web-a {
     .block {
         span {
             color: $purple;
@@ -419,4 +429,9 @@
     color: #fff;
     background-color: #333645;
     border-color: #333645;
+
+    &:hover {
+        background-color: #22242e;
+        border-color: #191a22;
+    }
 }
