@@ -11,6 +11,12 @@
      .row {
          margin-left: -15px;
          margin-right: -15px;
+
+         @media (min-width: $break-s) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+         }
      }
 
      .f-column {
@@ -20,6 +26,10 @@
         min-height: 1px;
         padding: auto 15px;
         margin-bottom: 30px;
+
+        @media (min-width: $break-s) {
+            width: 50%;
+        }
 
         h4 {
             color: #fff;

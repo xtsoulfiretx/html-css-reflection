@@ -145,6 +145,11 @@
     .item {
         font-size: .8125rem;
         margin-top: 30px;
+        
+        @media (min-width: $break-s) {
+            width: 345px;
+            height: 569px;
+        }
     }
 
     .category {
@@ -219,6 +224,29 @@
             padding-left: 20px;
             line-height: 1.375rem;
         }
+    }
+
+    .column-1,
+    .column-2 {
+        @media (min-width: $break-s) {
+            width: 45%;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+
+    .column-3 {
+        @media (min-width: $break-s) {
+            display: none!important;
+        } 
+    }
+
+    @media (min-width: $break-s) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
     }
 }
 
@@ -336,6 +364,10 @@
     .northern {
         height: 45px;
         width: 207.5px;
+    }
+
+    @media (max-width: $break-s) {
+        display: none!important;
     }
 }
 

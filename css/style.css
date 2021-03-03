@@ -5,7 +5,7 @@
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    min-width: 750px;
   }
 }
 @media (max-width: 992px) {
@@ -342,6 +342,12 @@
   font-size: 0.8125rem;
   margin-top: 30px;
 }
+@media (min-width: 768px) {
+  .articles-list .item {
+    width: 345px;
+    height: 569px;
+  }
+}
 .articles-list .category {
   position: absolute;
   top: 10px;
@@ -405,6 +411,27 @@
   display: inline-block;
   padding-left: 20px;
   line-height: 1.375rem;
+}
+@media (min-width: 768px) {
+  .articles-list .column-1,
+.articles-list .column-2 {
+    width: 45%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .articles-list .column-3 {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .articles-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .web-a .block span {
@@ -502,6 +529,11 @@
 .clients-section .northern {
   height: 45px;
   width: 207.5px;
+}
+@media (max-width: 768px) {
+  .clients-section {
+    display: none !important;
+  }
 }
 
 .newsletter-full-width {
@@ -641,6 +673,13 @@ footer .row {
   margin-left: -15px;
   margin-right: -15px;
 }
+@media (min-width: 768px) {
+  footer .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 footer .f-column {
   display: flex;
   flex-direction: column;
@@ -648,6 +687,11 @@ footer .f-column {
   min-height: 1px;
   padding: auto 15px;
   margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  footer .f-column {
+    width: 50%;
+  }
 }
 footer .f-column h4 {
   color: #fff;
