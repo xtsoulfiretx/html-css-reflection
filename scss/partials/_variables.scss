@@ -40,12 +40,14 @@ $pink: #f62459;
     }
 }
 
-@media (max-width: $break-s) {
+@media (max-width: $break-m) {
 
     .hidden-s {
         display: none!important;
     }
 }
+
+
 
 // bug fixing 
 

@@ -8,7 +8,7 @@
     width: 750px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .hidden-s {
     display: none !important;
   }
@@ -28,6 +28,10 @@
   #head-nav .main-nav {
     display: hidden;
   }
+}
+#head-nav .head-padding {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 #head-nav .help-nav {
   padding: 20px 0;
@@ -49,7 +53,35 @@
   padding-left: 15px;
   display: block;
 }
+#head-nav .search-bar-2 {
+  display: block !important;
+}
+#head-nav .search-bar-2 .form-control {
+  height: 56px;
+  width: 174px;
+}
+#head-nav .search-bar-2 .form-control:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+#head-nav .search-bar-2 #basic-addon1 {
+  background-color: #999aa2;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  #head-nav .search-bar-2 {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) {
+  #head-nav .search-bar-2 {
+    display: none !important;
+  }
+}
 #head-nav .actions {
+  display: flex;
+  flex-direction: row;
   line-height: 46px;
   font-size: 1.125rem;
   font-family: Poppins, sans-serif;
@@ -67,6 +99,11 @@
   font-size: 1.6rem;
   margin: 0 15px 15px 5px;
   color: #333645;
+}
+@media (min-width: 768px) {
+  #head-nav .call-btn {
+    display: none !important;
+  }
 }
 #head-nav .btn-support {
   background-color: #4183d7;
@@ -131,8 +168,13 @@
 #head-nav .search-bar-wrapper i {
   color: #333645;
   position: absolute;
-  top: 107px;
+  top: 97px;
   right: 28px;
+}
+@media (min-width: 768px) {
+  #head-nav .search-bar-wrapper {
+    display: none !important;
+  }
 }
 #head-nav .title {
   display: block;
@@ -902,10 +944,10 @@ body {
 
 .hero-image {
   height: 80vh;
-  background-image: linear-gradient(270deg, transparent 25%, #000), url(../images/web-design.jpg);
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.45) 40%, transparent 75%), url(../images/web-design.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain, cover;
   position: relative;
 }
 

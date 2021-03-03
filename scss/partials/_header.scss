@@ -11,6 +11,11 @@
         }
     }
 
+    .head-padding {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     .help-nav {
         padding: 20px 0;
     }
@@ -34,8 +39,38 @@
         padding-left: 15px;
         display: block;
     }
+    
+    .search-bar-2 {
+        display: block!important;
+
+        .form-control {
+            height: 56px;
+            width: 174px;
+        }
+
+        .form-control:focus {
+            border-color: #5bc0de;
+            outline: 0;
+            box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(91 192 222 / 60%);
+        }
+
+        #basic-addon1 {
+            background-color: #999aa2;
+            color: #fff;
+        }
+
+        @media (max-width: $break-s) {
+            display: none!important;
+        }
+
+        @media (min-width: $break-m) {
+            display: none!important;
+        }
+    }
 
     .actions {
+        display: flex;
+        flex-direction: row;
         line-height: 46px;
         font-size: 1.125rem;
         font-family: Poppins, sans-serif;
@@ -55,6 +90,10 @@
         font-size: 1.6rem;
         margin: 0 15px 15px 5px;
         color: #333645;
+
+        @media (min-width: $break-s) {
+            display: none!important;
+        }
     }
 
     .btn-support {
@@ -129,9 +168,13 @@
           i {
               color: #333645;
               position: absolute;
-              top: 107px;
+              top: 97px;
               right: 28px;
           }
+
+          @media (min-width: $break-s) {
+            display: none!important;
+        }
       }
 
     .title {
