@@ -78,6 +78,24 @@
     padding: 0 15px;
 }
 
+.split-4-wrap {
+
+    @media (min-width: $break-s) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+
+    .split-4 {
+        @media (min-width: $break-s) {
+            width: 50%;
+        }
+    }
+
+}
+
+
 // Latest articles styles
  .active {
     

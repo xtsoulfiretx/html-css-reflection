@@ -68,6 +68,8 @@
 #head-nav .search-bar-2 #basic-addon1 {
   background-color: #999aa2;
   color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media (max-width: 768px) {
   #head-nav .search-bar-2 {
@@ -280,6 +282,20 @@
   position: relative;
   min-height: 1px;
   padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .split-4-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) {
+  .split-4-wrap .split-4 {
+    width: 50%;
+  }
 }
 
 .active {
