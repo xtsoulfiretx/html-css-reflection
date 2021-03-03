@@ -13,10 +13,14 @@
     background-color: #333645;
 
     .brand-background {
-        background-image: url(/netmatters_site/images/branded.png);
+        background-image: #333645;
         background-repeat: no-repeat;
         background-position: 100%;
         background-size: auto 100%;
+
+        @media (min-width:$break-m) {
+            background-image: url(/netmatters_site/images/branded.png);
+        }
     }
     
     .info {
@@ -220,7 +224,7 @@
     }
 }
 
-.articles {
+.article-section {
     box-shadow: 0 5px 35px rgb(0 0 0 / 10%);
 }
 
@@ -229,6 +233,7 @@
 .clients-section {
     padding-top: 50px;
     padding-bottom: 50px;
+    max-width: 100%;
 
     .client-list {
         display: flex;
@@ -237,7 +242,7 @@
     }
 
     .client-list .item {
-        flex-grow: 1;
+        flex-shrink: 1;
         vertical-align: middle;
         padding: 0 20px;
         position: relative;
@@ -295,7 +300,25 @@
         display: block;
     }
 
+    .busseys {
+        height: 45px;
+        width: 121px;
+    }
 
+    .crane {
+        height: 45px;
+        width: 185px;
+    }
+
+    .beat {
+        height: 45px;
+        width: 46px;
+    }
+
+    .northern {
+        height: 45px;
+        width: 207.5px;
+    }
 }
 
 

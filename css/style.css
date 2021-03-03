@@ -181,10 +181,15 @@
   background-color: #333645;
 }
 #main-info .brand-background {
-  background-image: url(/netmatters_site/images/branded.png);
+  background-image: #333645;
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: auto 100%;
+}
+@media (min-width: 992px) {
+  #main-info .brand-background {
+    background-image: url(/netmatters_site/images/branded.png);
+  }
 }
 #main-info .info {
   color: #fff;
@@ -360,13 +365,14 @@
   text-decoration: none;
 }
 
-.articles {
+.article-section {
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
 }
 
 .clients-section {
   padding-top: 50px;
   padding-bottom: 50px;
+  max-width: 100%;
 }
 .clients-section .client-list {
   display: flex;
@@ -374,7 +380,7 @@
   text-align: center;
 }
 .clients-section .client-list .item {
-  flex-grow: 1;
+  flex-shrink: 1;
   vertical-align: middle;
   padding: 0 20px;
   position: relative;
@@ -422,6 +428,22 @@
 }
 .clients-section .client-list .item:hover .description {
   display: block;
+}
+.clients-section .busseys {
+  height: 45px;
+  width: 121px;
+}
+.clients-section .crane {
+  height: 45px;
+  width: 185px;
+}
+.clients-section .beat {
+  height: 45px;
+  width: 46px;
+}
+.clients-section .northern {
+  height: 45px;
+  width: 207.5px;
 }
 
 .newsletter-full-width {
@@ -880,7 +902,7 @@ body {
 
 .hero-image {
   height: 80vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/web-design.jpg);
+  background-image: linear-gradient(270deg, transparent 25%, #000), url(../images/web-design.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
