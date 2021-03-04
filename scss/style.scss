@@ -32,6 +32,22 @@ body {
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+
+    @media (min-width: $break-l) {
+        width: 1200px;
+    }
+
+    @media (min-width: $break-m) {
+        width: 970px;
+    }
+
+    @media (min-width: $break-s) {
+        width: 750px;
+    }
+
+    @media (min-width: $break-xs) {
+        width: auto;
+    }
 }
 
 .row {
