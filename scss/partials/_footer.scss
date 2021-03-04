@@ -115,6 +115,10 @@
     .awards-section {
         padding: 50px 0;
         text-align: center;
+
+        @media (max-width: $break-s) {
+            display: none!important;
+        }
     }
 
     .awards-list,
@@ -125,13 +129,12 @@
         width: 720px;
         height: 88px;
 
-        .award-item {
+        .award-item,
+        .award-item-g {
             flex-grow: 1;
             vertical-align: middle;
             padding: 0 20px;
             position: relative;
-            height: auto;
-            width: 100%;
         }
     }
 
@@ -143,4 +146,11 @@
 
     .awards-list-row-2 {
         margin-top: 20px;
+    }
+
+    .award-item {
+        img {
+            height: auto;
+            width: 100%;
+        }
     }

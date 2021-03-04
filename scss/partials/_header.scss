@@ -32,17 +32,24 @@
 
     .logo-container {
         width: 299px;
+
+        @media (min-width: $break-m) {
+            width: 370px;
+        }
     }
 
     .logo-img {
         max-width: 100%;
         padding-left: 15px;
         display: block;
-
     }
     
     .search-bar-2 {
         display: block!important;
+
+        .input-group {
+            flex-wrap: nowrap;
+        }
 
         .form-control {
             height: 56px;
@@ -102,21 +109,88 @@
     .btn-support {
         background-color: $blue;
         border-color: $blue;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.125rem;
+        height: 56px;
 
-        a {
-            color: #fff;
-            text-decoration: none;
+        i {
+            font-size: 1.438rem; 
+            margin-top: -5px;
         }
+    }
+
+    .btn-support:hover {
+        background-color: #2a6ec6;
+        border-color: #2665b5;
     }
 
     .btn-contact {
         background-color: #999aa2;
         border-color: #999aa2;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.125rem;
+        height: 56px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 20px;
 
-        a {
-            color: #fff;
-            text-decoration: none;
+        i {
+            font-size: 1.438rem;
         }
+    }
+
+    .btn-contact:hover {
+        background-color: #7e808a;
+    }
+
+
+    .search-bar-3 {
+        display: block!important;
+        margin-left: 10px;
+
+        .form-control {
+            height: 56px;
+            width: 174px;
+        }
+
+        .form-control:focus {
+            border-color: #5bc0de;
+            outline: 0;
+            box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(91 192 222 / 60%);
+        }
+
+        .bar-3 {
+            width: 240px;
+            @media (max-width: $break-l) {
+                display: none!important;
+            }
+        }
+
+    }
+    .search-btn {
+        background-color: #999aa2;
+        color: #fff;
+        height: 56px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        i {
+        font-size: 1.438rem;
+        }
+    }
+
+    .search-btn:hover {
+        background-color: #7e808a;
     }
 
     .menu-button {
