@@ -266,6 +266,10 @@
 #head-nav .main-nav-list .smaller {
   font-size: 0.625rem;
 }
+#head-nav .main-nav-list:first-child {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
 #head-nav .web i {
   color: #926fb1;
 }
@@ -278,6 +282,66 @@
 #head-nav .web .dropdown {
   background-color: #79539a;
 }
+#head-nav .it i {
+  color: #4183d7;
+}
+#head-nav .it:hover i {
+  color: #fff;
+}
+#head-nav .it:hover a {
+  color: #fff;
+}
+#head-nav .it .dropdown {
+  background-color: #4183d7;
+}
+#head-nav .telecoms i {
+  color: #d64541;
+}
+#head-nav .telecoms:hover i {
+  color: #fff;
+}
+#head-nav .telecoms:hover a {
+  color: #fff;
+}
+#head-nav .telecoms .dropdown {
+  background-color: #d64541;
+}
+#head-nav .software i {
+  color: #67809f;
+}
+#head-nav .software:hover i {
+  color: #fff;
+}
+#head-nav .software:hover a {
+  color: #fff;
+}
+#head-nav .software .dropdown {
+  background-color: #67809f;
+}
+#head-nav .digital i {
+  color: #2ecc71;
+}
+#head-nav .digital:hover i {
+  color: #fff;
+}
+#head-nav .digital:hover a {
+  color: #fff;
+}
+#head-nav .digital .dropdown {
+  background-color: #2ecc71;
+}
+#head-nav .cyber i {
+  color: #f62459;
+}
+#head-nav .cyber:hover i {
+  color: #fff;
+}
+#head-nav .cyber:hover a {
+  color: #fff;
+}
+#head-nav .cyber .dropdown {
+  background-color: #f62459;
+}
 #head-nav .dropdown {
   position: absolute;
   z-index: 10;
@@ -289,7 +353,7 @@
 #head-nav .dropdown li {
   line-height: 2.813rem;
 }
-#head-nav .dropdown li::after {
+#head-nav .dropdown li:nth-child(n+2)::after {
   content: "";
   position: absolute;
   display: block;
@@ -378,6 +442,25 @@
   padding: 0 15px;
 }
 
+@media (min-width: 992px) {
+  .split-3-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) {
+  .split-3-wrap .split-3 {
+    width: 33.333%;
+  }
+}
+@media (min-width: 992px) {
+  .split-3-wrap .block {
+    min-height: 386px;
+  }
+}
+
 @media (min-width: 768px) {
   .split-4-wrap {
     display: flex;
@@ -389,6 +472,16 @@
 @media (min-width: 768px) {
   .split-4-wrap .split-4 {
     width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .split-4-wrap .block {
+    min-height: 315px;
+  }
+}
+@media (min-width: 992px) {
+  .split-4-wrap .block {
+    max-height: 290px;
   }
 }
 
@@ -435,12 +528,6 @@
 .articles-list .item {
   font-size: 0.8125rem;
   margin-top: 30px;
-}
-@media (min-width: 768px) {
-  .articles-list .item {
-    width: 345px;
-    height: 569px;
-  }
 }
 .articles-list .category {
   position: absolute;
@@ -612,17 +699,41 @@
   height: 45px;
   width: 121px;
 }
+@media (min-width: 992px) {
+  .clients-section .busseys {
+    height: 62.828px;
+    width: 168px;
+  }
+}
 .clients-section .crane {
   height: 45px;
   width: 185px;
+}
+@media (min-width: 992px) {
+  .clients-section .crane {
+    height: 62.828px;
+    width: 257px;
+  }
 }
 .clients-section .beat {
   height: 45px;
   width: 46px;
 }
+@media (min-width: 992px) {
+  .clients-section .beat {
+    height: 62.828px;
+    width: 64.625px;
+  }
+}
 .clients-section .northern {
   height: 45px;
   width: 207.5px;
+}
+@media (min-width: 992px) {
+  .clients-section .northern {
+    height: 62.828px;
+    width: 289px;
+  }
 }
 @media (max-width: 768px) {
   .clients-section {
@@ -774,6 +885,11 @@ footer .row {
     flex-wrap: wrap;
   }
 }
+@media (min-width: 1260px) {
+  footer .row {
+    flex-wrap: nowrap;
+  }
+}
 footer .f-column {
   display: flex;
   flex-direction: column;
@@ -785,6 +901,11 @@ footer .f-column {
 @media (min-width: 768px) {
   footer .f-column {
     width: 50%;
+  }
+}
+@media (min-width: 1260px) {
+  footer .f-column {
+    width: 25%;
   }
 }
 footer .f-column h4 {
@@ -868,9 +989,16 @@ footer .social-media .linkedin:hover {
 .awards-list-row-2 {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   text-align: center;
   width: 720px;
   height: 88px;
+}
+@media (min-width: 992px) {
+  .awards-list,
+.awards-list-row-2 {
+    margin: 0 auto;
+  }
 }
 .awards-list .award-item,
 .awards-list .award-item-g,
@@ -1196,6 +1324,17 @@ h1 {
 .btn a {
   text-decoration: none;
   color: #fff;
+}
+
+@media (max-width: 992px) {
+  .cyber span.btn-container {
+    margin-top: 25px;
+  }
+}
+@media (min-width: 1260px) {
+  .cyber span.btn-container {
+    margin-top: auto;
+  }
 }
 
 .block {

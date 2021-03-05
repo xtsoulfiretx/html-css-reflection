@@ -291,6 +291,11 @@
         .smaller {
             font-size: .625rem;
         }
+
+        &:first-child {
+            border-left: 1px solid hsla(0,0%,100%,.1);
+            border-right: 1px solid rgba(0,0,0,.25);
+        }
     }
 
     .web {
@@ -313,6 +318,106 @@
         }
     }
 
+    .it {
+        i {
+            color: $blue;
+        }
+
+        &:hover {
+            i {
+                color: #fff;
+            }
+
+            a {
+                color: #fff;
+            }
+        }
+
+        .dropdown {
+            background-color: #4183d7;
+        }
+    }
+
+    .telecoms {
+        i {
+            color: $red;
+        }
+
+        &:hover {
+            i {
+                color: #fff;
+            }
+
+            a {
+                color: #fff;
+            }
+        }
+
+        .dropdown {
+            background-color: #d64541;
+        }
+    }
+
+    .software {
+        i {
+            color: $gray;
+        }
+
+        &:hover {
+            i {
+                color: #fff;
+            }
+
+            a {
+                color: #fff;
+            }
+        }
+
+        .dropdown {
+            background-color: #67809f;
+        }
+    }
+
+    .digital {
+        i {
+            color: $green;
+        }
+
+        &:hover {
+            i {
+                color: #fff;
+            }
+
+            a {
+                color: #fff;
+            }
+        }
+
+        .dropdown {
+            background-color: #2ecc71;
+        }
+    }
+
+    .cyber {
+        i {
+            color: $pink;
+        }
+
+        &:hover {
+            i {
+                color: #fff;
+            }
+
+            a {
+                color: #fff;
+            }
+        }
+
+        .dropdown {
+            background-color: #f62459;
+        }
+    }
+
     .dropdown {
         position: absolute;
         z-index: 10;
@@ -323,17 +428,16 @@
 
         li {
             line-height: 2.813rem;
-        }
 
-        li::after {
-            content: "";
-            position: absolute;
-            display: block;
-            height: 2px;
-            background-color: #fff;
-            width: 10px;
-            top: 22px;
-
+            &:nth-child(n+2)::after {
+                content: "";
+                position: absolute;
+                display: block;
+                height: 2px;
+                background-color: #fff;
+                width: 10px;
+                top: 22px;
+            }
         }
     }
 

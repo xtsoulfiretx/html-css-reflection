@@ -78,6 +78,29 @@
     padding: 0 15px;
 }
 
+.split-3-wrap {
+
+    @media (min-width: $break-m) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+
+    .split-3 {
+        @media (min-width: $break-m) {
+            width: 33.333%;
+        }
+    }
+
+    .block {
+       @media (min-width: $break-m) {
+           min-height: 386px;
+       }
+    }
+}
+
+
 .split-4-wrap {
 
     @media (min-width: $break-s) {
@@ -93,6 +116,15 @@
         }
     }
 
+    .block {
+        @media (min-width: $break-s) {
+            min-height: 315px;
+        }
+
+        @media (min-width: $break-m) {
+            max-height: 290px;
+        }
+     }
 }
 
 
@@ -145,10 +177,12 @@
     .item {
         font-size: .8125rem;
         margin-top: 30px;
+
+
         
         @media (min-width: $break-s) {
-            width: 345px;
-            height: 569px;
+            // width: 345px;
+            // height: 569px;
         }
     }
 
@@ -228,6 +262,7 @@
 
     .column-1,
     .column-2 {
+
         @media (min-width: $break-s) {
             width: 45%;
             margin-left: 15px;
@@ -349,21 +384,41 @@
     .busseys {
         height: 45px;
         width: 121px;
+
+        @media (min-width: $break-m) {
+            height: 62.828px;
+            width: 168px;
+        }
     }
 
     .crane {
         height: 45px;
         width: 185px;
+
+        @media (min-width: $break-m) {
+            height: 62.828px;
+            width: 257px;
+        }
     }
 
     .beat {
         height: 45px;
         width: 46px;
+
+        @media (min-width: $break-m) {
+            height: 62.828px;
+            width: 64.625px;
+        }
     }
 
     .northern {
         height: 45px;
         width: 207.5px;
+
+        @media (min-width: $break-m) {
+            height: 62.828px;
+            width: 289px;
+        }
     }
 
     @media (max-width: $break-s) {

@@ -133,6 +133,18 @@ h1 {
     color: #fff;
 }
 
+.cyber {
+    span.btn-container {
+        @media (max-width: $break-m){
+             margin-top: 25px;
+        }
+
+        @media (min-width: $break-l) {
+            margin-top: auto;
+        }
+    }
+}
+
 .block {
     display: block;
     border: 1px solid #ccc;
@@ -187,7 +199,7 @@ h1 {
         font-weight: 400;
         color: #333645;
     }
-
+    
     span.btn-container {
         height: auto;
         line-height: 35px;
