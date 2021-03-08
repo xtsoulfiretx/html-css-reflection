@@ -233,6 +233,16 @@
         height: auto;
         vertical-align: middle;
         border: 0;
+        overflow: hidden;
+        transition: all .25s cubic-bezier(.215,.61,.355,1);
+    }
+
+    .img-responsive:hover {
+        @media (min-width: $break-m) {
+        transform: scale(1.1);
+        filter: opacity(75%);
+        transition: all .25s cubic-bezier(.215,.61,.355,1);
+        }
     }
 
     .block {

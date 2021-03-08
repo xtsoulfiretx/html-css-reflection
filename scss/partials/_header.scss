@@ -55,6 +55,11 @@
         .form-control {
             height: 56px;
             width: 174px;
+
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { 
+                height: 56px;
+                width: 174px;
+            }
         }
 
         .form-control:focus {

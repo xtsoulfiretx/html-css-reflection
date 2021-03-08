@@ -59,6 +59,12 @@
   height: 56px;
   width: 174px;
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #head-nav .search-bar-2 .form-control {
+    height: 56px;
+    width: 174px;
+  }
+}
 #head-nav .search-bar-2 .form-control:focus {
   border-color: #5bc0de;
   outline: 0;
@@ -600,6 +606,15 @@
   height: auto;
   vertical-align: middle;
   border: 0;
+  overflow: hidden;
+  transition: all 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+@media (min-width: 992px) {
+  .articles-list .img-responsive:hover {
+    transform: scale(1.1);
+    filter: opacity(75%);
+    transition: all 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
 }
 .articles-list .block {
   margin-top: 0;
