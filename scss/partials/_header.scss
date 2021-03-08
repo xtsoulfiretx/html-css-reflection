@@ -95,11 +95,11 @@
     }
 
     .call-btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 110px;
         font-size: 1.6rem;
-        margin: 0 15px 15px 5px;
         color: #333645;
 
         @media (min-width: $break-s) {
@@ -152,7 +152,7 @@
 
 
     .search-bar-3 {
-        display: block!important;
+        display: none;
         margin-left: 10px;
 
         .form-control {
@@ -164,6 +164,10 @@
             border-color: #5bc0de;
             outline: 0;
             box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(91 192 222 / 60%);
+        }
+
+        @media (min-width: $break-s) {
+            display: block!important;
         }
 
         .bar-3 {

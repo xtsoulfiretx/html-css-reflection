@@ -84,6 +84,12 @@
         display: block!important;
     }
 }
+.visible-l {
+    display: none!important;
+    @media (min-width: $break-l) {
+        display: block!important;
+    }
+}
 
 .column {
     position: relative;
@@ -176,7 +182,6 @@
 
     .item {
         font-size: .8125rem;
-        margin-top: 30px;
     }
 
     .category {
@@ -237,11 +242,13 @@
         font-size: .875rem;
         color: #333645;
         text-decoration: none;
+        display: flex;
+        flex-direction: row;
 
         .avatar {
             display: inline-block;
             height: 47px;
-            width: 47px;
+            max-width: 47px;
             border-radius: 50%;
             overflow: hidden;
         }   
@@ -250,6 +257,13 @@
             display: inline-block;
             padding-left: 20px;
             line-height: 1.375rem;
+        }
+    }
+
+    .details {
+        p {
+            margin-block-start: auto;
+            margin-block-end: auto;
         }
     }
 
@@ -292,14 +306,39 @@
     }
 }
 
-.web-a {
+.news-b {
+    .block {
+        span {
+            color: $blue;
+        }
+    }
+    .article-btn-web {
+        font-weight: 300;
+        color: #fff;
+        background-color: $blue;
+        border-color: $blue;
+        height: auto;
+        padding: 5px 15px;
+        text-transform: uppercase;
+        font-size: 1.063rem;
+        border-radius: 3px;
+        text-decoration: none;
+        line-height: 35px;
+    }
+
+    .tooltip {
+        background-color: $blue;
+    }
+}
+
+.news-p {
     .block {
         span {
             color: $purple;
         }
     }
-    .article-btn-web {
-        font-weight: 400;
+    .article-btn-news {
+        font-weight: 300;
         color: #fff;
         background-color: $purple;
         border-color: $purple;
@@ -309,6 +348,11 @@
         font-size: 1.063rem;
         border-radius: 3px;
         text-decoration: none;
+        line-height: 35px;
+    }
+
+    .tooltip {
+        background-color: $purple;
     }
 }
 

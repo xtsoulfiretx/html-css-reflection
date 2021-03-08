@@ -94,11 +94,11 @@
   white-space: normal;
 }
 #head-nav .call-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 110px;
   font-size: 1.6rem;
-  margin: 0 15px 15px 5px;
   color: #333645;
 }
 @media (min-width: 768px) {
@@ -144,7 +144,7 @@
   background-color: #7e808a;
 }
 #head-nav .search-bar-3 {
-  display: block !important;
+  display: none;
   margin-left: 10px;
 }
 #head-nav .search-bar-3 .form-control {
@@ -155,6 +155,11 @@
   border-color: #5bc0de;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+@media (min-width: 768px) {
+  #head-nav .search-bar-3 {
+    display: block !important;
+  }
 }
 #head-nav .search-bar-3 .bar-3 {
   width: 240px;
@@ -452,6 +457,15 @@
   }
 }
 
+.visible-l {
+  display: none !important;
+}
+@media (min-width: 1260px) {
+  .visible-l {
+    display: block !important;
+  }
+}
+
 .column {
   position: relative;
   min-height: 1px;
@@ -532,7 +546,6 @@
 
 .articles-list .item {
   font-size: 0.8125rem;
-  margin-top: 30px;
 }
 .articles-list .category {
   position: absolute;
@@ -585,11 +598,13 @@
   font-size: 0.875rem;
   color: #333645;
   text-decoration: none;
+  display: flex;
+  flex-direction: row;
 }
 .articles-list .user .avatar {
   display: inline-block;
   height: 47px;
-  width: 47px;
+  max-width: 47px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -597,6 +612,10 @@
   display: inline-block;
   padding-left: 20px;
   line-height: 1.375rem;
+}
+.articles-list .details p {
+  margin-block-start: auto;
+  margin-block-end: auto;
 }
 @media (min-width: 768px) {
   .articles-list .column-1,
@@ -634,11 +653,31 @@
   }
 }
 
-.web-a .block span {
+.news-b .block span {
+  color: #4183d7;
+}
+.news-b .article-btn-web {
+  font-weight: 300;
+  color: #fff;
+  background-color: #4183d7;
+  border-color: #4183d7;
+  height: auto;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  text-decoration: none;
+  line-height: 35px;
+}
+.news-b .tooltip {
+  background-color: #4183d7;
+}
+
+.news-p .block span {
   color: #926fb1;
 }
-.web-a .article-btn-web {
-  font-weight: 400;
+.news-p .article-btn-news {
+  font-weight: 300;
   color: #fff;
   background-color: #926fb1;
   border-color: #926fb1;
@@ -648,6 +687,10 @@
   font-size: 1.063rem;
   border-radius: 3px;
   text-decoration: none;
+  line-height: 35px;
+}
+.news-p .tooltip {
+  background-color: #926fb1;
 }
 
 .article-section {
