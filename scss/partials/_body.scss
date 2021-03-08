@@ -80,13 +80,33 @@
 
 .visible-md {
     display: none!important;
-    @media (min-width: $break-m) {
+    @media (min-width: $break-s) and (max-width: $break-m){
         display: block!important;
     }
 }
 .visible-l {
     display: none!important;
+    @media (min-width: $break-m) {
+        display: block!important;
+    }
+}
+
+.visible-md-a {
+    display: none!important;
+    @media (min-width: $break-m) {
+        display: block!important;
+    }
+}
+
+.visible-md-ab {
+    display: none!important;
     @media (min-width: $break-l) {
+        display: block!important;
+    }
+}
+.visible-l-a {
+    display: none!important;
+    @media (min-width: $break-m) {
         display: block!important;
     }
 }

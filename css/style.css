@@ -451,7 +451,7 @@
 .visible-md {
   display: none !important;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .visible-md {
     display: block !important;
   }
@@ -460,8 +460,35 @@
 .visible-l {
   display: none !important;
 }
-@media (min-width: 1260px) {
+@media (min-width: 992px) {
   .visible-l {
+    display: block !important;
+  }
+}
+
+.visible-md-a {
+  display: none !important;
+}
+@media (min-width: 992px) {
+  .visible-md-a {
+    display: block !important;
+  }
+}
+
+.visible-md-ab {
+  display: none !important;
+}
+@media (min-width: 1260px) {
+  .visible-md-ab {
+    display: block !important;
+  }
+}
+
+.visible-l-a {
+  display: none !important;
+}
+@media (min-width: 992px) {
+  .visible-l-a {
     display: block !important;
   }
 }
