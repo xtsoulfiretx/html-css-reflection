@@ -11,6 +11,7 @@
 
 #main-info {
     background-color: #333645;
+    display: flex;
 
     .brand-background {
         background-image: #333645;
@@ -69,6 +70,18 @@
             margin-left: 12px;
             color: #333645;
         }
+
+        @media (min-width: $break-l) {
+            width: 50%;
+            margin-left: 30px;
+        }
+    }
+}
+
+.visible-md {
+    display: none!important;
+    @media (min-width: $break-m) {
+        display: block!important;
     }
 }
 
@@ -83,7 +96,6 @@
     @media (min-width: $break-m) {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-between;
         }
 
@@ -91,12 +103,6 @@
         @media (min-width: $break-m) {
             width: 33.333%;
         }
-    }
-
-    .block {
-       @media (min-width: $break-m) {
-           min-height: 386px;
-       }
     }
 }
 
@@ -110,21 +116,15 @@
         justify-content: space-between;
         }
 
+    @media (min-width: $break-l) {
+       flex-wrap: nowrap;
+        }
+
     .split-4 {
         @media (min-width: $break-s) {
             width: 50%;
         }
     }
-
-    .block {
-        @media (min-width: $break-s) {
-            min-height: 315px;
-        }
-
-        @media (min-width: $break-m) {
-            max-height: 290px;
-        }
-     }
 }
 
 
@@ -177,13 +177,6 @@
     .item {
         font-size: .8125rem;
         margin-top: 30px;
-
-
-        
-        @media (min-width: $break-s) {
-            // width: 345px;
-            // height: 569px;
-        }
     }
 
     .category {
@@ -271,9 +264,19 @@
     }
 
     .column-3 {
-        @media (min-width: $break-s) {
+        @media (min-width: $break-s) and (max-width: $break-l) {
             display: none!important;
         } 
+    }
+
+    .column-1,
+    .column-2,
+    .column-3 {
+        @media (min-width: $break-l) {
+            width: 33.333%;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
     }
 
     @media (min-width: $break-s) {
@@ -282,6 +285,10 @@
             flex-wrap: wrap;
             justify-content: space-between;
             
+    }
+
+    @media (min-width: $break-l) {
+        flex-wrap: nowrap;
     }
 }
 
@@ -320,6 +327,7 @@
         display: flex;
         flex-direction: row;
         text-align: center;
+        justify-content: space-around;
     }
 
     .client-list .item {
@@ -389,6 +397,11 @@
             height: 62.828px;
             width: 168px;
         }
+
+        @media (min-width: $break-l) {
+            height: 70px;
+            width: 188px;
+        }
     }
 
     .crane {
@@ -398,6 +411,11 @@
         @media (min-width: $break-m) {
             height: 62.828px;
             width: 257px;
+        }
+
+        @media (min-width: $break-l) {
+            height: 70px;
+            width: 287px;
         }
     }
 
@@ -409,6 +427,11 @@
             height: 62.828px;
             width: 64.625px;
         }
+
+        @media (min-width: $break-l) {
+            height: 70px;
+            width: 72px;
+        }
     }
 
     .northern {
@@ -418,6 +441,11 @@
         @media (min-width: $break-m) {
             height: 62.828px;
             width: 289px;
+        }
+
+        @media (min-width: $break-l) {
+            height: 70px;
+            width: 322px;
         }
     }
 

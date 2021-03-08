@@ -117,6 +117,12 @@
         .linkedin:hover {
             background-color: #0077b5;
         }
+
+        .row {
+            @media (min-width: $break-l) {
+                flex-wrap: wrap;
+            }
+        }
     }
  }
 
@@ -133,13 +139,14 @@
     .awards-list-row-2 {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         text-align: center;
         width: 720px;
         height: 88px;
 
         @media (min-width: $break-m) {
            margin: 0 auto;
+           width: auto;
         }
 
         .award-item,
@@ -148,6 +155,12 @@
             vertical-align: middle;
             padding: 0 20px;
             position: relative;
+
+            img{
+            @media (min-width: $break-m) {
+                max-width: 175px;
+             }
+        }
         }
     }
 
@@ -166,4 +179,29 @@
             height: auto;
             width: 100%;
         }
+    }
+
+    .smp-badge {
+        img {
+            @media (min-width: $break-m) {
+                width: 115px!important;
+            }
+        }
+    }
+
+    .f5-badge {
+        img {
+        @media (min-width: $break-m) {
+            width: 44px!important;
+        }
+    }
+}
+
+
+    .qms-badge {
+        img {
+        @media (min-width: $break-m) {
+            width: 60px;
+        }
+    }
     }
