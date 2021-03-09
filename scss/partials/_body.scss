@@ -263,6 +263,10 @@
             font-weight: 600;
             margin: 0 0 15px;
         }
+
+        @media (max-width: $break-s) {
+            margin-bottom: 30px;
+        }
     }
 
     .user {
@@ -356,6 +360,11 @@
         line-height: 35px;
     }
 
+    .article-btn-web:hover {
+        background-color: #2a6ec6;
+        border-color: #2665b5;
+    }
+
     .tooltip {
         background-color: $blue;
     }
@@ -381,6 +390,11 @@
         line-height: 35px;
     }
 
+    .article-btn-news:hover {
+        background-color: #7e57a0;
+        border-color: #735093;
+    }
+
     .tooltip {
         background-color: $purple;
     }
@@ -396,6 +410,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
     max-width: 100%;
+    
 
     .client-list {
         display: flex;

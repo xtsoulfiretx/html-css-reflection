@@ -115,8 +115,11 @@
 #head-nav .btn-support {
   background-color: #4183d7;
   border-color: #4183d7;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-align: center;
   align-items: center;
   color: #fff;
   text-decoration: none;
@@ -633,6 +636,11 @@
   font-weight: 600;
   margin: 0 0 15px;
 }
+@media (max-width: 768px) {
+  .articles-list .block {
+    margin-bottom: 30px;
+  }
+}
 .articles-list .user {
   margin-top: 30px;
   padding-top: 30px;
@@ -711,6 +719,10 @@
   text-decoration: none;
   line-height: 35px;
 }
+.news-b .article-btn-web:hover {
+  background-color: #2a6ec6;
+  border-color: #2665b5;
+}
 .news-b .tooltip {
   background-color: #4183d7;
 }
@@ -730,6 +742,10 @@
   border-radius: 3px;
   text-decoration: none;
   line-height: 35px;
+}
+.news-p .article-btn-news:hover {
+  background-color: #7e57a0;
+  border-color: #735093;
 }
 .news-p .tooltip {
   background-color: #926fb1;
@@ -1000,6 +1016,16 @@ footer {
   color: #fff;
   padding: 47px 0 43px;
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  footer {
+    max-width: 100vw;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  footer .footer {
+    margin-left: 10px;
+  }
+}
 footer a:hover {
   text-decoration: underline;
 }
@@ -1017,6 +1043,11 @@ footer .row {
 @media (min-width: 1260px) {
   footer .row {
     flex-wrap: nowrap;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  footer .row {
+    max-width: 98vw;
   }
 }
 footer .f-column {
@@ -1071,9 +1102,23 @@ footer .f-column ul li .netmatters-email {
 footer .social-media {
   margin-top: -24px;
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  footer .social-media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 footer .social-media .social-box {
   display: flex;
   width: 50%;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  footer .social-media .social-box {
+    margin-left: 20px;
+    max-width: 219px;
+    min-width: 107px;
+  }
 }
 footer .social-media i {
   font-size: 1.7rem;
@@ -1105,7 +1150,8 @@ footer .social-media .linkedin:hover {
 }
 @media (min-width: 1260px) {
   footer .social-media .row {
-    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -1381,6 +1427,7 @@ body {
   font-size: 1rem;
   letter-spacing: 0.4px;
   color: #666;
+  overflow: auto;
 }
 
 .container {
