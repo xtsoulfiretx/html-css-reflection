@@ -50,16 +50,15 @@
 
         .input-group {
             flex-wrap: nowrap;
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { 
+                height: 56px;
+                width: 237.776px;
+            }
         }
 
         .form-control {
             height: 56px;
             width: 174px;
-
-            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { 
-                height: 56px;
-                width: 174px;
-            }
         }
 
         .form-control:focus {
@@ -125,6 +124,7 @@
         text-decoration: none;
         font-size: 1.125rem;
         height: 56px;
+        width: max-content;
 
         i {
             font-size: 1.438rem; 
@@ -158,7 +158,11 @@
         background-color: #7e808a;
     }
 
-
+    .container-fluid {
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { 
+            width: auto;
+        }
+    }
     .search-bar-3 {
         display: none;
         margin-left: 10px;

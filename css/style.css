@@ -55,15 +55,15 @@
 #head-nav .search-bar-2 .input-group {
   flex-wrap: nowrap;
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #head-nav .search-bar-2 .input-group {
+    height: 56px;
+    width: 237.776px;
+  }
+}
 #head-nav .search-bar-2 .form-control {
   height: 56px;
   width: 174px;
-}
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  #head-nav .search-bar-2 .form-control {
-    height: 56px;
-    width: 174px;
-  }
 }
 #head-nav .search-bar-2 .form-control:focus {
   border-color: #5bc0de;
@@ -125,6 +125,7 @@
   text-decoration: none;
   font-size: 1.125rem;
   height: 56px;
+  width: max-content;
 }
 #head-nav .btn-support i {
   font-size: 1.438rem;
@@ -151,6 +152,11 @@
 }
 #head-nav .btn-contact:hover {
   background-color: #7e808a;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #head-nav .container-fluid {
+    width: auto;
+  }
 }
 #head-nav .search-bar-3 {
   display: none;
