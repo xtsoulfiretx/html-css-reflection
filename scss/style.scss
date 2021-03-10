@@ -219,9 +219,3 @@ li {
     }
 }
 
-.grayscale {
-    @include grayscale_element(100%);
-    &:hover {
-        @include grayscale_element(0);
-    }
-}

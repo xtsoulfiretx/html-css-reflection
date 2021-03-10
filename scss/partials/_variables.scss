@@ -16,13 +16,6 @@ $green: #2ecc71;
 $red: #d64541;
 $pink: #f62459;
 
-// Mixins
-
-@mixin grayscale_element($value) {
-    -webkit-filter: #{"grayscale(#{$value})"};
-    -moz-filter: #{"grayscale(#{$value})"};
-    filter:#{"grayscale(#{$value})"};
-}
 
 //Media Queries
 

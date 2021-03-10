@@ -371,6 +371,26 @@
         display: block;
     }
 
+    .client-logo {
+        .colored {
+            display: none;
+        }
+
+        .grayscale {
+            display: block;
+        }
+    }
+
+    .client-logo:hover {
+        .colored {
+            display: block;
+        }
+
+        .grayscale {
+            display: none;
+        }
+    }
+
     .busseys {
         height: 45px;
         width: 121px;
