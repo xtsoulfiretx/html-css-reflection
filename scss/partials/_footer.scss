@@ -9,7 +9,7 @@
 
      .footer {
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-            margin-left: 10px;
+            margin-left: 20px;
        }
      }
 
@@ -27,7 +27,7 @@
             flex-wrap: wrap;
          }
 
-         @media (min-width: $break-l) {
+         @media (min-width: $break-xl) {
             flex-wrap: nowrap;
         }
 
