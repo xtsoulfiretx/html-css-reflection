@@ -1,4 +1,4 @@
-
+// Main Footer Section //
  footer {
      background-color: #333645;
      color: #fff;
@@ -31,6 +31,8 @@
             flex-wrap: nowrap;
         }
      }
+
+     // Footer column styling //
 
      .f-column {
         display: flex;
@@ -85,6 +87,8 @@
             text-transform: lowercase;
         }
     }
+
+    // Social Media Buttons //
 
     .social-media {
         margin-top: -24px;
@@ -151,6 +155,8 @@
     }
  }
 
+    // Awards Section //
+
     .awards-section {
         padding: 50px 0;
         text-align: center;
@@ -208,6 +214,8 @@
              }
               }
          }
+
+    // Award Item Styles //
 
     .badgemain {
             img {

@@ -16,18 +16,6 @@ $green: #2ecc71;
 $red: #d64541;
 $pink: #f62459;
 
-
-//Media Queries
-
-@media (max-width: $break-m) {
-
-    .hidden-s {
-        display: none!important;
-    }
-}
-
-
-
 // bug fixing 
 
  .bugfix {

@@ -9,6 +9,8 @@
     margin-top: -30px;
 }
 
+//Natmatters Bio Section //
+
 #main-info {
     background-color: #333645;
     display: flex;
@@ -85,7 +87,7 @@
 }
 
 
-// Latest articles styles
+// Latest articles section //
  .active {
     
     float: left;
@@ -128,6 +130,8 @@
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+// Actual Article Styles //
 
 .articles-list {
 
@@ -233,6 +237,8 @@
     }
 }
 
+// Article Theme Styling //
+
 .news-b {
     .block {
         span {
@@ -297,7 +303,7 @@
     box-shadow: 0 5px 35px rgb(0 0 0 / 10%);
 }
 
-//Clients
+// Clients Section //
 
 .clients-section {
     padding-top: 50px;
@@ -318,6 +324,8 @@
         padding: 0 20px;
         position: relative;
     }
+
+    // Client Info Popup //
 
     .client-list .item .description {
         display: none;
@@ -370,6 +378,8 @@
     .client-list .item:hover .description {
         display: block;
     }
+
+    // Client Logo Styling //
 
     .client-logo {
         .colored {
@@ -456,10 +466,13 @@
     }
 }
 
+// Sign-up Newsletter Section // 
 
 .newsletter-full-width {
     background-color: #ddd;
 }
+
+// Sign-up Info //
 
 .sign-up {
     margin: 0;
@@ -510,6 +523,8 @@
         color: #d24d57;
     }
 }
+
+// Sign-up Checkbox //
 
 .cb {
     display: flex;
@@ -564,6 +579,8 @@
         left: 8px;
     }
 }
+
+// Agreement Info //
 
 .media-body {
     font-weight: 600;

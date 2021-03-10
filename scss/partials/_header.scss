@@ -21,6 +21,8 @@
         padding: 20px 0;
     }
 
+    // Top Row of header //
+
     .header-row {
         display: flex;
         flex-direction: row;
@@ -31,6 +33,7 @@
         align-items: center;
     }
 
+    // Netmatters logo //
     .logo-container {
         width: 299px;
 
@@ -45,6 +48,8 @@
         display: block;
     }
     
+    // Search bar shown on medium screen sizes //
+
     .search-bar-2 {
         display: block!important;
 
@@ -82,6 +87,8 @@
             display: none!important;
         }
     }
+
+    // Header Buttons //
 
     .actions {
         display: flex;
@@ -158,11 +165,8 @@
         background-color: #7e808a;
     }
 
-    .container-fluid {
-        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { 
-            width: auto;
-        }
-    }
+    // Search bar shown in largest screen sizes //
+
     .search-bar-3 {
         display: none;
         margin-left: 10px;
@@ -210,6 +214,8 @@
         background-color: #7e808a;
     }
 
+    // Menu Burger Btn //
+
     .menu-button {
         background-color: #333645;
         padding: 5px 15px;
@@ -238,6 +244,8 @@
           margin: 0;
           line-height: 1.1;
       }
+
+      // Search Bar shown on smallest screen sizes //
 
       .search-bar {
           margin-left: 15px;
@@ -271,14 +279,7 @@
         }
       }
 
-    .title {
-        display: block;
-        font-size: .75rem;
-        line-height: 1;
-        position: relative;
-        top: 5px;
-        margin-bottom: 0;
-    }
+      // Header Navigation //
 
     ul {
         display: flex;
@@ -313,6 +314,8 @@
             border-right: 1px solid rgba(0,0,0,.25);
         }
     }
+    
+    // Navigation Dropdown list //
 
     .web {
         i {

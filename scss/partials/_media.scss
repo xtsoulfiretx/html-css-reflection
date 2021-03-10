@@ -1,3 +1,5 @@
+// Media Queries //
+
 .container {
 
     @media (min-width: $break-xs) {
@@ -24,6 +26,8 @@
         padding-right: 27px;
     }
 }
+
+// Sizing Visible Q's //
 
 .visible-md {
     display: none!important;
@@ -73,6 +77,20 @@
     }
 }
 
+.container-fluid {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { 
+        width: auto;
+    }
+}
+
+@media (max-width: $break-m) {
+    .hidden-s {
+        display: none!important;
+    }
+}
+
+// Card Sizing Q's //
+
 .split-3-wrap {
 
     @media (min-width: $break-m) {
@@ -108,6 +126,8 @@
         }
     }
 }
+
+// Articles Sizing Q's //
 
 .articles-list {
     .column-1,

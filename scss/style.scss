@@ -45,6 +45,8 @@ body {
     margin-right: -15px;
 }
 
+// Hero banner //
+
 .hero-image {
     height: 80vh;
     background-image: linear-gradient(to right, rgb(0,0,0), rgba(0,0,0,.45) 40%, transparent 75%), url(../images/web-design.jpg);
@@ -102,6 +104,8 @@ body {
         text-align: left;
     }
 }
+
+//Generic Rules //
 
 h1 {
     line-height: 1.1;
