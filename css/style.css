@@ -1172,6 +1172,9 @@ i {
   background-color: #67809f;
   line-height: 58px;
 }
+.software span.icon i {
+  margin-top: -10px;
+}
 .software span.btn-container {
   color: #fff;
   background-color: #67809f;

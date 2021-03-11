@@ -12,6 +12,10 @@ i {
     span.icon {
         background-color: $gray;
         line-height: 58px;
+
+        i {
+            margin-top: -10px;
+        }
     }
 
     span.btn-container {
