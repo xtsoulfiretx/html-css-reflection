@@ -20,10 +20,6 @@
             flex-direction: row;
             flex-wrap: wrap;
          }
-
-         @media (min-width: $break-xl) {
-            flex-wrap: nowrap;
-        }
      }
 
      // Footer column styling //

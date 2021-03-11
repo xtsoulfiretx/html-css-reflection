@@ -64,6 +64,14 @@ body {
     transform: translate(-50%, -50%);
     color: #fff;
 
+    @media (min-width: $break-xs) and (max-width: $break-s) {
+        width: 420px;
+    }
+
+    @media (min-width: $break-m) and (max-width: $break-l){
+        width: 940px;
+    }
+
     h1 {
         text-transform: uppercase;
         font-weight: 400;
@@ -75,6 +83,10 @@ body {
         font-size: 1.25rem;
         line-height: 2.25rem;
         margin: 0 0 35px;
+        
+        @media (min-width: $break-m) {
+            width: 50%;
+        }
     }
 
     button {
@@ -122,7 +134,6 @@ h1 {
     vertical-align: center;
     cursor: pointer;
     border-radius: 3px;
-    border: 1px solid transparent;
 }
 
 .btn a {
@@ -223,3 +234,9 @@ li {
     }
 }
 
+button {
+    border: none!important;
+    outline: none!important;
+    border-image: none!important;
+    border-style: none!important;
+}

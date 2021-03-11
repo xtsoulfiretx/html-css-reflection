@@ -18,12 +18,14 @@
     .brand-background {
         background-image: #333645;
         background-repeat: no-repeat;
-        background-position: 100%;
         background-size: auto 100%;
         display: block;
+        width: 100%;
+        
 
         @media (min-width:$break-m) {
             background-image: url(../images/branded.png);
+            background-position: right;
         }
     }
     
