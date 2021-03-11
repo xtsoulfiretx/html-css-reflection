@@ -40,6 +40,10 @@
         @media (min-width: $break-m) {
             width: 370px;
         }
+
+        @media (max-width: 375px) {
+            width: 180px;
+        }
     }
 
     .logo-img {
@@ -112,6 +116,21 @@
         right: 110px;
         font-size: 1.6rem;
         color: #333645;
+
+        &:hover {
+            color: #121419;
+        }
+
+        &:hover::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: -3px;
+            right: 0;
+            background-color: #121419;
+            height: 3px;
+            width: 1.9rem;
+         }
 
         @media (min-width: $break-s) {
             display: none!important;
