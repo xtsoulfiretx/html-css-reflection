@@ -19,6 +19,9 @@
 
     .help-nav {
         padding: 20px 0;
+        @media (min-width: $break-s) {
+            height: 110px;
+        }
     }
 
     .container {
@@ -34,19 +37,22 @@
     .header-row {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-between;
         margin-left: -15px;
         margin-right: -15px;
         align-items: center;
+        @media (max-width:$break-s) {
+            flex-wrap: wrap;
+        }
     }
 
     // Netmatters logo //
     .logo-container {
-        width: 299px;
+        width: 370px!important;
+        height: 60.063px;
 
         @media (min-width: $break-m) {
-            width: 370px;
+            width: 370px!important;
         }
 
         @media (max-width: 454px) {
@@ -56,11 +62,15 @@
         @media (max-width: 300px) {
             width: 108px;
         }
+
+        @media (max-width: $break-m) {
+            padding-left: 15px;
+            width: auto;
+        }
     }
 
     .logo-img {
-        max-width: 100%;
-        padding-left: 15px;
+        width: 370px;
         display: block;
     }
     
@@ -222,7 +232,7 @@
             box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(91 192 222 / 60%);
         }
 
-        @media (min-width: $break-s) {
+        @media (min-width: $break-m) {
             display: block!important;
         }
 
@@ -493,7 +503,7 @@
             line-height: 2.813rem;
             list-style-image: url(data:0);
 
-            &:nth-child(n+2)::after {
+            &:nth-child(n+3)::after {
                 content: "";
                 position: absolute;
                 display: block;
@@ -501,6 +511,25 @@
                 background-color: #fff;
                 width: 10px;
                 top: 22px;
+            }
+
+            &:first-child {
+                flex-grow: 3;
+                @media (min-width: $break-l) {
+                    flex-grow: 4;
+                }
+            }
+
+            &:last-child {
+                flex-grow: 3;
+                @media (min-width: $break-l) {
+                    flex-grow: 4;
+                }
+            }
+            &:last-child::after{
+                content: "";
+                position: relative;
+                display: none;
             }
         }
     }
@@ -512,7 +541,7 @@
     .main-nav-list li:hover .dropdown {
         display: flex;
         flex-direction: row;
-        width: 100%;
         list-style: none;
+        justify-content: center;
     }
 }

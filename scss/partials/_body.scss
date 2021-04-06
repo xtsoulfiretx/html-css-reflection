@@ -131,7 +131,11 @@
 
 .article-section {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+
+    @media (min-width: $break-s) {
+        padding-bottom: 50px;
+    }
 }
 
 // Actual Article Styles //
@@ -158,12 +162,15 @@
     .tooltip {
         background-color: $purple;
     }
+    .tooltip:hover {
+        text-decoration: underline;
+    }
 
     .image-container {
         display: block;
         border-radius: 3px 3px 0 0;
-        overflow: hidden;
         position: relative;
+        overflow: hidden!important;
     }
 
     img {
@@ -171,7 +178,6 @@
         height: auto;
         vertical-align: middle;
         border: 0;
-        overflow: hidden;
         transition: all .25s cubic-bezier(.215,.61,.355,1);
     }
 
@@ -200,6 +206,9 @@
         span {
             font-weight: 600;
             margin: 0 0 15px;
+        }
+        span:hover {
+            text-decoration: underline;
         }
 
         @media (max-width: $break-s) {
@@ -254,12 +263,13 @@
         background-color: $blue;
         border-color: $blue;
         height: auto;
-        padding: 5px 15px;
+        line-height: 35px;
+        padding: 10px 20px;
         text-transform: uppercase;
         font-size: 1.063rem;
         border-radius: 3px;
         text-decoration: none;
-        line-height: 35px;
+        
     }
 
     .article-btn-web:hover {
@@ -284,7 +294,7 @@
         background-color: $purple;
         border-color: $purple;
         height: auto;
-        padding: 5px 15px;
+        padding: 10px 20px;
         text-transform: uppercase;
         font-size: 1.063rem;
         border-radius: 3px;
@@ -333,17 +343,53 @@
     .client-list .item .description {
         display: none;
         position: absolute;
-        bottom: 100%;
-        left: -200px;
-        right: -200px;
+        bottom: 95px;
+
+        @media (min-width: $break-m) {
+            bottom: 113px;
+        }
+
+        @media (min-width: $break-l) {
+            bottom: 120px;
+        }
 
         .box {
             background-color: #333645;
             color: #fff;
             padding: 20px;
             font-size: .875rem;
-            max-width: 260px;
-            margin: 0 auto 50px;
+            width: 260px;
+        }
+    }
+
+    .client-list .item-bus .description {
+        left: -50px;
+        @media (min-width: $break-m) {
+            left: -30px;
+        }
+        @media (min-width: $break-l) {
+            left: -15px;
+        }
+    }
+
+    .client-list .item-crane .description {
+        left: -40px;
+        @media (min-width: $break-m) {
+            left: 0px;
+        }
+    }
+
+    .client-list .item-beat .description {
+        left: -85px;
+        @media (min-width: $break-m) {
+            left: -72px;
+        }
+    }
+
+    .client-list .item-nd .description {
+        left: -20px;
+        @media (min-width: $break-m) {
+            left: 50px;
         }
     }
 
@@ -364,7 +410,7 @@
 
         .arrow {
             position: absolute;
-            bottom: 10px;
+            bottom: -40px;
             left: 50%;
             margin-left: -36px;
         }
@@ -517,6 +563,13 @@
             border-color: #ccc;
             width: 100%;
         }
+
+        .form-control:focus {
+            border-color: #5bc0de;
+            outline: 0;
+            box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(91 192 222 / 60%);
+        }
+
     }
 }
 

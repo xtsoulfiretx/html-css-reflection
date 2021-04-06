@@ -88,6 +88,8 @@
             display: flex;
             width: 50%;
             position: relative;
+            padding-left: 0px;
+            padding-right: 20px;
             @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
                 padding: 0 10px;
            }
@@ -191,7 +193,7 @@
             position: relative;
 
             img{
-            @media (min-width: $break-m) {
+            @media (min-width: $break-s) and (max-width: $break-m) {
                 max-width: 175px;
              }
               }
@@ -201,7 +203,7 @@
 
     .badgemain {
             img {
-                height: 82px;
+                width:220px;
             }
     }
 

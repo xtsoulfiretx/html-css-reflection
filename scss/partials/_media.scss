@@ -140,6 +140,14 @@
         }
     }
 
+    .column-2 {
+        @media (min-width: $break-s) {
+            width: 45%;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+
     .column-3 {
         @media (min-width: $break-s) and (max-width: $break-l) {
             display: none!important;
