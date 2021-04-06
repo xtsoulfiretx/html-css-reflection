@@ -166,6 +166,13 @@
         text-decoration: underline;
     }
 
+    .tooltip:hover ~ .bordered {
+        img {
+        transform: scale(1.1);
+        opacity: 0.75;
+        transition: all .25s cubic-bezier(.215,.61,.355,1);
+        }
+    }
     .image-container {
         display: block;
         border-radius: 3px 3px 0 0;
