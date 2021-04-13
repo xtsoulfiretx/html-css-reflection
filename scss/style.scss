@@ -99,6 +99,10 @@ body {
         font-size: 1.25rem;
         border-radius: 3px;
         white-space: normal;
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { 
+            height: 60px;
+        }
     }
 
     button:hover {

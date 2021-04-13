@@ -10,6 +10,7 @@
         @media (max-width: $break-m) {
             display: hidden;
         }
+
     }
 
     .head-padding {
@@ -21,6 +22,13 @@
         padding: 20px 0;
         @media (min-width: $break-s) {
             height: 110px;
+        }
+
+        @media (min-width: $break-m) {
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
 
@@ -48,22 +56,21 @@
 
     // Netmatters logo //
     .logo-container {
-        width: 370px!important;
+        display: flex;
         height: 60.063px;
+        padding-left: 15px;
+        align-items: center;
 
         @media (min-width: $break-m) {
             width: 370px!important;
-        }
-
-        @media (max-width: 454px) {
-            width: 180px;
+            padding-left: 15px;
         }
 
         @media (max-width: 300px) {
             width: 108px;
         }
 
-        @media (max-width: $break-m) {
+        @media (min-width: 455px) and (max-width: 991px) {
             padding-left: 15px;
             width: auto;
         }
@@ -72,6 +79,27 @@
     .logo-img {
         width: 370px;
         display: block;
+
+        @media (min-width: $break-m) {
+            width: 370px!important;
+            padding-left: 15px;
+        }
+
+        @media (max-width: 530px) {
+            width: 300px;
+        }
+
+        @media (max-width: 450px) {
+            width: 250px;
+        }
+
+        @media (max-width: 375px) {
+            width: 200px;
+        }
+
+        @media (max-width: 320px) {
+            width: 180px;
+        }
     }
     
     // Search bar shown on medium screen sizes //
@@ -101,8 +129,8 @@
         #basic-addon1 {
             background-color: #999aa2;
             color: #fff;
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
 
         @media (max-width: $break-s) {
@@ -128,6 +156,11 @@
             padding: 5px 15px;
             border-radius: 3px;
             white-space: normal;
+        }
+
+        .container-fluid {
+            padding-right: 10px;
+            padding-left: 10px;
         }
     }
 
@@ -160,8 +193,8 @@
 
         @media (max-width: 454px) {
             position: relative;
-            top:auto;
-            right:auto;
+            top: auto;
+            right: auto;
             margin-left: -10px;
             margin-right: -15px;
             margin-top: -10px;
@@ -242,14 +275,14 @@
                 display: none!important;
             }
         }
-
     }
+
     .search-btn {
         background-color: #999aa2;
         color: #fff;
         height: 56px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
         border-radius: 3px;
         display: flex;
         flex-direction: row;
@@ -271,7 +304,7 @@
         padding: 5px 15px;
         border: none;
         margin-right: 15px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     .menu-button:hover {
@@ -346,6 +379,13 @@
 
         .li {
             width: 140px;
+
+            &:first-child {
+                border-left: 1px solid hsla(0,0%,100%,.1);
+            }
+            &:last-child {
+                border-right: 1px solid rgba(0,0,0,.25);
+            }
         }
 
         .icon-head {
@@ -363,11 +403,6 @@
 
         .smaller {
             font-size: .625rem;
-        }
-
-        &:first-child {
-            border-left: 1px solid hsla(0,0%,100%,.1);
-            border-right: 1px solid rgba(0,0,0,.25);
         }
     }
     
