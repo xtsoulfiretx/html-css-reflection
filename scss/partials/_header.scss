@@ -299,32 +299,17 @@
 
     // Menu Burger Btn //
 
-    .menu-button {
-        background-color: #333645;
-        padding: 5px 15px;
-        border: none;
+    .hamburger {
+        height: 56px;
+        display: flex;
+        flex-direction: column;
         margin-right: 15px;
-        margin-left: 10px;
     }
-
-    .menu-button:hover {
-        background-color: #22242e;
-        border-color: #191a22;
-    }
-
-    .bar1, .bar2, .bar3 {
-        width: 35px;
-        height: 3px;
-        background-color: #fff;
-        margin: 6px 0;
-        transition: 0.4s;
-      }
 
       .menu-text {
           font-family: Poppins,sans-serif;
           font-size: .75rem;
           color:#fff;
-          margin: 0;
           line-height: 1.1;
       }
 
