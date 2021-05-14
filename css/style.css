@@ -1650,6 +1650,90 @@ i {
   }
 }
 
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  height: 100%;
+  width: 275px;
+  background-color: #333645;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .main {
+  padding: 21px;
+}
+.sidebar .main ul {
+  margin: -20px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .main ul li {
+  display: block;
+}
+.sidebar .main .head-li {
+  padding: 20px 0 0;
+}
+.sidebar .main small {
+  font-size: 0.875rem;
+}
+.sidebar .main ul li a {
+  font-size: 1.125rem;
+  padding: 19px 0 18px;
+  border-radius: 3px;
+  outline: 1px solid rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: block;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.sidebar .main ul li ul {
+  margin-top: 20px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.sidebar .main ul li ul li a {
+  display: block;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  font-size: 1rem;
+  padding: 15px;
+}
+.sidebar .second-list {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .second-list ul {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .second-list ul li {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.sidebar .second-list ul li a {
+  padding: 20px;
+  font-size: 1rem;
+  line-height: 1;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.sidebar .second-list ul li ul li {
+  display: block;
+  border-top: 1px solid rgba(0, 0, 0, 0.45);
+}
+.sidebar .second-list ul li ul li a {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.sidebar .second-list li {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
