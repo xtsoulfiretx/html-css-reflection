@@ -24,6 +24,20 @@
     // outline: solid #f00 1px !important;
 }
 
+.main-outer {
+    height: 100%;
+    overflow: auto;
+}
+
+#main {
+    transition: .5s;
+}
+
+.btn-pressed {
+    position: absolute;
+    left: -275px;
+}
+
 div {
     display: block;
 }

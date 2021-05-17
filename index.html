@@ -7,6 +7,7 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,400;1,500&display=swap" rel="stylesheet"> 
+   <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png">
    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -21,6 +22,7 @@
 
   <body>
     <div id="main"> <!--Start of main body-->
+      <div class="main-outer">
         <header id="head-nav"> <!--Start of header navigation-->
           <div class="help-nav"> <!--Top of site support navigation-->
             <div class="head-padding container">
@@ -557,6 +559,7 @@
       </div> <!--End of awards section-->
 
      </div>
+     </div>
     </div>
 
     <div class="sidebar"> <!--Start of mobile side nav-->
@@ -566,12 +569,12 @@
             <a href="https://www.netmatters.co.uk/contact-us">Contact Us</a>
           </li>
 
-          <li class="web head-li"> <!--Start of Webdesign list-->
+          <li class="head-li"> <!--Start of Webdesign list-->
             <a href="https://www.netmatters.co.uk/web-design">
-              <span class="icon-code"></span>
+              <span class="icon-code"><i class="bi bi-code-slash"></i></span>
               <small>Web</small> Design
             </a>
-            <ul class role="menu">
+            <ul>
               <li>
                 <a href="https://www.netmatters.co.uk/web-design/website-design">Stylish Websites</a>
               </li>
@@ -593,12 +596,12 @@
             </ul>
           </li> <!--End of Webdesign list-->
 
-          <li class="it head-li"> <!--Start of IT list-->
+          <li class="head-li"> <!--Start of IT list-->
             <a href="https://www.netmatters.co.uk/it-support">
-            <span class="icon-display"></span>
+            <span class="icon-display"><i class="fas fa-desktop"></i></span>
             <small>It</small> Support
             </a>
-            <ul class role="menu">
+            <ul>
               <li>
                 <a href="https://www.netmatters.co.uk/it-support/managed-it-support">Managed It</a>
               </li>
@@ -620,12 +623,12 @@
             </ul>
           </li> <!--End of It List-->
 
-          <li class="Telecoms head-li"> <!--Start of Telecoms list-->
+          <li class="head-li"> <!--Start of Telecoms list-->
             <a href="https://www.netmatters.co.uk/telecoms-services">
-            <span class="icon-phone"></span>
+            <span class="icon-phone"><i class="bi bi-telephone-outbound"></i></span>
             <small>Telecoms</small> Services
             </a>
-            <ul class role="menu">
+            <ul>
               <li>
                 <a href="https://www.netmatters.co.uk/telecoms-services/gigabit-voucher-scheme">Gigabit Voucher</a>
               </li>
@@ -647,12 +650,12 @@
             </ul>
           </li> <!--End of Telecoms List-->
 
-          <li class="software head-li"> <!--Start of Software List-->
+          <li class="head-li"> <!--Start of Software List-->
             <a href="https://www.netmatters.co.uk/bespoke-software">
-              <span class="icon-apps"></span>
+              <span class="icon-apps"><i class="bi bi-grid-3x3-gap-fill"></i></span>
               <small>Bespoke</small> Software
             </a>
-            <ul class role="menu">
+            <ul>
               <li>
                 <a href="https://www.netmatters.co.uk/bespoke-software/workflow-solutions">Workflow</a>
               </li>
@@ -674,12 +677,12 @@
             </ul>
           </li> <!--End of Software list-->
 
-          <li class="digital head-li"> <!--Start of Digital Marketing List-->
+          <li class="head-li"> <!--Start of Digital Marketing List-->
             <a href="https://www.netmatters.co.uk/digital-marketing">
-              <span class="icon-bar-graph"></span>
+              <span class="icon-bar-graph"><i class="bi bi-bar-chart-fill"></i></span>
               <small>Digital</small> Marketing
             </a>
-            <ul class role="menu">
+            <ul>
               <li>
                 <a href="https://www.netmatters.co.uk/digital-marketing/seo-search-engine-optimisation">Search &lpar;SEO&rpar;</a>
               </li>
@@ -701,12 +704,12 @@
             </ul>
           </li> <!--End of Digital Marketing List-->
 
-          <li class="security head-li"> <!--Start of Cyber Security List-->
+          <li class="head-li"> <!--Start of Cyber Security List-->
             <a href="https://www.netmatters.co.uk/cyber-security">
-              <span class="icon-security"></span>
+              <span class="icon-security"><i class="bi bi-shield-shaded"></i></span>
               <small>Cyber</small> Security
             </a>
-            <ul class role="menu">
+            <ul>
               <li>
                 <a href="https://www.netmatters.co.uk/cyber-security/cyber-security-assessment">Assessment</a>
               </li>
@@ -734,8 +737,8 @@
       <ul class="second-list"> <!-- Start of services list-->
 
         <li> <!--Training support list-->
-          <a href="https://www.netmatters.co.uk/scs-web-developer-course">Training</a>
-          <ul class role="menu">
+          <a href="https://www.netmatters.co.uk/scs-web-developer-course" class="side-title">Training</a>
+          <ul class="menu">
             <li>
               <a href="https://www.netmatters.co.uk/scs-web-developer-course">Web Developer Course</a>
             </li>
@@ -749,8 +752,8 @@
         </li> <!--End of training list-->
 
         <li> <!--Events list-->
-          <a href="https://www.netmatters.co.uk/business-automation-seminar">Events</a>
-          <ul class role="menu">
+          <a href="https://www.netmatters.co.uk/business-automation-seminar" class="side-title">Events</a>
+          <ul class="menu">
             <li>
              <a href="https://www.netmatters.co.uk/business-automation-seminar">Business Automation Seminar</a>
             </li>
@@ -758,8 +761,8 @@
         </li> <!--End of Events list-->
 
         <li> <!--Start of Our Company list-->
-          <a href="https://www.netmatters.co.uk/our-culture">Our Company</a>
-          <ul class role="menu">
+          <a href="https://www.netmatters.co.uk/our-culture" class="side-title">Our Company</a>
+          <ul class="menu">
             <li>
               <a href="https://www.netmatters.co.uk/our-culture">Our Culture</a>
             </li>
@@ -779,8 +782,8 @@
         </li> <!--End of company list-->
 
         <li><!--Start of Our Work list-->
-          <a href="https://www.netmatters.co.uk/case-studies">Our Work</a>
-          <ul class role="menu">
+          <a href="https://www.netmatters.co.uk/case-studies" class="side-title">Our Work</a>
+          <ul class="menu">
             <li>
               <a href="https://www.netmatters.co.uk/case-studies">Case Studies</a>
             </li>
@@ -788,8 +791,8 @@
         </li> <!--End of our work list-->
 
         <li> <!--Start of our knowledge list-->
-          <a href="https://www.netmatters.co.uk/guides">Our Knowledge</a>
-          <ul class role="menu">
+          <a href="https://www.netmatters.co.uk/guides" class="side-title">Our Knowledge</a>
+          <ul class="menu">
             <li>
               <a href="https://www.netmatters.co.uk/guides">Guides</a>
             </li>
@@ -803,18 +806,21 @@
         </li> <!--End of knowledge list-->
 
         <li>
-          <a href="https://www.netmatters.co.uk/covid-risk-assessments">Covid Risk Assessments</a>
+          <a href="https://www.netmatters.co.uk/covid-risk-assessments" class="side-title">Covid Risk Assessments</a>
         </li>
 
         <li>
-          <a href="https://www.netmatters.co.uk/contact-us">Contact Us</a>
+          <a href="https://www.netmatters.co.uk/contact-us" class="side-title">Contact Us</a>
         </li>
 
         <li>
-          <a href="https://support.netmatters.com/" target="_blank">Support</a>
+          <a href="https://support.netmatters.com/" class="side-title" target="_blank">Support</a>
         </li>
       </ul>
     </div> <!--End of mobile nav-->
+
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
   </body>
   <script src="javascript/myscript.js"></script>
