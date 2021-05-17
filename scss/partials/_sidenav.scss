@@ -10,6 +10,8 @@
     overflow: auto;
     display: flex;
     flex-direction: column;
+    transform: translate(275px);
+    transition: .5s;
 
     .main {
         padding: 21px;
@@ -20,10 +22,6 @@
             flex-direction: column;
         }
 
-        ul li {
-            display: block;
-        }
-
         .head-li {
             padding: 20px 0 0;
             
@@ -32,18 +30,12 @@
                 flex-direction: column;
             }
 
-            a:hover {
-                background-color: hsla(0,0%,100%,.05);
-            }
-
             span {
                 line-height: 1;
                 font-weight: 400;
                 padding-bottom: 10px;
                 font-size: 1.438rem;
             }
-
-            
         }
 
         small {
@@ -57,8 +49,6 @@
             border-radius: 3px;
             outline: 1px solid rgba(0,0,0,.25);
             border: 1px solid hsla(0,0%,100%,.1);
-
-            display: block;
             color: #fff;
             text-align: center;
             text-transform: uppercase;
@@ -69,14 +59,20 @@
             margin-top: 20px;
             border-radius: 3px;
             overflow: hidden;
+            color: #fff;
         }
 
-        ul li ul li a {
-            display: block;
-            text-align: center;
+        .secondary-list-item {
             background-color: rgba(0,0,0,.25);
             font-size: 1rem;
             padding: 15px;
+            color: #fff;
+        }
+
+        .secondary-list-item:hover {
+            .big-one {
+                color: red;
+            }
         }
     }
 
@@ -84,6 +80,7 @@
         
         display: flex;
         flex-direction: column;
+        color: #fff;
 
         ul {
             display: flex;
@@ -102,9 +99,18 @@
             border-bottom: 1px solid rgba(0,0,0,.25);
         }
 
+        li:hover {
+            .side-title {
+                background-color: hsla(0,0%,100%,.05);
+            }
+        }
+
         li a {
             border-top: 1px solid hsla(0,0%,100%,.1);
+            color: #fff;
         }
+
+        
     }
 
     .side-title {
@@ -123,6 +129,8 @@
             border-top: 1px solid rgba(0,0,0,.45);
         }
 
+        
+
         li a {
             display: block;
             background-color: rgba(0,0,0,.25);
@@ -130,6 +138,7 @@
             letter-spacing: .4px;
             line-height: 1.428;
             border-top: 1px solid hsla(0,0%,100%,.1);
+            color: #fff;
         }
 
         li a::before {

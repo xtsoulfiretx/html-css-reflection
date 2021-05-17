@@ -288,6 +288,7 @@
   display: flex;
   flex-direction: column;
   margin-right: 15px;
+  z-index: 3;
 }
 #head-nav .menu-text {
   font-family: Poppins, sans-serif;
@@ -1662,6 +1663,8 @@ i {
   overflow: auto;
   display: flex;
   flex-direction: column;
+  transform: translate(275px);
+  transition: 0.5s;
 }
 .sidebar .main {
   padding: 21px;
@@ -1671,18 +1674,12 @@ i {
   display: flex;
   flex-direction: column;
 }
-.sidebar .main ul li {
-  display: block;
-}
 .sidebar .main .head-li {
   padding: 20px 0 0;
 }
 .sidebar .main .head-li a {
   display: flex;
   flex-direction: column;
-}
-.sidebar .main .head-li a:hover {
-  background-color: rgba(255, 255, 255, 0.05);
 }
 .sidebar .main .head-li span {
   line-height: 1;
@@ -1700,7 +1697,6 @@ i {
   border-radius: 3px;
   outline: 1px solid rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  display: block;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
@@ -1710,17 +1706,21 @@ i {
   margin-top: 20px;
   border-radius: 3px;
   overflow: hidden;
+  color: #fff;
 }
-.sidebar .main ul li ul li a {
-  display: block;
-  text-align: center;
+.sidebar .main .secondary-list-item {
   background-color: rgba(0, 0, 0, 0.25);
   font-size: 1rem;
   padding: 15px;
+  color: #fff;
+}
+.sidebar .main .secondary-list-item:hover .big-one {
+  color: red;
 }
 .sidebar .second-list {
   display: flex;
   flex-direction: column;
+  color: #fff;
 }
 .sidebar .second-list ul {
   display: flex;
@@ -1736,8 +1736,12 @@ i {
   border-top: 1px solid rgba(0, 0, 0, 0.45);
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
+.sidebar .second-list li:hover .side-title {
+  background-color: rgba(255, 255, 255, 0.05);
+}
 .sidebar .second-list li a {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
 }
 .sidebar .side-title {
   text-align: left;
@@ -1757,6 +1761,7 @@ i {
   letter-spacing: 0.4px;
   line-height: 1.428;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
 }
 .sidebar .menu li a::before {
   content: "»";
@@ -1977,6 +1982,10 @@ i {
   font-size: 1rem;
 }
 
+.fixed-body {
+  overflow: hidden;
+}
+
 .main-outer {
   height: 100%;
   overflow: auto;
@@ -1986,9 +1995,23 @@ i {
   transition: 0.5s;
 }
 
+.site-wrap-d {
+  display: block;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #22242e;
+  z-index: 1;
+  opacity: 0.45;
+}
+
 .btn-pressed {
-  position: absolute;
-  left: -275px;
+  transform: translate(-275px);
+  transform: opacity(100);
+}
+
+.is-visible {
+  transform: translate(0);
 }
 
 div {
