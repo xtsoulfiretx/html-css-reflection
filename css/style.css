@@ -276,6 +276,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  z-index: 0;
 }
 #head-nav .search-btn i {
   font-size: 1.438rem;
@@ -288,7 +289,14 @@
   display: flex;
   flex-direction: column;
   margin-right: 15px;
-  z-index: 3;
+  margin-left: 10px;
+}
+#head-nav .is-active {
+  background-color: #000009;
+  border-color: #191a22;
+}
+#head-nav .hamburger:hover {
+  opacity: 1;
 }
 #head-nav .menu-text {
   font-family: Poppins, sans-serif;
@@ -1670,12 +1678,14 @@ i {
   padding: 21px;
 }
 .sidebar .main ul {
-  margin: -20px 0 0;
   display: flex;
   flex-direction: column;
 }
+.sidebar .main .side-contact:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
 .sidebar .main .head-li {
-  padding: 20px 0 0;
+  margin: 20px 0;
 }
 .sidebar .main .head-li a {
   display: flex;
@@ -1702,20 +1712,14 @@ i {
   text-transform: uppercase;
   text-decoration: none;
 }
-.sidebar .main ul li ul {
-  margin-top: 20px;
-  border-radius: 3px;
-  overflow: hidden;
-  color: #fff;
-}
-.sidebar .main .secondary-list-item {
+.sidebar .main .mobile-nav-item {
   background-color: rgba(0, 0, 0, 0.25);
   font-size: 1rem;
   padding: 15px;
   color: #fff;
 }
-.sidebar .main .secondary-list-item:hover .big-one {
-  color: red;
+.sidebar .main ul:hover .head-li {
+  background-color: rgba(255, 255, 255, 0.05);
 }
 .sidebar .second-list {
   display: flex;

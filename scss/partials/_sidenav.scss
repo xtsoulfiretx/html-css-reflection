@@ -17,13 +17,16 @@
         padding: 21px;
 
         ul {
-            margin: -20px 0 0;
             display: flex;
             flex-direction: column;
         }
 
+        .side-contact:hover {
+            background-color: hsla(0,0%,100%,.05);
+        }
+
         .head-li {
-            padding: 20px 0 0;
+            margin: 20px 0;
             
             a {
                 display: flex;
@@ -55,25 +58,18 @@
             text-decoration: none;
         }
 
-        ul li ul {
-            margin-top: 20px;
-            border-radius: 3px;
-            overflow: hidden;
-            color: #fff;
-        }
-
-        .secondary-list-item {
+        .mobile-nav-item {
             background-color: rgba(0,0,0,.25);
             font-size: 1rem;
             padding: 15px;
             color: #fff;
         }
 
-        .secondary-list-item:hover {
-            .big-one {
-                color: red;
+        ul:hover {
+            .head-li {
+              background-color: hsla(0,0%,100%,.05);
             }
-        }
+          }
     }
 
     .second-list {
