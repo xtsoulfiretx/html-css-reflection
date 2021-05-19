@@ -5,6 +5,8 @@
 
 #head-nav {
   width: 100%;
+  z-index: 5;
+  position: relative;
 }
 #head-nav .main-nav {
   position: relative;
@@ -22,6 +24,7 @@
 }
 #head-nav .help-nav {
   padding: 20px 0;
+  background-color: #fff;
 }
 @media (min-width: 767px) {
   #head-nav .help-nav {
@@ -1841,7 +1844,7 @@ i {
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   width: 33px;
   height: 3px;
-  background-color: #fff;
+  background-color: #adadad;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -1961,7 +1964,7 @@ i {
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   width: 33px;
   height: 3px;
-  background-color: #fff;
+  background-color: #adadad;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
