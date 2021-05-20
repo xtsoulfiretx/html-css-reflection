@@ -7,6 +7,7 @@
   width: 100%;
   z-index: 5;
   position: relative;
+  transition: 0.25s;
 }
 #head-nav .main-nav {
   position: relative;
@@ -1667,7 +1668,7 @@ i {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 3;
+  z-index: 8;
   height: 100%;
   width: 275px;
   background-color: #333645;
@@ -1675,7 +1676,7 @@ i {
   display: flex;
   flex-direction: column;
   transform: translate(275px);
-  transition: 0.5s;
+  transition: 0.25s;
 }
 .sidebar .main {
   padding: 21px;
@@ -1793,6 +1794,36 @@ i {
   color: #f62459;
 }
 
+@keyframes scrollUpAnimation {
+  0% {
+    transform: translateY(-220px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.slide-left {
+  margin-left: -265px;
+}
+@media (min-width: 767px) {
+  .slide-left {
+    margin-left: -258px;
+  }
+}
+
+@keyframes headerSlideLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-275px);
+  }
+}
+.stick-left {
+  transform: translateX(-275px);
+}
+
+@keyframes scrollDownAnimation {}
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -1990,7 +2021,7 @@ i {
 }
 
 .fixed-body {
-  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .main-outer {
@@ -1998,8 +2029,8 @@ i {
   overflow: auto;
 }
 
-#main {
-  transition: 0.5s;
+#site-body {
+  transition: 0.25s;
 }
 
 .site-wrap-d {
@@ -2008,7 +2039,7 @@ i {
   height: 100%;
   width: 100%;
   background-color: #22242e;
-  z-index: 1;
+  z-index: 7;
   opacity: 0.45;
 }
 

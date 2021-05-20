@@ -1,0 +1,30 @@
+
+
+// Header Scroll Up Animation
+
+@keyframes scrollUpAnimation {
+    0% {transform: translateY(-220px);}
+    100% {transform: translateY(0px)}
+}
+
+.slide-left {
+    margin-left: -265px;
+
+    @media (min-width: $break-s) {
+        margin-left: -258px;
+    }
+}
+
+@keyframes headerSlideLeft {
+    0% {transform: translateX(0px);}
+    100% {transform: translateX(-275px);}
+}
+
+.stick-left {
+    transform: translateX(-275px);
+}
+
+
+// Header Scroll Down Animation
+
+@keyframes scrollDownAnimation {}

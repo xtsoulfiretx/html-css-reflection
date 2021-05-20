@@ -8,15 +8,12 @@
 
     const scrollPosition = $("header").offset();
     
-
-    $("header").style.top = `${scrollPosition}px`;
-
     $(".hamburger").toggleClass("is-active");
-    $("#main").toggleClass("btn-pressed");
+    $("#site-body").toggleClass("btn-pressed");
     $(".sidebar").toggleClass("is-visible");
     $(".site-wrap").toggleClass("site-wrap-d");
     $("body").toggleClass("fixed-body");
-    
+    $("#head-nav").toggleClass("slide-left");
 };
 
 $(".hamburger").click(darken);
@@ -47,5 +44,13 @@ $(".site-wrap").click(darken);
     }
     lastScrollTop = Math.abs(st); // For Mobile or negative scrolling
  }, false);
+
+
+
+
+
+// potential animation code
+
+//  document.getElementById('head-nav').setAttribute("style","animation-name: scrollUpAnimation");
 
 

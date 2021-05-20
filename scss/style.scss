@@ -5,7 +5,8 @@
         'partials/footer',
         'partials/icons',
         'partials/media',
-        'partials/sidenav';
+        'partials/sidenav',
+        'partials/animations';
 
 @import '../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss',
         '../node_modules/hamburgers/_sass/hamburgers/base';
@@ -24,8 +25,9 @@
     // outline: solid #f00 1px !important;
 }
 
+
 .fixed-body {
-    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .main-outer {
@@ -33,8 +35,8 @@
     overflow: auto;
 }
 
-#main {
-    transition: .5s;
+#site-body {
+    transition: .25s;
 }
 
 .site-wrap-d {
@@ -43,7 +45,7 @@
     height: 100%;
     width: 100%;
     background-color: #22242e;
-    z-index: 1;
+    z-index: 7;
     opacity: .45;
 }
 
