@@ -499,6 +499,219 @@
   justify-content: center;
 }
 
+.content-main .hero-image {
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  position: relative;
+}
+.content-main .hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .content-main .hero-text {
+    width: 420px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1260px) {
+  .content-main .hero-text {
+    width: 940px;
+  }
+}
+.content-main .hero-text h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 0 0 25px;
+}
+.content-main .hero-text p {
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  margin: 0 0 35px;
+}
+@media (min-width: 992px) {
+  .content-main .hero-text p {
+    width: 50%;
+  }
+}
+.content-main .hero-text button {
+  color: #fff;
+  line-height: 50px;
+  height: auto;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  border-radius: 3px;
+  white-space: normal;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .content-main .hero-text button {
+    height: 60px;
+  }
+}
+.content-main .hero-text svg {
+  margin-right: -4px;
+  margin-left: 12px;
+  line-height: 50px;
+}
+@media (min-width: 992px) {
+  .content-main .hero-text {
+    text-align: left;
+  }
+}
+.content-main .slide-web-dev .hero-image {
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.45) 40%, transparent 75%), url(../images/web-design.jpg);
+}
+.content-main .slide-web-dev .hero-text button {
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+.content-main .slide-web-dev .hero-text button:hover {
+  background-color: #7e57a0;
+  border-color: #735093;
+}
+.content-main .slide-it-support .hero-image {
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.45) 40%, transparent 75%), url(../images/it-support.jpg);
+}
+.content-main .slide-it-support button {
+  background-color: #4183d7;
+  border-color: #4183d7;
+}
+.content-main .slide-it-support button:hover {
+  background-color: #2a6ec6;
+  border-color: #2665b5;
+}
+.content-main .slide-telecoms .hero-image {
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.45) 40%, transparent 75%), url(../images/telecoms-services.jpg);
+}
+.content-main .slide-telecoms button {
+  background-color: #d64541;
+  border-color: #d64541;
+}
+.content-main .slide-telecoms button:hover {
+  background-color: #c42e2a;
+  border-color: #b32a27;
+}
+.content-main .slide-bespoke .hero-image {
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.45) 40%, transparent 75%), url(../images/bespoke-software.jpg);
+}
+.content-main .slide-bespoke button {
+  background-color: #67809f;
+  border-color: #67809f;
+}
+.content-main .slide-bespoke button:hover {
+  background-color: #566c88;
+  border-color: #4e627b;
+}
+.content-main .slide-digital .hero-image {
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.45) 40%, transparent 75%), url(../images/digital-marketing.jpg);
+}
+.content-main .slide-digital button {
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+.content-main .slide-digital button:hover {
+  background-color: #26ab5f;
+  border-color: #239a55;
+}
+.content-main .slide-security .hero-image {
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.45) 40%, transparent 75%), url(../images/cyber-security.jpg);
+}
+.content-main .slide-security button {
+  background-color: #f62459;
+  border-color: #f62459;
+}
+.content-main .slide-security button:hover {
+  background-color: #e80a42;
+  border-color: #d4093c;
+}
+
+#cookie-app {
+  display: block;
+}
+#cookie-app #cookie-consent {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+#cookie-app .modal-dialog {
+  margin: auto;
+  position: relative;
+}
+#cookie-app .fade-in {
+  opacity: 1;
+}
+#cookie-app .modal-content {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-clip: padding-box;
+}
+#cookie-app .modal-content .modal-header {
+  padding: 15px 20px;
+  border-bottom: 1px solid #e5e5e5;
+  min-height: 16.428px;
+}
+#cookie-app .modal-content .modal-body {
+  position: relative;
+  padding: 20px;
+}
+#cookie-app .modal-content .modal-footer {
+  margin: 0;
+  padding: 19px 20px 20px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+#cookie-app .modal-content .button-container {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#cookie-app .modal-content .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+#cookie-app .modal-content .modal-btn {
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063;
+  border-radius: 3px;
+  white-space: normal;
+  display: block;
+  width: 100%;
+}
+#cookie-app .modal-content .change-settings-btn {
+  color: #fff;
+  background-color: #999aa2;
+  border-color: #999aa2;
+}
+#cookie-app .modal-content .accept-cookies-btn {
+  color: #fff;
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+
 .section {
   padding: 50px 0;
 }
@@ -2340,138 +2553,6 @@ body {
 .row {
   margin-left: -15px;
   margin-right: -15px;
-}
-
-.content-main .hero-image {
-  height: 80vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain, cover;
-  position: relative;
-}
-.content-main .hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-}
-@media (min-width: 576px) and (max-width: 767px) {
-  .content-main .hero-text {
-    width: 420px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1260px) {
-  .content-main .hero-text {
-    width: 940px;
-  }
-}
-.content-main .hero-text h1 {
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 3rem;
-  margin: 0 0 25px;
-}
-.content-main .hero-text p {
-  font-size: 1.25rem;
-  line-height: 2.25rem;
-  margin: 0 0 35px;
-}
-@media (min-width: 992px) {
-  .content-main .hero-text p {
-    width: 50%;
-  }
-}
-.content-main .hero-text button {
-  color: #fff;
-  line-height: 50px;
-  height: auto;
-  padding: 5px 20px;
-  font-size: 1.25rem;
-  border-radius: 3px;
-  white-space: normal;
-}
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .content-main .hero-text button {
-    height: 60px;
-  }
-}
-.content-main .hero-text svg {
-  margin-right: -4px;
-  margin-left: 12px;
-  line-height: 50px;
-}
-@media (min-width: 992px) {
-  .content-main .hero-text {
-    text-align: left;
-  }
-}
-.content-main .slide-web-dev .hero-image {
-  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.45) 40%, transparent 75%), url(../images/web-design.jpg);
-}
-.content-main .slide-web-dev .hero-text button {
-  background-color: #926fb1;
-  border-color: #926fb1;
-}
-.content-main .slide-web-dev .hero-text button:hover {
-  background-color: #7e57a0;
-  border-color: #735093;
-}
-.content-main .slide-it-support .hero-image {
-  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.45) 40%, transparent 75%), url(../images/it-support.jpg);
-}
-.content-main .slide-it-support button {
-  background-color: #4183d7;
-  border-color: #4183d7;
-}
-.content-main .slide-it-support button:hover {
-  background-color: #2a6ec6;
-  border-color: #2665b5;
-}
-.content-main .slide-telecoms .hero-image {
-  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.45) 40%, transparent 75%), url(../images/telecoms-services.jpg);
-}
-.content-main .slide-telecoms button {
-  background-color: #d64541;
-  border-color: #d64541;
-}
-.content-main .slide-telecoms button:hover {
-  background-color: #c42e2a;
-  border-color: #b32a27;
-}
-.content-main .slide-bespoke .hero-image {
-  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.45) 40%, transparent 75%), url(../images/bespoke-software.jpg);
-}
-.content-main .slide-bespoke button {
-  background-color: #67809f;
-  border-color: #67809f;
-}
-.content-main .slide-bespoke button:hover {
-  background-color: #566c88;
-  border-color: #4e627b;
-}
-.content-main .slide-digital .hero-image {
-  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.45) 40%, transparent 75%), url(../images/digital-marketing.jpg);
-}
-.content-main .slide-digital button {
-  background-color: #2ecc71;
-  border-color: #2ecc71;
-}
-.content-main .slide-digital button:hover {
-  background-color: #26ab5f;
-  border-color: #239a55;
-}
-.content-main .slide-security .hero-image {
-  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.45) 40%, transparent 75%), url(../images/cyber-security.jpg);
-}
-.content-main .slide-security button {
-  background-color: #f62459;
-  border-color: #f62459;
-}
-.content-main .slide-security button:hover {
-  background-color: #e80a42;
-  border-color: #d4093c;
 }
 
 h1 {

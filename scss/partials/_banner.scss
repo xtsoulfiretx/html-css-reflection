@@ -1,0 +1,170 @@
+// Hero banner //
+.content-main {
+
+    .hero-image {
+        height: 80vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain, cover;
+        position: relative;
+    }
+    
+    .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+    
+        @media (min-width: $break-xs) and (max-width: $break-s) {
+            width: 420px;
+        }
+    
+        @media (min-width: $break-m) and (max-width: $break-l){
+            width: 940px;
+        }
+    
+        h1 {
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 3rem;
+            margin: 0 0 25px;
+        }
+    
+        p {
+            font-size: 1.25rem;
+            line-height: 2.25rem;
+            margin: 0 0 35px;
+            
+            @media (min-width: $break-m) {
+                width: 50%;
+            }
+        }
+    
+        button {
+            color: #fff;
+            line-height: 50px;
+            height: auto;
+            padding: 5px 20px;
+            font-size: 1.25rem;
+            border-radius: 3px;
+            white-space: normal;
+    
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { 
+                height: 60px;
+            }
+        }
+    
+        svg {
+            margin-right: -4px;
+            margin-left: 12px;
+            line-height: 50px;
+        }
+    
+        @media (min-width: $break-m) {
+            text-align: left;
+        }
+    }
+
+
+    .slide-web-dev {
+
+        .hero-image {
+            background-image: linear-gradient(to right, rgb(0,0,0), rgba(0,0,0,.45) 40%, transparent 75%), url(../images/web-design.jpg);
+        }
+
+        .hero-text {
+
+            button {
+                background-color: $purple;
+                border-color: $purple;
+            }
+
+            button:hover {
+                background-color: #7e57a0;
+                border-color: #735093;
+            }
+        }
+    }
+
+    .slide-it-support {
+        .hero-image {
+            background-image: linear-gradient(to right, rgb(0,0,0), rgba(0,0,0,.45) 40%, transparent 75%), url(../images/it-support.jpg);
+        }
+
+        button {
+            background-color: $blue;
+            border-color: $blue;
+        }
+
+        button:hover {
+            background-color: #2a6ec6;
+            border-color: #2665b5;
+        }
+    }
+    
+    .slide-telecoms {
+        .hero-image {
+            background-image: linear-gradient(to right, rgb(0,0,0), rgba(0,0,0,.45) 40%, transparent 75%), url(../images/telecoms-services.jpg);
+        }
+
+        button {
+            background-color: $red;
+            border-color: $red;
+        }
+
+        button:hover {
+            background-color: #c42e2a;
+            border-color: #b32a27;
+        }
+    }
+
+    .slide-bespoke {
+        .hero-image {
+            background-image: linear-gradient(to right, rgb(0,0,0), rgba(0,0,0,.45) 40%, transparent 75%), url(../images/bespoke-software.jpg);
+        }
+
+        button {
+            background-color: $gray;
+            border-color: $gray;
+        }
+    
+        button:hover {
+            background-color: #566c88;
+            border-color: #4e627b;
+        }
+    }
+
+    .slide-digital {
+        .hero-image {
+            background-image: linear-gradient(to right, rgb(0,0,0), rgba(0,0,0,.45) 40%, transparent 75%), url(../images/digital-marketing.jpg);
+        }
+
+        button {
+            background-color: $green;
+            border-color: $green;
+        }
+
+        button:hover {
+            background-color: #26ab5f;
+            border-color: #239a55;
+        }
+    }
+
+    .slide-security {
+        .hero-image {
+            background-image: linear-gradient(to right, rgb(0,0,0), rgba(0,0,0,.45) 40%, transparent 75%), url(../images/cyber-security.jpg);
+        }
+
+        button {
+            background-color: $pink;
+            border-color: $pink;
+        }
+
+        button:hover {
+            background-color: #e80a42;
+            border-color: #d4093c;
+        }
+    }
+}

@@ -1,0 +1,92 @@
+#cookie-app {
+    display: block;
+
+    #cookie-consent {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 100;
+        background-color: rgba(0,0,0,.7);
+        display: flex;
+        overflow-x: hidden;
+        overflow-y: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .modal-dialog {
+        margin: auto;
+        position: relative;
+    }
+
+    .fade-in {
+        opacity: 1;
+    }
+
+    .modal-content {
+        position: relative;
+        background-color: #fff;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 5px;
+        background-clip: padding-box;
+
+        .modal-header {
+            padding: 15px 20px;
+            border-bottom: 1px solid #e5e5e5;
+            min-height: 16.428px;
+        }
+
+        .modal-body {
+            position: relative;
+            padding: 20px;
+        } 
+
+        .modal-footer {
+            margin: 0;
+            padding: 19px 20px 20px;
+            text-align: right;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .button-container {
+            position: relative;
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        .modal-btn {
+            height: auto;
+            line-height: 35px;
+            padding: 5px 15px;
+            text-transform: uppercase;
+            font-size: 1.063;
+            border-radius: 3px;
+            white-space: normal;
+            display: block;
+            width: 100%;
+        }
+
+        .change-settings-btn {
+            color: #fff;
+            background-color: #999aa2;
+            border-color: #999aa2;
+        }
+
+        .accept-cookies-btn {
+            color: #fff;
+            background-color: #926fb1;
+            border-color: #926fb1;
+        }
+    }
+}
