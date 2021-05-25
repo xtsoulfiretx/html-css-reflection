@@ -7,6 +7,8 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,400;1,500&display=swap" rel="stylesheet"> 
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
    <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png">
    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -21,6 +23,83 @@
   </head>
 
   <body>
+    <div id="cookie-app"> <!--Start of Cookie Pop up-->
+      <div class="cookie-cloak">
+        <div id="cookie-consent" class="modal fade-in">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">Cookies Policy</h3>
+              </div>
+              <div class="modal-body">
+                <p>We use cookies to obtain aggregate data regarding site traffic and interaction,
+                   in order to identify user trends and obtain insights in order to continually improve our site.
+                    These cookies enable us to improve your customer experience as you use our site
+                     and help provide you with relevant online marketing.</p>
+
+                <p>You can see a list of the other companies who use cookies on this website,
+                   by visiting cookie settings at the bottom of each page. 
+                   For full details of how we use your personal information, and your rights in relation to it
+                   , view our privacy policy.</p>
+              </div>
+              <div class="modal-footer">
+                <div class="row">
+                  <div class="button-container cs">
+                    <a class="change-settings-btn">Change Settings</a>
+                  </div>
+                  <div class="button-container ac">
+                    <a class="accept-cookies-btn">Accept Cookies</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cookie-settings">
+          <div class="container">
+            <div class="h3">Cookies Preferences</div>
+            <div class="h5">Netmatters uses cookies on their website. Cookies are small text files that are stored on
+               your computer or other device by websites that you visit. This page explains the cookies we use and
+                what we use them for, and lets you turn them on or off. &lpar;Some cookies are necessary in order for our 
+                website to work properly.&rpar; We also explain below which other companies use cookies on our website and 
+                what they use them for, and lets you turn those other companies' cookies on or off.</div>
+
+            <div class="h5">Our website uses cookies in order to make the website easier to use, to support the 
+              provision of information and functionality to you, as well as to provide us with information about how 
+              the website is used so that we can make sure it is as up to date, relevant and error free as we can. 
+              We also use cookies to try to ensure that our online adverts reflect the interests of web users. 
+              Further information about the types of cookies that are used on our website is set out box below.</div>
+
+            <div class="h5">As well as the options provided below, you can choose to restrict or block cookies through
+               your browser settings at any time. For more information about how to do this, and about cookies in general,
+                you can visit <a href="https://www.allaboutcookies.org">www.allaboutcookies.org</a> and
+                 <a href="https://www.youronlinechoices.eu">www.youronlinechoices.eu</a>. However, please be aware that 
+                restricting or blocking cookies set on our website may impact the functionality or performance of the website,
+                 or prevent you from using certain services provided through the website.</div>
+
+            <div class="h5">Please note that third parties &lpar;including, for example, advertising networks and providers 
+              of external services like website analysis services&rpar; may also use cookies, over which we have no control,
+               although we may receive services from these third parties &lpar;including, for example, for targeted advertising
+                purposes and website analytics&rpar;. These cookies are likely to be performance cookies or targeting cookies &lpar;as described below&rpar;.</div>
+          </div>
+          <div class="container">
+            <div class="h1">Functional Cookies</div>
+            <div class="h5">Functional cookies allow our website to remember choices you make, such as your user name, log in 
+              details or language preferences, and any customisations you make to pages on our website during your visit.</div>
+            <div class="h4"><strong>Examples of how we use these cookies include&colon;</strong></div>
+            <ul>
+              <li><h5>Live chat</h5></li>
+            </ul>
+            <div class="buttons">
+              <button type="button" class="btn-web">Disable</button>
+              <button tpe="button" class="btn-light">Enable</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!--End of Cookie Pop Up-->
+
     <div id="main"> <!--Start of main body-->
       <div class="site-wrap"></div>
       <div class="main-outer">
@@ -178,14 +257,77 @@
 
       <div id="site-body">   
         <div class="content-main"> <!--Start of main banner-->
-          <div class="hero-image">
-          <div class="hero-text container">
-            <h1>Web Design</h1> 
-            <p>For businesses looking to make a strong and effective first impression.</p>
-            <button class="fom_btn">FIND OUT MORE<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
-              <path fill="#fff" d="M9.707 13.707l5-5c0.391-0.39 0.391-1.024 0-1.414l-5-5c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l3.293 3.293h-9.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h9.586l-3.293 3.293c-0.195 0.195-0.293 0.451-0.293 0.707s0.098 0.512 0.293 0.707c0.391 0.391 1.024 0.391 1.414 0z"></path>
-              </svg></button>
+          <div class="slide-web-dev"> <!--Start of Web Dev Slide-->
+            <div class="hero-image">
+            <div class="hero-text container">
+              <h1>Web Design</h1> 
+              <p>For businesses looking to make a strong and effective first impression.</p>
+              <button class="fom_btn">FIND OUT MORE<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                <path fill="#fff" d="M9.707 13.707l5-5c0.391-0.39 0.391-1.024 0-1.414l-5-5c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l3.293 3.293h-9.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h9.586l-3.293 3.293c-0.195 0.195-0.293 0.451-0.293 0.707s0.098 0.512 0.293 0.707c0.391 0.391 1.024 0.391 1.414 0z"></path>
+                </svg></button>
+            </div>
           </div>
+          </div> <!--End of Web Dev Slide-->
+
+          <div class="slide-it-support"> <!--Start of It Slide-->
+            <div class="hero-image">
+              <div class="hero-text container">
+                <h1>IT Support</h1> 
+                <p>Fast and cost-effective IT support services for your business</p>
+                <button class="fom_btn">FIND OUT MORE<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                <path fill="#fff" d="M9.707 13.707l5-5c0.391-0.39 0.391-1.024 0-1.414l-5-5c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l3.293 3.293h-9.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h9.586l-3.293 3.293c-0.195 0.195-0.293 0.451-0.293 0.707s0.098 0.512 0.293 0.707c0.391 0.391 1.024 0.391 1.414 0z"></path>
+                </svg></button>
+              </div>
+            </div>
+          </div> <!--End of It Slide-->
+
+          <div class="slide-telecoms"> <!--Start of Telecoms Slide-->
+            <div class="hero-image">
+              <div class="hero-text container">
+                <h1>Telecoms Services</h1> 
+                <p>A new approach to connectivity, see how we can help your business</p>
+                <button class="fom_btn">FIND OUT MORE<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                <path fill="#fff" d="M9.707 13.707l5-5c0.391-0.39 0.391-1.024 0-1.414l-5-5c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l3.293 3.293h-9.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h9.586l-3.293 3.293c-0.195 0.195-0.293 0.451-0.293 0.707s0.098 0.512 0.293 0.707c0.391 0.391 1.024 0.391 1.414 0z"></path>
+                </svg></button>
+              </div>
+            </div>
+          </div> <!--End of Telecoms Slide-->
+
+          <div class="slide-bespoke"> <!--Start of Bespoke Slide-->
+            <div class="hero-image">
+              <div class="hero-text container">
+                <h1>Bespoke Software</h1> 
+                <p>Bring your business together with solutions that grow with you.</p>
+                <button class="fom_btn">FIND OUT MORE<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                <path fill="#fff" d="M9.707 13.707l5-5c0.391-0.39 0.391-1.024 0-1.414l-5-5c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l3.293 3.293h-9.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h9.586l-3.293 3.293c-0.195 0.195-0.293 0.451-0.293 0.707s0.098 0.512 0.293 0.707c0.391 0.391 1.024 0.391 1.414 0z"></path>
+                </svg></button>
+              </div>
+            </div>
+          </div> <!--End of Bespoke Slide-->
+
+          <div class="slide-digital"> <!--Start of Digital Slide-->
+            <div class="hero-image">
+              <div class="hero-text container">
+                <h1>Digital Marketing</h1> 
+                <p>Generating you new business through results-driven marketing activities.</p>
+                <button class="fom_btn">SEE HOW WE CAN HELP YOU<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                <path fill="#fff" d="M9.707 13.707l5-5c0.391-0.39 0.391-1.024 0-1.414l-5-5c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l3.293 3.293h-9.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h9.586l-3.293 3.293c-0.195 0.195-0.293 0.451-0.293 0.707s0.098 0.512 0.293 0.707c0.391 0.391 1.024 0.391 1.414 0z"></path>
+                </svg></button>
+              </div>
+            </div>
+          </div> <!--End of Digital Slide-->
+
+          <div class="slide-security"> <!--Start of Security Slide-->
+            <div class="hero-image">
+              <div class="hero-text container">
+                <h1>Cyber Security</h1> 
+                <p>Keeping businesses and their customers sensitive information protected.</p>
+                <button class="fom_btn">FIND OUT MORE<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                <path fill="#fff" d="M9.707 13.707l5-5c0.391-0.39 0.391-1.024 0-1.414l-5-5c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l3.293 3.293h-9.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h9.586l-3.293 3.293c-0.195 0.195-0.293 0.451-0.293 0.707s0.098 0.512 0.293 0.707c0.391 0.391 1.024 0.391 1.414 0z"></path>
+                </svg></button>
+              </div>
+            </div>
+          </div> <!--End of Security Slide-->
         </div> <!--End of main banner-->
 
         <div id="middle"> <!--Start of middle section-->
@@ -830,7 +972,10 @@
     <script src="//code.jquery.com/jquery-latest.js"></script>
     <script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="jquery.sticky.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="javascript/myscript.js"></script>
 
   </body>
-  <script src="javascript/myscript.js"></script>
  </html>

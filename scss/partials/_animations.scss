@@ -2,10 +2,18 @@
 
 // Header Scroll Up Animation
 
+.scrollUp {
+    animation-name: scrollUpAnimation;
+}
+
 @keyframes scrollUpAnimation {
     0% {transform: translateY(-220px);}
-    100% {transform: translateY(0px)}
+    100% {transform: translateY(0px);}
 }
+
+
+// Header Slide Left Animation
+
 
 .slide-left {
     margin-left: -265px;
@@ -25,6 +33,11 @@
 }
 
 
-// Header Scroll Down Animation
+.scrollDown {
+    animation-name: scrollDownAnimation;
+}
 
-@keyframes scrollDownAnimation {}
+@keyframes scrollDownAnimation {
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(-220px);}
+}
