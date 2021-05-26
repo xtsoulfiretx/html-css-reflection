@@ -16,10 +16,29 @@
 $(".hamburger").click(darken);
 $(".site-wrap").click(darken);
 
+
+// Onload events
+
   let lastScrollTop = 0;
 
 window.addEventListener('load', function() {
    lastScrollTop = window.pageYOffset;
+
+   const acceptedCookies = document.cookie.split('; ').find(row => row.startsWith('acceptedCookies='));
+   if (acceptedCookies == 'acceptedCookies=true') {
+    console.log("Cookie found")
+   } else {
+     console.log("Showing Cookie Pop up");
+    $("#cookie-app").addClass("c-visible");
+   }
+});
+
+// Cookie details
+
+$(".accept-cookies-btn").click(function (){
+  document.cookie = 'acceptedCookies=true';
+  $("#cookie-app").removeClass("c-visible");
+  console.log("Cookie Got");
 });
 
 // Sticky Header event listener
@@ -92,3 +111,4 @@ $(".content-main").slick({
   arrows: false,
   dots: true
 });
+

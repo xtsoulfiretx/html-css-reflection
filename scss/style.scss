@@ -1,8 +1,8 @@
 // partial imports
-@import 'partials/variables',
+@import 'partials/variables-a',
         'partials/header',
         'partials/banner',
-        'partials/modal',
+        'partials/modal-a',
         'partials/body',
         'partials/footer',
         'partials/icons',
@@ -209,4 +209,8 @@ button {
     outline: none!important;
     border-image: none!important;
     border-style: none!important;
+}
+
+.c-visible {
+    display: block!important;
 }
