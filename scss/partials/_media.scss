@@ -90,6 +90,12 @@
     }
 }
 
+@media (min-width: $break-m) {
+    .hidden-m {
+        display: none;
+    }
+}
+
 // Card Sizing Q's //
 
 .split-3-wrap {

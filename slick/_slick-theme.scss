@@ -18,7 +18,7 @@ $slick-next-character: "\2192" !default;
 $slick-dot-character: "\2022" !default;
 $slick-dot-size: 13px !default;
 $slick-opacity-default: 0.75 !default;
-$slick-opacity-on-hover: 1 !default;
+$slick-opacity-on-hover: .5 !default;
 $slick-opacity-not-active: 0.25 !default;
 
 @function slick-image-url($url) {
@@ -143,6 +143,7 @@ $slick-opacity-not-active: 0.25 !default;
     padding: 0;
     margin: 0;
     width: 100%;
+    
 
     li {
         position: relative;
@@ -196,8 +197,6 @@ $slick-opacity-not-active: 0.25 !default;
         &.slick-active button:before {
             color: $slick-dot-color-active;
             opacity: $slick-opacity-default;
-            border: solid 2px #fff;
-            border-radius: 15px!important;
         }
     }
 }

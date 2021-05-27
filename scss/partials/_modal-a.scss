@@ -44,9 +44,26 @@
             min-height: 16.428px;
         }
 
+        .modal-title {
+            font-weight: 400;
+            color: #333645;
+            font-size: 1.625rem;
+        }
+
         .modal-body-a {
             position: relative;
             padding: 20px;
+
+            p {
+                margin-bottom: 25px;
+                font-size: 1rem;
+                letter-spacing: .4px;
+                line-height: 1.875rem;
+            }
+
+            .lower {
+                margin-bottom: 0px;
+            }
         } 
 
         .modal-footer-a {
@@ -94,10 +111,20 @@
             border-color: #999aa2;
         }
 
+        .change-settings-btn:hover {
+            background-color: #84858f;
+            border-color: #797a85;
+        }
+
         .accept-cookies-btn {
             color: #fff;
             background-color: #926fb1;
             border-color: #926fb1;
+        }
+
+        .accept-cookies-btn:hover {
+            background-color: #7e57a0;
+            border-color: #735093;
         }
     }
 }

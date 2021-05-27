@@ -1,24 +1,27 @@
 {
-  "name": "netmatters_site",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "gulp": "^4.0.2",
-    "hamburgers": "^1.1.3"
-  },
-  "devDependencies": {},
+  "name": "jquery-sticky",
+  "version": "1.0.4",
+  "description": "Sticky is a jQuery plugin that gives you the ability to make any element on your page always stay visible.",
+  "main": "jquery.sticky.js",
+  "files": [
+    "jquery.sticky.js"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xtsoulfiretx/html-css-reflection.git"
-  },
-  "author": "",
-  "license": "ISC",
+  "repository": "garand/sticky",
+  "keywords": [
+    "dom",
+    "jquery-plugin",
+    "ui"
+  ],
+  "author": "Anthony Garand",
+  "license": "(MIT OR GPL-3.0)",
   "bugs": {
-    "url": "https://github.com/xtsoulfiretx/html-css-reflection/issues"
+    "url": "https://github.com/garand/sticky/issues"
   },
-  "homepage": "https://github.com/xtsoulfiretx/html-css-reflection#readme"
+  "homepage": "https://github.com/garand/sticky#readme",
+  "peerDependencies": {
+    "jquery": "*"
+  }
 }

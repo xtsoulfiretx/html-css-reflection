@@ -1,4 +1,10 @@
 // partial imports
+@import '../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss',
+        '../node_modules/hamburgers/_sass/hamburgers/base';
+
+@import '../slick/slick-theme.scss',
+        '../slick/slick.scss';
+
 @import 'partials/variables-a',
         'partials/header',
         'partials/banner',
@@ -9,12 +15,6 @@
         'partials/media',
         'partials/sidenav',
         'partials/animations';
-
-@import '../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss',
-        '../node_modules/hamburgers/_sass/hamburgers/base';
-
-@import '../slick/slick-theme.scss',
-        '../slick/slick.scss';
 
 
 //Body styles
@@ -109,6 +109,10 @@ h1 {
 .btn a {
     text-decoration: none;
     color: #fff;
+}
+
+.sticky {
+    position: fixed!important;
 }
 
 .block {
