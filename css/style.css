@@ -1126,6 +1126,12 @@
   align-items: center;
   justify-content: center;
   padding: 30px;
+  text-align: center;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #cookie-app #cookie-consent {
+    justify-content: flex-start;
+  }
 }
 #cookie-app .modal-dialog-a {
   margin: auto;
@@ -2393,6 +2399,14 @@ i {
   }
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .slick-dots button {
+    border: 2px solid transparent !important;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+  }
+}
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -2413,6 +2427,11 @@ i {
 .sidebar .main ul {
   display: flex;
   flex-direction: column;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .sidebar .main ul {
+    list-style: none;
+  }
 }
 .sidebar .main .side-contact:hover {
   background-color: rgba(255, 255, 255, 0.05);
@@ -2469,6 +2488,13 @@ i {
   line-height: 1;
   background-color: rgba(0, 0, 0, 0.25);
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .sidebar .second-list ul li a {
+    padding: 0;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
 .sidebar .second-list li {
   border-top: 1px solid rgba(0, 0, 0, 0.45);
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
@@ -2484,6 +2510,14 @@ i {
   text-align: left;
   padding-left: 20px;
   font-size: 1rem;
+  background-color: #333645;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .sidebar .side-title {
+    font-size: 1rem !important;
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+  }
 }
 .sidebar .menu li {
   display: block;
@@ -2503,6 +2537,12 @@ i {
 .sidebar .menu li a::before {
   content: "»";
   padding-right: 15px;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .sidebar .menu li a:before {
+    content: "";
+    padding-right: 0;
+  }
 }
 .sidebar .icon-code {
   color: #926fb1;
@@ -2584,10 +2624,6 @@ i {
   overflow: auto;
 }
 
-#site-body {
-  transition: 0.25s;
-}
-
 .site-wrap-d {
   display: block;
   position: fixed;
@@ -2652,6 +2688,10 @@ h1 {
 .btn a {
   text-decoration: none;
   color: #fff;
+}
+
+.no-header {
+  margin-top: 211px;
 }
 
 .sticky {

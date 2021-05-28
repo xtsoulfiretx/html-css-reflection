@@ -183,3 +183,15 @@
         flex-wrap: nowrap;
     }
 }
+
+// Javascript query's 
+
+.slick-dots {
+    button {
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { 
+            border: 2px solid transparent!important;
+            width: 1.50rem!important;
+            height: 1.50rem!important;
+        }
+    }
+}

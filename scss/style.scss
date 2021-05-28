@@ -39,9 +39,9 @@
     overflow: auto;
 }
 
-#site-body {
-    transition: .25s;
-}
+// #site-body {
+//     transition: .25s;
+// }
 
 .site-wrap-d {
     display: block;
@@ -109,6 +109,10 @@ h1 {
 .btn a {
     text-decoration: none;
     color: #fff;
+}
+
+.no-header {
+    margin-top: 211px;
 }
 
 .sticky {
