@@ -13,9 +13,8 @@ function darken() {
   setTimeout(function () {
     $("#site-body").css("transition", "");
   }, 250);
-}
+};
 
-;
 $(".hamburger").click(darken);
 $(".site-wrap").click(darken); // Onload events
 

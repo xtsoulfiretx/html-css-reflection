@@ -180,6 +180,15 @@
         z-index: 4;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        //    margin-left: 0;
+        //    margin-right: 0;
+           align-items: center;
+           display: block;
+           width: auto;
+         }
 
         button {
             width: 20px;
