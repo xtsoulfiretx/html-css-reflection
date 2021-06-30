@@ -426,6 +426,18 @@
 
         .dropdown {
             background-color: #79539a;
+
+            .container {
+                li{
+                    &:nth-child(n+2)::after {
+                        left: -35px;
+
+                        @media (max-width: $break-l) {
+                            left: -30px;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -445,8 +457,20 @@
         }
 
         .dropdown {
-            background-color: #4183d7;
-            margin-top: 3px;
+            background-color: #286abd;
+            top: 101px;
+
+            .container {
+                li{
+                    &:nth-child(n+2)::after {
+                        left: -45px;
+
+                        @media (max-width: $break-l) {
+                            left: -35px;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -466,7 +490,19 @@
         }
 
         .dropdown {
-            background-color: #d64541;
+            background-color: #bc2c28;
+
+            .container {
+                li{
+                    &:nth-child(n+2)::after {
+                        left: -50px;
+
+                        @media (max-width: $break-l) {
+                            left: -45px;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -486,7 +522,18 @@
         }
 
         .dropdown {
-            background-color: #67809f;
+            background-color: #526781;
+
+            .container {
+                li{
+                    &:nth-child(n+2)::after {
+
+                        @media (max-width: $break-l) {
+                            left: -25px;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -506,7 +553,19 @@
         }
 
         .dropdown {
-            background-color: #2ecc71;
+            background-color: #25a25a;
+
+            .container {
+                li{
+                    &:nth-child(n+2)::after {
+                        left: -50px;
+
+                        @media (max-width: $break-l) {
+                            left: -40px;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -526,7 +585,18 @@
         }
 
         .dropdown {
-            background-color: #f62459;
+            background-color: #de093f;
+
+            .container {
+                li{
+                    &:nth-child(n+2)::after {
+
+                        @media (max-width: $break-l) {
+                            left: -30px;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -539,37 +609,32 @@
         text-transform: uppercase;
         list-style-image: url(data:0);
 
-        li {
-            line-height: 2.813rem;
-            list-style-image: url(data:0);
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
 
-            &:nth-child(n+3)::after {
-                content: "";
-                position: absolute;
-                display: block;
-                height: 2px;
-                background-color: #fff;
-                width: 10px;
-                top: 22px;
-            }
+            li {
+                line-height: 2.813rem;
+                list-style-image: url(data:0);
+                text-align: justify;
+                font-size: .8125rem;
+                margin-left: 2px;
 
-            &:first-child {
-                flex-grow: 3;
-                @media (min-width: $break-l) {
-                    flex-grow: 4;
+                @media (min-width: 1260px) {
+                    font-size: 1rem;
                 }
-            }
-
-            &:last-child {
-                flex-grow: 3;
-                @media (min-width: $break-l) {
-                    flex-grow: 4;
+    
+                &:nth-child(n+2)::after {
+                    content: "";
+                    position: relative;
+                    display: block;
+                    height: 1px;
+                    background-color: #fff;
+                    width: 7px;
+                    top: -22px;
+                    left: -35px;
                 }
-            }
-            &:last-child::after{
-                content: "";
-                position: relative;
-                display: none;
             }
         }
     }
@@ -582,6 +647,6 @@
         display: flex;
         flex-direction: row;
         list-style: none;
-        justify-content: center;
+        justify-content: space-between;
     }
 }

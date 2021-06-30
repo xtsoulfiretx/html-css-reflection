@@ -232,6 +232,37 @@
     }
 }
 
+    .prta-badge {
+        img {
+            @media (min-width: $break-m) {
+                width: 175px!important;
+            }
+        }
+    } 
+
+    .ncc-badge {
+        img {
+            @media (min-width: $break-m) {
+                width: 175px!important;
+            }
+        }
+    }
+
+    .stw-badge {
+        img {
+            @media (min-width: $break-m) {
+                width: 175px!important;
+            }
+        }
+    }
+
+    .ifgw-badge {
+        img {
+            @media (min-width: $break-m) {
+                width: 175px!important;
+            }
+        }
+    }
 
     .qms-badge {
         img {

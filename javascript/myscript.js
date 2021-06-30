@@ -26,17 +26,16 @@ window.addEventListener('load', function () {
   });
 
   if (acceptedCookies == 'acceptedCookies=true') {
-    console.log("Cookie found");
   } else {
-    console.log("Showing Cookie Pop up");
     $("#cookie-app").addClass("c-visible");
+    $("body").addClass("fixed-body");
   }
 }); // Cookie details
 
 $(".accept-cookies-btn").click(function () {
   document.cookie = 'acceptedCookies=true';
   $("#cookie-app").removeClass("c-visible");
-  console.log("Cookie Got");
+  $("body").removeClass("fixed-body");
 }); // Sticky Header event listener
 
 window.addEventListener('scroll', function () {
@@ -50,7 +49,6 @@ window.addEventListener('scroll', function () {
     if (st > lastScrollTop) {
       //  Scroll down
       if ($('#head-nav').css('position') === 'fixed') {
-        console.log("Scrolled down, will play animation then unstick");
         $("#head-nav").addClass("scrollDown");
         setTimeout(function () {
           $("#head-nav").removeClass("sticky");
@@ -60,19 +58,15 @@ window.addEventListener('scroll', function () {
           $("#head-nav").removeClass("scrollDown");
         }, 750);
       } else if ($('#head-nav').css('position') === 'relative') {
-        console.log("Scrolled down but don't need to do anything");
       }
     } else if (st === 0 && $('#head-nav').css('position') === 'fixed') {
-      console.log("Scrolled to top, will now unstick");
       $("#site-body").removeClass("no-header");
       $("#head-nav").removeClass("sticky");
     } else if (st <= headerHeight) {
       //Do Nothing
-      console.log("Doing nothing");
     } else if (st < lastScrollTop && st > headerHeight) {
       // Scroll Up
       if ($('#head-nav').css('position') === 'relative') {
-        console.log("Scrolled up, will stick header");
         $("#site-body").addClass("no-header");
         $("#head-nav").addClass("sticky");
         $("#head-nav").addClass("scrollUp");
@@ -80,15 +74,11 @@ window.addEventListener('scroll', function () {
           $("#head-nav").removeClass("scrollUp");
         }, 750);
       } else if ($('head-nav').css('position') === 'fixed') {
-        console.log("Scrolled up, but Header already present");
       }
     } else {
-      console.log("nothing will happen");
     }
 
     lastScrollTop = Math.abs(st); // For Mobile or negative scrolling
-
-    console.log("Haven't scrolled in 250ms!");
   }));
 }); // potential animation code
 //  document.getElementById('head-nav').setAttribute("style","animation-name: scrollUpAnimation");

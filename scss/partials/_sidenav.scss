@@ -10,8 +10,12 @@
     overflow: auto;
     display: flex;
     flex-direction: column;
-    transform: translate(275px);
+    transform: translate(350px);
     transition: .25s;
+
+    @media (min-width: $break-m) {
+        width: 350px;
+    }
 
     .main {
         padding: 21px;
