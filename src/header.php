@@ -9,7 +9,7 @@ echo '<div id="main"> <!--Start of main body-->
             <div class="head-padding container">
               <div class="header-row">
                 <div class="logo-container">
-                  <a href="top">
+                  <a href="top"> 
                   <img class="logo-img" src="images/f-logo.png" alt="Netmatters logo">
                   </a>
                 </div>

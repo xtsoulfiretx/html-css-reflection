@@ -2,19 +2,19 @@
 
 echo '<div class="newsletter-full-width"> <!--Start of Newsletter-->
             <div class="newsletter container">
-              <form method="POST" id="sign-up" class="sign-up">
+              <form method="POST" action="src/nmdb.php" id="sign-up" class="sign-up">
                 <h2>Email Newsletter Sign-Up</h2>
                 <div class="sign-up-inputs-wrapper">
                   <div class="sign-up-input">
                     <div class="form-group required">
-                      <label class="name-label">Your Name</label>
-                      <input type="text" class="form-control">
+                      <label for="NLName" class="name-label">Your Name</label>
+                      <input type="text" class="form-control" name="NLName">
                     </div>
                   </div>
                   <div class="sign-up-input">
                     <div class="form-group required">
-                      <label class="email-label">Your Email</label>
-                      <input type="email" class="form-control">
+                      <label for="NLEmail" class="email-label">Your Email</label>
+                      <input type="email" class="form-control" name="NLEmail">
                     </div>
                   </div>
                 </div>
