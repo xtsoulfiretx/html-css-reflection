@@ -1874,6 +1874,11 @@
   border-color: #191a22;
 }
 
+.contact_body .page_indicator {
+  display: flex;
+  flex-direction: row;
+}
+
 footer {
   background-color: #333645;
   color: #fff;

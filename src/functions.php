@@ -18,15 +18,6 @@ function getLatestArticles() {
 
 function getArticleHtml(array $article){
 
-    switch($article["subcategory"]) {
-        case "web_development":
-            $article_class = "web_development";
-            break;
-        case "it_support":
-            $article_class = "it_support";
-            break;
-    }
-
     // create date/ time object
     $date_published = new DateTime($article["date"]);
     $formatted_date = $date_published->format("jS F Y");

@@ -9,7 +9,7 @@ echo '<div id="main"> <!--Start of main body-->
             <div class="head-padding container">
               <div class="header-row">
                 <div class="logo-container">
-                  <a href="top"> 
+                  <a href="/netmatters_site/"> 
                   <img class="logo-img" src="images/f-logo.png" alt="Netmatters logo">
                   </a>
                 </div>
@@ -22,7 +22,7 @@ echo '<div id="main"> <!--Start of main body-->
                       </div>
                     </form>
                   <a href="#" class="btn-support btn hidden-s"><i class="bi bi-mouse2-fill"></i><span>Support</span></a>
-                  <a href="#" class="btn-contact btn hidden-s"><i class="fas fa-paper-plane"></i><span>Contact</span></a>
+                  <a href="/netmatters_site/contact.php" class="btn-contact btn hidden-s"><i class="fas fa-paper-plane"></i><span>Contact</span></a>
                   <form class="container-fluid search-bar-3">
                     <div class="input-group">
                       <input type="text" class="form-control bar-3" placeholder="Search..." aria-label="Username" aria-describedby="basic-addon1">

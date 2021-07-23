@@ -29,7 +29,7 @@
         ?>
         <div class="contact_body">
             <div class="page_indicator">
-                <h5 class="home">Home</h5><h5>&sol; Our Offices</h5>
+                <h5 class="home">Home &nbsp;</h5><h5>&sol; Our Offices</h5>
             </div>
             <div class="main_container">
                 <h3>Contact Us</h3>
