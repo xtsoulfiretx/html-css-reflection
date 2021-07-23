@@ -1461,9 +1461,13 @@
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+.articles-list .block .art_body {
+  min-height: 66px;
+}
 .articles-list .block span {
   font-weight: 600;
   margin: 0 0 15px;
+  min-height: 48px;
 }
 .articles-list .block span:hover {
   text-decoration: underline;

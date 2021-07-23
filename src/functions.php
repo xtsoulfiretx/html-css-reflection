@@ -45,7 +45,7 @@ function getArticleHtml(array $article){
           </div>
             <div class="block">
               <span>{$article["title"]}</span>
-              <p>{$article["body"]}<br class="visible-md-ab"> &nbsp;</p>
+              <p class="art_body">{$article["body"]}<br class="visible-md-ab"> &nbsp;</p>
               <a class="article-btn-web" href="#">Read More</a>
               <div class="user n">
                 <div class="avatar n">

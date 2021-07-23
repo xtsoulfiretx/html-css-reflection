@@ -58,7 +58,9 @@
       </div>
     </div> <!--End of Cookie Pop Up-->
 
-    <?php require("src/header.php"); ?>
+    <?php 
+    require __DIR__ . "/src/header.php"; 
+    ?>
 
       <div id="site-body">   
         <div class="content-main"> <!--Start of main banner-->
@@ -313,9 +315,13 @@
             </div>
           </div> <!--End of Clients section-->
 
-          <?php require ("src/footer.php"); ?>
+          <?php
+          require __DIR__ . "/src/footer.php"; 
+          ?>
 
-    <?php require ("src/mobile.php"); ?>
+    <?php 
+    require __DIR__ . "/src/mobile.php"; 
+    ?>
 
     <script src="//code.jquery.com/jquery-latest.js"></script>
     <script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>

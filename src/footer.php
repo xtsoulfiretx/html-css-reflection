@@ -2,7 +2,7 @@
 
 echo '<div class="newsletter-full-width"> <!--Start of Newsletter-->
             <div class="newsletter container">
-              <form method="POST" action="src/nmdb.php" id="sign-up" class="sign-up">
+              <form method="POST" action="/src/nmdb.php" id="sign-up" class="sign-up">
                 <h2>Email Newsletter Sign-Up</h2>
                 <div class="sign-up-inputs-wrapper">
                   <div class="sign-up-input">

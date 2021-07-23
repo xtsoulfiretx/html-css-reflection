@@ -213,9 +213,14 @@
             margin-inline-end: 0px;
         }
 
+        .art_body {
+            min-height: 66px;
+        }
+
         span {
             font-weight: 600;
             margin: 0 0 15px;
+            min-height: 48px;
         }
         span:hover {
             text-decoration: underline;
