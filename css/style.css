@@ -1874,9 +1874,115 @@
   border-color: #191a22;
 }
 
+.contact_body .indicator-container {
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+  padding: 14px 0 13px;
+}
 .contact_body .page_indicator {
   display: flex;
   flex-direction: row;
+}
+.contact_body .page_indicator .home {
+  color: #333645;
+  font-weight: 700;
+}
+.contact_body .page_indicator h5 {
+  color: #333645;
+  font-size: 0.8125rem;
+}
+.contact_body .main-c {
+  padding-top: 50px;
+}
+.contact_body .main-c h3 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin: 0 0 28px;
+  color: #333645;
+  margin-bottom: 50px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.contactform-info {
+  display: flex;
+  flex-direction: row;
+}
+.contactform-info .email_details {
+  order: 2;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 1260px) {
+  .contactform-info .email_details {
+    width: 33.333%;
+  }
+}
+.contactform-info .email_details .basic-details p {
+  line-height: 1.875rem;
+  margin-bottom: 25px;
+}
+.contactform-info .email_details .basic-details p a {
+  font-weight: 600;
+  color: #926fb1 !important;
+  font-size: 1.625rem;
+  margin: 0 0 15px;
+  line-height: 1.1;
+  text-decoration: none;
+}
+.contactform-info .email_details .basic-details p strong {
+  font-weight: 600;
+  color: #333645;
+}
+.contactform-info .accordian-question {
+  line-height: 1.875rem;
+  margin-bottom: 25px;
+}
+.contactform-info .accordian-question strong {
+  font-weight: 600;
+  color: #333645;
+}
+.contactform-info .accordian-question:hover {
+  text-decoration: underline;
+}
+.contactform-info .enquiry-form {
+  margin-right: 15px;
+}
+@media (min-width: 1260px) {
+  .contactform-info .enquiry-form {
+    width: 66.666%;
+  }
+}
+.contactform-info #contact-form {
+  background-color: #e6e7e9;
+  border-radius: 10px;
+  padding: 30px;
+}
+.contactform-info #contact-form .row-column {
+  width: 50%;
+}
+.contactform-info .form-group {
+  margin-bottom: 15px;
+}
+.contactform-info .form-group label {
+  font-weight: 600;
+  color: #333645;
+  margin-bottom: 5px;
+}
+.contactform-info .form-group .required:after {
+  content: " *";
+  color: #d24d57;
+}
+.contactform-info .form-group .form-input {
+  width: 100%;
+  height: 47px;
+  padding: 5px 15px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
 }
 
 footer {

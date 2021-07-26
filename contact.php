@@ -28,26 +28,28 @@
         require __DIR__ . "/src/header.php"; 
         ?>
         <div class="contact_body">
-            <div class="page_indicator">
-                <h5 class="home">Home &nbsp;</h5><h5>&sol; Our Offices</h5>
+            <div class="indicator-container">
+                <div class="page_indicator container">
+                    <h5 class="home">Home &nbsp;</h5><h5>&sol; Our Offices</h5>
+                </div>
             </div>
-            <div class="main_container">
+            <div class="main-c container">
                 <h3>Contact Us</h3>
-                <div class="contactform/info">
+                <div class="contactform-info">
                     <div class="email_details">
                         <div class="basic-details">
-                            <span>Email us on&colon;</span>
-                            <a href="mailto:sales@netmatters.com" class="email_address">sales&commat;netmatters.com</a>
-                            <span>Business hours&colon;</span>
-                            <span>Monday - Friday 07&colon;00 - 18&colon;00</span>
+                            <p><strong>Email us on&colon;</strong><br></p>
+                            <p><a href="mailto:sales@netmatters.com" class="email_address">sales&commat;netmatters.com</a><br></p>
+                            <p><strong>Business hours&colon;</strong><br></p>
+                            <p><strong>Monday - Friday 07&colon;00 - 18&colon;00</strong><br></p>
                         </div>
                         <div>
-                            <span>Out of Hours IT Support <i class="fas fa-angle-down"></i></span>
+                            <p class="accordian-question"><strong>Out of Hours IT Support <i class="fas fa-angle-down"></strong></i></span>
                             <div class="accordian_answers">
                                 <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
-                                <span><strong>Monday - Friday 18&colon;00 - 22&colon;00</strong></span>
-                                <span><strong>Saturday 08&colon;00 - 16&colon;00</strong></span>
-                                <span><strong>Sunday 10&colon;00 - 18&colon;00</strong></span>
+                                <p><strong>Monday - Friday 18&colon;00 - 22&colon;00</strong></p>
+                                <p><strong>Saturday 08&colon;00 - 16&colon;00</strong></p>
+                                <p><strong>Sunday 10&colon;00 - 18&colon;00</strong></p>
                                 <p>To log a critical task, you will need to call our main line number and select 
                                     Option 2 to leave an Out of Hours voicemail. A technician will contact you 
                                     on the number provided within 45 minutes of your call.
