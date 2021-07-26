@@ -1885,10 +1885,18 @@
 .contact_body .page_indicator .home {
   color: #333645;
   font-weight: 700;
+  font-size: 0.8125rem;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+.contact_body .page_indicator .home:hover {
+  text-decoration: underline;
 }
 .contact_body .page_indicator h5 {
   color: #333645;
   font-size: 0.8125rem;
+  font-weight: 400;
 }
 .contact_body .main-c {
   padding-top: 50px;
@@ -1909,6 +1917,7 @@
 .contactform-info {
   display: flex;
   flex-direction: row;
+  padding-bottom: 50px;
 }
 .contactform-info .email_details {
   order: 2;
@@ -1920,11 +1929,13 @@
     width: 33.333%;
   }
 }
-.contactform-info .email_details .basic-details p {
+.contactform-info .email_details .basic-details p,
+.contactform-info .email_details .accordian_answers p {
   line-height: 1.875rem;
   margin-bottom: 25px;
 }
-.contactform-info .email_details .basic-details p a {
+.contactform-info .email_details .basic-details p a,
+.contactform-info .email_details .accordian_answers p a {
   font-weight: 600;
   color: #926fb1 !important;
   font-size: 1.625rem;
@@ -1932,7 +1943,12 @@
   line-height: 1.1;
   text-decoration: none;
 }
-.contactform-info .email_details .basic-details p strong {
+.contactform-info .email_details .basic-details p a:hover,
+.contactform-info .email_details .accordian_answers p a:hover {
+  text-decoration: underline;
+}
+.contactform-info .email_details .basic-details p strong,
+.contactform-info .email_details .accordian_answers p strong {
   font-weight: 600;
   color: #333645;
 }
@@ -1983,6 +1999,70 @@
   border: 1px solid #e5e5e5;
   border-radius: 2px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+.contactform-info .form-group .form-input:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+.contactform-info .form-group textarea {
+  height: 100px;
+  min-height: 100px;
+}
+.contactform-info .cb {
+  display: flex;
+}
+.contactform-info .enquiry-checkbox {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 32px;
+  margin-bottom: 30px;
+  overflow: visible;
+}
+.contactform-info .enquiry-checkbox::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-color: #e6e7e9;
+  border: 3px solid #333645;
+  border-radius: 3px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.contactform-info .enquiry-checkbox #contact-cb:checked + span::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-color: #333645;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+  display: block;
+}
+.contactform-info .enquiry-checkbox #contact-cb:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 5px;
+  border-left: 2.8px solid #ddd;
+  border-bottom: 2.8px solid #ddd;
+  transform: rotate(-45deg);
+  top: 11px;
+  left: 8px;
+}
+.contactform-info .send-e {
+  color: #fff;
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+.contactform-info .send-e:hover {
+  background-color: #7e57a0;
+  border-color: #735093;
 }
 
 footer {

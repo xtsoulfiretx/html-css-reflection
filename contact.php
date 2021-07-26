@@ -30,7 +30,7 @@
         <div class="contact_body">
             <div class="indicator-container">
                 <div class="page_indicator container">
-                    <h5 class="home">Home &nbsp;</h5><h5>&sol; Our Offices</h5>
+                    <a href="/netmatters_site/" class="home">Home</a><h5>&nbsp; &sol; Our Offices</h5>
                 </div>
             </div>
             <div class="main-c container">
@@ -94,12 +94,14 @@
                             <div class="form-group">
                                 <div class="cb">
                                     <label class="enquiry-checkbox" for="contact-cb">
-                                    <input type="checkbox" name="contact-cb" id="contact-cb" value=1>
+                                        <input type="checkbox" name="contact-cb" id="contact-cb" value=1>
+                                        <span class="media-body">
+                                            Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we use your data.
+                                        </span>
+                                    </label>
                                 </div>
-                                <span class="media-body">
-                                    Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we use your data.
-                                </span>
                             </div>
+                            <button name="submit-e" class="btn send-e">Send Enquiry</button>
                         </form>
                     </div>
                 </div>

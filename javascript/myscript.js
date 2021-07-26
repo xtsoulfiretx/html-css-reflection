@@ -90,3 +90,11 @@ $(".content-main").slick({
   arrows: false,
   dots: true
 });
+
+window.addEventListener('load', function () {
+  $(".accordian_answers").slideUp('0000');
+});
+
+$(".accordian-question").click(function (){
+  $(".accordian_answers").slideToggle();
+});
