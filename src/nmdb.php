@@ -1,7 +1,5 @@
 <?php
 
-
-/*
 $nlname = (!empty($_POST['NLName']) ? $_POST['NLName'] : '');
 $nlemail = (!empty($_POST['NLEmail']) ? $_POST['NLEmail'] : '');
 $nlcheck = (!empty($_POST['marketing-optin']) ? $_POST['marketing-optin'] : '');
@@ -21,6 +19,5 @@ try {
     echo 'Error: ' . $e->getMessage();
 }
 
-*/
 ?>
 
