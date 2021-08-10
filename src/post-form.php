@@ -22,9 +22,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["action"] === "contact-form")
         $invalidContactFields = $response;
     // if createEnquiry returns true, form was submitted 
     } elseif ($response) {
-        header("Location: thankyou.php");
+        echo "Success";
     } else {
-        $contactStatusAlert = "Enquiry Failed please try again.";
+        echo "Enquiry Failed please try again.";
     }
 } elseif ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["action"] === "newsletter") {
     // Add each form field to array 

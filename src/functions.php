@@ -56,3 +56,11 @@ EOD;
 
 return $output;
 }
+
+function createSubscription(array $newsletterData) {
+  include __DIR__ . "/connection.php";
+  
+  $subscription = new NewsletterSubmission($newsletterData);
+
+  return $subscription;
+}

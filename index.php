@@ -59,7 +59,8 @@
     </div> <!--End of Cookie Pop Up-->
 
     <?php 
-    require __DIR__ . "/src/header.php"; 
+    include __DIR__ . "/src/header.php"; 
+    include __DIR__ . "/src/post-form.php";
     ?>
 
       <div id="site-body">   

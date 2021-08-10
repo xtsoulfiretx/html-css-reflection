@@ -26,6 +26,7 @@
     <body>
         <?php 
         require __DIR__ . "/src/header.php"; 
+        include __DIR__ . "/src/post-form.php";
         ?>
         <div class="contact_body">
             <div class="indicator-container">
