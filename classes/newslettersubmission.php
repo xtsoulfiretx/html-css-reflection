@@ -6,11 +6,6 @@ class NewsletterSubmission extends Formsubmit {
     private $email;
     private $accept_marketing;
 
-    public function __construct($name, $email, $accept_marketing){
-        $this->name = $name;
-        $this->email = $email;
-        $this->accept_marketing = $accept_marketing;
-      }
 
     public function getName()
     {
@@ -26,6 +21,13 @@ class NewsletterSubmission extends Formsubmit {
     {
         return $this->accept_marketing;
     }
+
+
+    public function __construct($name, $email, $accept_marketing){
+        $this->name = $name;
+        $this->email = $email;
+        $this->accept_marketing = $accept_marketing;
+      }
     
     public function submitForm() {
         try {

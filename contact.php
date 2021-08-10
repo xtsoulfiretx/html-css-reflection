@@ -25,8 +25,9 @@
 
     <body>
         <?php 
-        require __DIR__ . "/src/header.php"; 
-        include __DIR__ . "/src/post-form.php";
+        require __DIR__ . "/src/includes/bootstrap.php";
+        include __DIR__ . "/src/includes/header.php"; 
+        include __DIR__ . "/src/includes/post-form.php";
         ?>
         <div class="contact_body">
             <div class="indicator-container">
@@ -109,11 +110,11 @@
             </div>
         </div>
             <?php
-                require __DIR__ . "/src/footer.php"; 
+                require __DIR__ . "/src/includes/footer.php"; 
             ?>
 
         <?php 
-        require __DIR__ . "/src/mobile.php"; 
+        require __DIR__ . "/src/includes/mobile.php"; 
         ?>
 
     <script src="//code.jquery.com/jquery-latest.js"></script>

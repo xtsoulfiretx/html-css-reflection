@@ -2,7 +2,8 @@
 
 echo '<div class="newsletter-full-width"> <!--Start of Newsletter-->
             <div class="newsletter container">
-              <form method="POST" action="newsletter" id="sign-up" class="sign-up">
+              <form method="POST" action="index.php" id="sign-up" class="sign-up">
+              <input type="hidden" name="action" value="newsletter">
                 <h2>Email Newsletter Sign-Up</h2>
                 <div class="sign-up-inputs-wrapper">
                   <div class="sign-up-input">
@@ -27,6 +28,7 @@ echo '<div class="newsletter-full-width"> <!--Start of Newsletter-->
                   </label>
                 </div>
                 <button class="newsletter-button">SUBSCRIBE</button>
+                
               </form>
             </div>
           </div> <!--End of Newsletter-->

@@ -2,10 +2,9 @@
 
 //A list of functions used for the site.
 
-
 function getLatestArticles() {
     try {
-        require __DIR__ . "/connection.php";
+        include __DIR__ . "/../connection.php";
 
         $result = $db->query("SELECT * FROM articles ORDER BY article_id ASC LIMIT 3");
         $result->execute();
@@ -61,6 +60,6 @@ function createSubscription(array $newsletterData) {
   include __DIR__ . "/connection.php";
   
   $subscription = new NewsletterSubmission($newsletterData);
-
+  
   return $subscription;
 }

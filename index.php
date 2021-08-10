@@ -59,8 +59,9 @@
     </div> <!--End of Cookie Pop Up-->
 
     <?php 
-    include __DIR__ . "/src/header.php"; 
-    include __DIR__ . "/src/post-form.php";
+    require __DIR__ . "/src/includes/bootstrap.php";
+    include __DIR__ . "/src/includes/header.php"; 
+    include __DIR__ . "/src/includes/post-form.php";
     ?>
 
       <div id="site-body">   
@@ -237,7 +238,6 @@
                 <div class="container"> <!--Start of articles container-->
                   <div class="articles-list">
                   <?php 
-                  require __DIR__ . "/src/functions.php";
                   try {
                     $articles = getLatestArticles();
                     if ($articles) {
@@ -317,11 +317,11 @@
           </div> <!--End of Clients section-->
 
           <?php
-          require __DIR__ . "/src/footer.php"; 
+          require __DIR__ . "/src/includes/footer.php"; 
           ?>
 
     <?php 
-    require __DIR__ . "/src/mobile.php"; 
+    require __DIR__ . "/src/includes/mobile.php"; 
     ?>
 
     <script src="//code.jquery.com/jquery-latest.js"></script>

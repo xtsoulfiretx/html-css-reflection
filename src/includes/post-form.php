@@ -29,8 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["action"] === "contact-form")
 } elseif ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["action"] === "newsletter") {
     // Add each form field to array 
     $newsletterData["name"] = trim(filter_input(INPUT_POST, "NLName", FILTER_SANITIZE_STRING));
-    $newsletterData["email"] = trim(filter_input(INPUT_POST, "NLEmail", FILTER_SANITZE_EMAIL));
-    $newsletterData["accept_marketing"] = trim(filter_input(INPUT_POST, "accept-marketing", FILTER_SANTIZE_NUMBER_INT));
+    $newsletterData["email"] = trim(filter_input(INPUT_POST, "NLEmail", FILTER_SANITIZE_EMAIL));
+    $newsletterData["accept_marketing"] = trim(filter_input(INPUT_POST, "accept-marketing", FILTER_SANITIZE_NUMBER_INT));
 
     //if no post data was received from checkbox, set its value to 0. e.g.(false)
     if (empty($newsletterData["accept_marketing"])) {
