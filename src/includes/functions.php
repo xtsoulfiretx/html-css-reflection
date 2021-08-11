@@ -4,7 +4,7 @@
 
 function getLatestArticles() {
     try {
-        include __DIR__ . "/../connection.php";
+        include __DIR__ . "/connection.php";
 
         $result = $db->query("SELECT * FROM articles ORDER BY article_id ASC LIMIT 3");
         $result->execute();
@@ -61,5 +61,7 @@ function createSubscription(array $newsletterData) {
   
   $subscription = new NewsletterSubmission($newsletterData);
   
+  var_dump($subscription);
+  $subscription->submitForm();
   return $subscription;
 }
