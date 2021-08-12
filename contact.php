@@ -72,7 +72,7 @@
                                 <div class="row-column">
                                     <div class="form-group">
                                         <label for="contact-email" class="required">Your Email</label>
-                                        <input class="form-input" name="contact-email" type="text" value id="contact-email">
+                                        <input class="form-input email-c" name="contact-email" type="text" value id="contact-email">
                                     </div>
                                 </div>
                             </div>
