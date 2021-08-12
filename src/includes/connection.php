@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "alexi";
 $password = "Password12";
-$dbname = "alexi";
+$dbname = "netmatters";
 
 try {
   $db = new PDO("mysql:host=$servername;dbname=$dbname;port=3306", $username, $password);

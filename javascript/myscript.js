@@ -98,3 +98,24 @@ window.addEventListener('load', function () {
 $(".accordian-question").click(function (){
   $(".accordian_answers").slideToggle();
 });
+
+// will check email input for incorrect values.
+var EmailRegex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+var validateEmail = function validateEmail(email) {
+  if (email.match(EmailRegex) && email.length > 0) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+$("#email").on('input', function () {
+  var isValid = validateEmail($("#contact-email").val());
+
+  if (isValid) {
+    $("#contact-email").css("border", "3px solid green");
+  } else {
+    $("#contact-email").css("border", "3px solid red");
+  }
+});

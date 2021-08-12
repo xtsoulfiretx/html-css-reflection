@@ -3,11 +3,11 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["action"] === "contact-form") {
     //Add form fields
     $contactData["name"] = trim(filter_input(INPUT_POST, "contact-name", FILTER_SANITIZE_STRING));
-    $contactData["email"] = trim(filter_input(INPUT_POST, "contact-email", FILTER_SANITZE_EMAIL));
+    $contactData["email"] = trim(filter_input(INPUT_POST, "contact-email", FILTER_SANITIZE_EMAIL));
     $contactData["phone"] = trim(filter_input(INPUT_POST, "contact-telephone", FILTER_SANITIZE_STRING));
     $contactData["subject"] = trim(filter_input(INPUT_POST, "contact-subject", FILTER_SANITIZE_SPECIAL_CHARS));
     $contactData["message"] = trim(filter_input(INPUT_POST, "contact-message", FILTER_SANITIZE_SPECIAL_CHARS));
-    $contactData["accept_marketing"] = trim(filter_input(INPUT_POST, "contact-cb", FILTER_SANTIZE_NUMBER_INT));
+    $contactData["accept_marketing"] = trim(filter_input(INPUT_POST, "contact-cb", FILTER_SANITIZE_NUMBER_INT));
 
     // if no post data was received from checkbox, set its value to 0 (false)
     if (empty($contactData["accept_marketing"])) {

@@ -61,7 +61,15 @@ function createSubscription(array $newsletterData) {
   
   $subscription = new NewsletterSubmission($newsletterData);
   
-  var_dump($subscription);
   $subscription->submitForm();
   return $subscription;
+}
+
+function createEnquiry(array $contactData) {
+  include __DIR__ . "/connection.php";
+  
+  $enquiry = new ContactSubmission($contactData);
+  
+  $enquiry->submitForm();
+  return $enquiry;
 }

@@ -60,7 +60,8 @@
                         </div>
                     </div>
                     <div class="enquiry-form">
-                        <form method="POST" accept-charset="UTF-8" id="contact-form">
+                        <form method="POST" action="contact.php" accept-charset="UTF-8" id="contact-form">
+                          <input type="hidden" name="action" value="contact-form">
                             <div class="row">
                                 <div class="row-column">
                                     <div class="form-group">
