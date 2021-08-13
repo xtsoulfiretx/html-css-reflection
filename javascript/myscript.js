@@ -36,6 +36,7 @@ window.addEventListener('load', function() {
      console.log("Showing Cookie Pop up");
     $("#cookie-app").addClass("c-visible");
    }
+   $(".accordian_answers").slideUp(0000);
 });
 
 // Cookie details
@@ -131,7 +132,9 @@ $(".content-main").slick({
   dots: true
 });
 
-$(".email-c").click(test);
+$(".accordian-question").click(function(){
+  $(".accordian_answers").slideToggle();
+});
 
 // will check email input for incorrect values.
 const EmailRegex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -148,10 +151,50 @@ $(".email-c").on("input", function () {
   let isValid = validateEmail($(".email-c").val());
 
   if (isValid != true) {
-    $(".email-c").css("border", "2px solid red");
+    $(".email-c").css("border", "1px solid red");
+  } else {
+    $(".email-c").css("border", "none");
   }
 });
 
-function test() {
-  console.log("right-sort of");
-};
+$('#contact-form').submit(function() {
+  if (!$.trim($("#contact-name").val()).length){
+      $("#contact-name").css("border", "1px solid red");
+      
+
+  } if (!$.trim($("#contact-email").val()).length) {
+      $("#contact-email").css("border", "1px solid red");
+
+
+  } if (!$.trim($("#contact-telephone").val()).length) {
+    $("#contact-telephone").css("border", "1px solid red");
+   
+
+  } if (!$.trim($("#contact-subject").val()).length) {
+    $("#contact-subject").css("border", "1px solid red");
+    
+
+  } if (!$.trim($("#contact-message").val()).length) {
+    $("#contact-message").css("border", "1px solid red");
+    return false;
+
+  } else {
+
+  }
+});
+
+$('#contact-form').change(function() {
+  if ($.trim($("#contact-name").val()).length){
+      $("#contact-name").css("border", "none");
+  } if ($.trim($("#contact-telephone").val()).length) {
+    $("#contact-telephone").css("border", "none");
+  } if ($.trim($("#contact-subject").val()).length) {
+    $("#contact-subject").css("border", "none");
+  } if ($.trim($("#contact-message").val()).length) {
+    $("#contact-message").css("border", "none");
+    return false;
+  } else {
+
+  }
+});
+

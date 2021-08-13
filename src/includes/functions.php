@@ -56,6 +56,8 @@ EOD;
 return $output;
 }
 
+
+//create a newsletter submission 
 function createSubscription(array $newsletterData) {
   include __DIR__ . "/connection.php";
   
@@ -65,11 +67,18 @@ function createSubscription(array $newsletterData) {
   return $subscription;
 }
 
+//create an enquiry
 function createEnquiry(array $contactData) {
   include __DIR__ . "/connection.php";
   
   $enquiry = new ContactSubmission($contactData);
   
+  $emptyInput = [];
+  if ($enquiry->hasEmptyFields()) {
+    $emptyInput = $enquiry->hasEmptyFields();
+    return false;
+  } else {
+
   $enquiry->submitForm();
   return $enquiry;
-}
+}}
