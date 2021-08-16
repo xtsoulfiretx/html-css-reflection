@@ -31,9 +31,7 @@ window.addEventListener('load', function() {
 
    const acceptedCookies = document.cookie.split('; ').find(row => row.startsWith('acceptedCookies='));
    if (acceptedCookies == 'acceptedCookies=true') {
-    console.log("Cookie found")
    } else {
-     console.log("Showing Cookie Pop up");
     $("#cookie-app").addClass("c-visible");
    }
    $(".accordian_answers").slideUp(0000);
@@ -44,7 +42,6 @@ window.addEventListener('load', function() {
 $(".accept-cookies-btn").click(function (){
   document.cookie = 'acceptedCookies=true';
   $("#cookie-app").removeClass("c-visible");
-  console.log("Cookie Got");
 });
 
 // Sticky Header event listener
@@ -61,7 +58,6 @@ $(".accept-cookies-btn").click(function (){
     if (st > lastScrollTop){
       //  Scroll down
       if ($('#head-nav').css('position') === 'fixed') {
-        console.log("Scrolled down, will play animation then unstick");
         $("#head-nav").addClass("scrollDown");
         setTimeout(function() {
           $("#head-nav").removeClass("sticky");
@@ -73,26 +69,22 @@ $(".accept-cookies-btn").click(function (){
       }
       
       else if ($('#head-nav').css('position') === 'relative') {
-        console.log("Scrolled down but don't need to do anything");
       }
     }
     
     else if (st === 0 && ($('#head-nav').css('position') === 'fixed')) {
-        console.log("Scrolled to top, will now unstick");
         $("#site-body").removeClass("no-header");
         $("#head-nav").removeClass("sticky");
     } 
     
     else if (st <= headerHeight) {
         //Do Nothing
-        console.log("Doing nothing")
     } 
     
     else if (st < lastScrollTop && st > headerHeight) {
 
         // Scroll Up
         if ($('#head-nav').css('position') === 'relative'){
-          console.log("Scrolled up, will stick header");
           $("#site-body").addClass("no-header");
           $("#head-nav").addClass("sticky");
           $("#head-nav").addClass("scrollUp");
@@ -103,16 +95,14 @@ $(".accept-cookies-btn").click(function (){
 
 
         else if ($('head-nav').css('position') === 'fixed') {
-          console.log("Scrolled up, but Header already present");
         }
     }
     
     else {
-      console.log("nothing will happen");
+    
     }
     lastScrollTop = Math.abs(st); // For Mobile or negative scrolling
 
-      console.log("Haven't scrolled in 250ms!");
   }));
 });
 
@@ -146,7 +136,7 @@ let validateEmail = function validateEmail(email) {
     return false;
   }
 };
-
+// this will change the border around the email input presubmit request
 $(".email-c").on("input", function () {
   let isValid = validateEmail($(".email-c").val());
 
@@ -157,6 +147,7 @@ $(".email-c").on("input", function () {
   }
 });
 
+// this function will change the borders around the input fields for the contact form 
 $('#contact-form').submit(function() {
   if (!$.trim($("#contact-name").val()).length){
       $("#contact-name").css("border", "1px solid red");
@@ -183,6 +174,7 @@ $('#contact-form').submit(function() {
   }
 });
 
+// this function will remove the the above border lines once something has been typed into the inputs fields
 $('#contact-form').change(function() {
   if ($.trim($("#contact-name").val()).length){
       $("#contact-name").css("border", "none");
@@ -194,7 +186,25 @@ $('#contact-form').change(function() {
     $("#contact-message").css("border", "none");
     return false;
   } else {
-
   }
+});
+
+
+$('#sign-up').submit(function() {
+  if (!$.trim($("#NLName").val()).length){
+      $(".nlnamepop").removeClass("hidden");
+  } if (!$.trim($("#NLEmail").val()).length) {
+      $(".nlemailpop").removeClass("hidden");   
+    return false;
+  } else {
+  }
+});
+
+$('.nlpn').click(function(){
+  $(".nlnamepop").addClass("hidden");
+});
+
+$('.nlpe').click(function(){
+  $(".nlemailpop").addClass("hidden");
 });
 

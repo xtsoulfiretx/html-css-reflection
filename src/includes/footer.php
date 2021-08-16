@@ -4,18 +4,36 @@ echo '<div class="newsletter-full-width"> <!--Start of Newsletter-->
             <div class="newsletter container">
               <form method="POST" action="index.php" id="sign-up" class="sign-up">
               <input type="hidden" name="action" value="newsletter">
+                <div class="alert_area">
+                  <div class="alert_pop nlnamepop hidden">
+                    <button class="close nlpn">x</button>
+                    The name field is required.
+                  </div>
+                  <div class="alert_pop nlemailpop hidden">
+                    <button class="close nlpe">x</button>
+                    The email field is required.
+                  </div>
+                  <div class="alert_pop hidden">
+                    <button class="close">x</button>
+                    Please wait until submitting the form again.
+                  </div>
+                  <div class="alert_pop nlmarketing hidden">
+                    <button class="close nlpb">x</button>
+                    The marketing preference field is required.
+                  </div>
+                </div>
                 <h2>Email Newsletter Sign-Up</h2>
                 <div class="sign-up-inputs-wrapper">
                   <div class="sign-up-input">
                     <div class="form-group required">
                       <label for="NLName" class="name-label">Your Name</label>
-                      <input type="text" class="form-control" name="NLName">
+                      <input type="text" class="form-control" name="NLName" value id="NLName">
                     </div>
                   </div>
                   <div class="sign-up-input">
                     <div class="form-group required">
                       <label for="NLEmail" class="email-label">Your Email</label>
-                      <input type="email" class="form-control" name="NLEmail">
+                      <input type="email" class="form-control" name="NLEmail" value id="NLEmail">
                     </div>
                   </div>
                 </div>
