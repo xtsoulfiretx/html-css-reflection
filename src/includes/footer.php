@@ -5,19 +5,19 @@ echo '<div class="newsletter-full-width"> <!--Start of Newsletter-->
               <form method="POST" action="index.php" id="sign-up" class="sign-up">
               <input type="hidden" name="action" value="newsletter">
                 <div class="alert_area">
-                  <div class="alert_pop nlnamepop hidden">
+                  <div class="alert_pop" id="namepop"> 
                     <button class="close nlpn">x</button>
                     The name field is required.
                   </div>
-                  <div class="alert_pop nlemailpop hidden">
+                  <div class="alert_pop" id="emailpop"> 
                     <button class="close nlpe">x</button>
                     The email field is required.
                   </div>
-                  <div class="alert_pop hidden">
+                  <div class="alert_pop removed"> 
                     <button class="close">x</button>
                     Please wait until submitting the form again.
                   </div>
-                  <div class="alert_pop nlmarketing hidden">
+                  <div class="alert_pop removed"> 
                     <button class="close nlpb">x</button>
                     The marketing preference field is required.
                   </div>

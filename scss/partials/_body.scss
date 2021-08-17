@@ -557,13 +557,20 @@
     }
 
     .alert_area {
- 
-        .hidden {
+        //change to remove
+        .removed {
             display: none!important;
         }
 
+        .alert_visible {
+            display: flex;
+        }
+
+        .alert_hidden {
+            display: none;
+        }
+
         .alert_pop{
-            display: flex; 
             padding: 15px;
             margin-bottom: 20px;
             color: #a94442;
@@ -573,7 +580,6 @@
             justify-content: space-between;
 
             button {
-                padding: 0;
                 background-color: #f2dede;
             }
 
@@ -583,7 +589,7 @@
                 font-weight: 700;
                 font-family: Poppins, sans-serif;
                 color: #000;
-                padding: 0;
+                padding: 2px;
                 background-color: #f2dede;
                 text-shadow: 0 1px 0 #fff;
                 border: 0;

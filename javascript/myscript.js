@@ -37,6 +37,11 @@ window.addEventListener('load', function() {
    $(".accordian_answers").slideUp(0000);
 });
 
+window.addEventListener('load', function(){
+  $("#namepop").addClass("alert_hidden");
+  $("#emailpop").addClass("alert_hidden");
+});
+
 // Cookie details
 
 $(".accept-cookies-btn").click(function (){
@@ -189,22 +194,27 @@ $('#contact-form').change(function() {
   }
 });
 
-
-$('#sign-up').submit(function() {
-  if (!$.trim($("#NLName").val()).length){
-      $(".nlnamepop").removeClass("hidden");
-  } if (!$.trim($("#NLEmail").val()).length) {
-      $(".nlemailpop").removeClass("hidden");   
+$('#sign-up').on("submit", function() {
+  if (!$.trim($('#NLName').val()).length){
+      $("#namepop").removeClass("alert_hidden");
+      $("#namepop").addClass("alert_visible"); }
+  if (!$.trim($('#NLEmail').val()).length) {
+      $("#emailpop").removeClass("alert_hidden");
+      $("#emailpop").addClass("alert_visible");   
     return false;
-  } else {
-  }
+  } 
 });
 
-$('.nlpn').click(function(){
-  $(".nlnamepop").addClass("hidden");
+$('.nlpn').on("click", function(){
+  event.preventDefault();
+  $("#namepop").addClass("alert_hidden"); 
+  $("#namepop").removeClass("alert_visible");
 });
 
-$('.nlpe').click(function(){
-  $(".nlemailpop").addClass("hidden");
+$('.nlpe').on("click", function(){
+  event.preventDefault();
+  $("#emailpop").addClass("alert_hidden"); 
+  $("#emailpop").removeClass("alert_visible");
 });
+
 
