@@ -156,22 +156,23 @@ $(".email-c").on("input", function () {
 $('#contact-form').submit(function() {
   if (!$.trim($("#contact-name").val()).length){
       $("#contact-name").css("border", "1px solid red");
-      
-
+      event.preventDefault();
+  
   } if (!$.trim($("#contact-email").val()).length) {
       $("#contact-email").css("border", "1px solid red");
-
+      event.preventDefault();
 
   } if (!$.trim($("#contact-telephone").val()).length) {
     $("#contact-telephone").css("border", "1px solid red");
-   
+    event.preventDefault();   
 
   } if (!$.trim($("#contact-subject").val()).length) {
     $("#contact-subject").css("border", "1px solid red");
-    
+    event.preventDefault();    
 
   } if (!$.trim($("#contact-message").val()).length) {
     $("#contact-message").css("border", "1px solid red");
+    event.preventDefault();
     return false;
 
   } else {

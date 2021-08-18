@@ -12,12 +12,16 @@ if (!isset($_SESSION["referral"])) {
 } else {
     $redirectPage = $_SESSION["referral"];
     echo <<<EOD
-    <div id="thanks">
+    <div id="thankyou">
         <i class="far fa-check-circle"></i>
-        <h1>Thanks for your Enquiry!</h1>
+        <h1>Thankyou for your Enquiry!</h1>
     </div>
     EOD;
     header("refresh:2; url=" . $redirectPage);
     session_unset();
 }
 ?>
+
+<script>history.pushState('', '', window.location.pathname);</script>
+
+<?php ob_end_flush();

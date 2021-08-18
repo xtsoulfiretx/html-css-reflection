@@ -78,7 +78,6 @@ function createEnquiry(array $contactData) {
     $emptyInput = $enquiry->hasEmptyFields();
     return false;
   } else {
-
   $enquiry->submitForm();
   return $enquiry;
 }}

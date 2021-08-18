@@ -63,7 +63,7 @@ class ContactSubmission extends Formsubmit {
             $stmt->execute();
 
         } catch (Exception $e) {
-            throw $e;
+            
         }
         // return true;
     }    
