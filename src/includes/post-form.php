@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["action"] === "contact-form") {
     //Add form fields
     $contactData["name"] = trim(filter_input(INPUT_POST, "contact-name", FILTER_SANITIZE_STRING));
@@ -13,16 +13,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["action"] === "contact-form")
     if (empty($contactData["accept_marketing"])) {
         $contactData["accept_marketing"] = 0;
     }
-
     // create enquiry and store return value
     $response = createEnquiry($contactData);
-
     // if createEnquiry returns an array, form is invalid
     if (is_array($response)) {
         $invalidContactFields = $response;
     // if createEnquiry returns true, form was submitted 
     } elseif ($response) {
-        header("Location: success.php");
+        header("Location:success.php");
+        exit;
     } else {
         
     }

@@ -51,7 +51,7 @@ class ContactSubmission extends Formsubmit {
     
     public function submitForm() {
         try {
-            require __DIR__ . "/../src/includes/connection.php";
+            include_once __DIR__ . "/../src/includes/connection.php";
 
             $stmt = $db->prepare("INSERT INTO enquiries (name, email, phone, subject, message, accept_marketing) VALUES (:name, :email, :phone, :subject, :message, :accept_marketing)");
             $stmt->bindValue(":name", $this->name, PDO::PARAM_STR);
@@ -65,6 +65,6 @@ class ContactSubmission extends Formsubmit {
         } catch (Exception $e) {
             
         }
-        // return true;
+        return true;
     }    
 }

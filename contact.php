@@ -1,3 +1,8 @@
+<?php 
+    ob_start();
+        require_once __DIR__ . "/src/includes/bootstrap.php";
+        include_once __DIR__ . "/src/includes/post-form.php";
+        ?>
 <!DOCTYPE html>
  <html lang="en">
   <head>
@@ -23,12 +28,11 @@
    <meta name="theme-color" content="#ffffff">
    </head>
 
+
     <body>
-        <?php 
-        require __DIR__ . "/src/includes/bootstrap.php";
-        include __DIR__ . "/src/includes/header.php"; 
-        include __DIR__ . "/src/includes/post-form.php";
-        ?>
+       <?php 
+        include_once __DIR__ . "/src/includes/header.php"; 
+       ?>
         <div class="contact_body">
             <div class="indicator-container">
                 <div class="page_indicator container">
@@ -111,11 +115,11 @@
             </div>
         </div>
             <?php
-                require __DIR__ . "/src/includes/footer.php"; 
+                require_once __DIR__ . "/src/includes/footer.php"; 
             ?>
 
         <?php 
-        require __DIR__ . "/src/includes/mobile.php"; 
+        require_once __DIR__ . "/src/includes/mobile.php"; 
         ?>
 
     <script src="//code.jquery.com/jquery-latest.js"></script>
@@ -127,3 +131,4 @@
 
     </body>
  </html>
+
