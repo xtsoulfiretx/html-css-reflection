@@ -967,7 +967,8 @@
   display: flex;
   flex-direction: row;
   list-style: none;
-  justify-content: space-between;
+  justify-content: center;
+  padding-left: 40px;
 }
 
 .content-main {
@@ -1955,10 +1956,20 @@
   flex-direction: row;
   padding-bottom: 50px;
 }
+@media (max-width: 1260px) {
+  .contactform-info {
+    flex-direction: column;
+  }
+}
 .contactform-info .email_details {
   order: 2;
   padding-right: 15px;
   padding-left: 15px;
+}
+@media (max-width: 1260px) {
+  .contactform-info .email_details {
+    order: 1;
+  }
 }
 @media (min-width: 1260px) {
   .contactform-info .email_details {
@@ -2008,13 +2019,57 @@
     width: 66.666%;
   }
 }
+@media (max-width: 1260px) {
+  .contactform-info .enquiry-form {
+    order: 2;
+  }
+}
 .contactform-info #contact-form {
   background-color: #e6e7e9;
   border-radius: 10px;
   padding: 30px;
 }
+.contactform-info #contact-form .rows {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .contactform-info #contact-form .rows {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .contactform-info #contact-form .rows {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+@media (-ms-high-contrast: none) and (max-width: 992px), (-ms-high-contrast: active) and (max-width: 992px) {
+  .contactform-info #contact-form .rows {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .contactform-info #contact-form .row-column {
-  width: 50%;
+  width: 49%;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .contactform-info #contact-form .row-column {
+    width: 49%;
+  }
+}
+@media (max-width: 992px) {
+  .contactform-info #contact-form .row-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .contactform-info .form-group {
   margin-bottom: 15px;
@@ -2046,6 +2101,11 @@
 .contactform-info .form-group textarea {
   height: 100px;
   min-height: 100px;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .contactform-info .form-group textarea {
+    overflow: auto;
+  }
 }
 .contactform-info .cb {
   display: flex;
@@ -2101,6 +2161,30 @@
 .contactform-info .send-e:hover {
   background-color: #7e57a0;
   border-color: #735093;
+}
+
+#thankyou {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#thankyou i {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #2ecc71;
+  font-size: 8rem;
+}
+#thankyou h1 {
+  font-size: 4rem;
+}
+#thankyou span {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+#thankyou a {
+  font-size: 1.5rem;
 }
 
 footer {

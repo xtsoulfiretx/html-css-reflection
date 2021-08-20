@@ -34,6 +34,7 @@ include_once __DIR__ . "/src/includes/header.php";
     <div id="thankyou">
         <i class="far fa-check-circle"></i>
         <h1>Thankyou for your Enquiry!</h1>
+        <span>You will be redirected now, if nothing happens please <a href="/netmatters_site/">Click Here</a>.</span>
     </div>
 </body>
 </html>

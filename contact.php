@@ -66,7 +66,7 @@
                     <div class="enquiry-form">
                         <form method="POST" action="contact.php" accept-charset="UTF-8" id="contact-form">
                           <input type="hidden" name="action" value="contact-form">
-                            <div class="row">
+                            <div class="rows">
                                 <div class="row-column">
                                     <div class="form-group">
                                         <label for="contact-name" class="required">Your Name</label>
@@ -80,7 +80,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="rows">
                                 <div class="row-column">
                                     <div class="form-group">
                                         <label for="contact-telephone" class="required">Your Telephone Number</label>
