@@ -45,7 +45,7 @@ echo '<div class="newsletter-full-width"> <!--Start of Newsletter-->
                     </span>
                   </label>
                 </div>
-                <button class="newsletter-button">SUBSCRIBE</button>
+                <button type="submit" class="newsletter-button">SUBSCRIBE</button>
                 
               </form>
             </div>

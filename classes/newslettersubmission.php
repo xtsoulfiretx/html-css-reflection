@@ -41,6 +41,6 @@ class NewsletterSubmission extends Formsubmit {
         } catch (Exception $e) {
             throw $e;
         }
-        // return true;
+        return true;
     }    
 }

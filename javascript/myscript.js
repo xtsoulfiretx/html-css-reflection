@@ -94,7 +94,7 @@ $(".accordian-question").click(function () {
   $(".accordian_answers").slideToggle();
 }); // will check email input for incorrect values.
 
-var EmailRegex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+var EmailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 var validateEmail = function validateEmail(email) {
   if (email.match(EmailRegex) && email.length > 0) {
@@ -115,35 +115,35 @@ $(".email-c").on("input", function () {
   }
 }); // this function will change the borders around the input fields for the contact form 
 
-$('#contact-form').submit(function () {
+$('#contact-form').submit(function (e) {
   if (!$.trim($("#contact-name").val()).length) {
     $("#contact-name").css("border", "1px solid red");
-    event.preventDefault();
+    e.preventDefault();
   }
 
   if (!$.trim($("#contact-email").val()).length) {
     $("#contact-email").css("border", "1px solid red");
-    event.preventDefault();
+    e.preventDefault();
   }
 
   if (!$.trim($("#contact-telephone").val()).length) {
     $("#contact-telephone").css("border", "1px solid red");
-    event.preventDefault();
+    e.preventDefault();
   }
 
   if (!$.trim($("#contact-subject").val()).length) {
     $("#contact-subject").css("border", "1px solid red");
-    event.preventDefault();
+    e.preventDefault();
   }
 
   if (!$.trim($("#contact-message").val()).length) {
     $("#contact-message").css("border", "1px solid red");
-    event.preventDefault();
+    e.preventDefault();
     return false;
   } else {}
 }); // this function will remove the the above border lines once something has been typed into the inputs fields
 
-$('#contact-form').change(function () {
+$('#contact-form').change(function (e) {
   if ($.trim($("#contact-name").val()).length) {
     $("#contact-name").css("border", "none");
   }
@@ -161,25 +161,49 @@ $('#contact-form').change(function () {
     return false;
   } else {}
 });
-$('#sign-up').on("submit", function () {
+
+$('#sign-up').change(function () {
+  var isValid = validateEmail($("#NLEmail").val());
   if (!$.trim($('#NLName').val()).length) {
     $("#namepop").removeClass("alert_hidden");
     $("#namepop").addClass("alert_visible");
+    e.preventDefault();
+    return false;
   }
 
-  if (!$.trim($('#NLEmail').val()).length) {
+  if (!$.trim($('#NLEmail').val()).length || (isValid != true)) {
     $("#emailpop").removeClass("alert_hidden");
     $("#emailpop").addClass("alert_visible");
+    $('.newsletter-button').attr("disabled", true);
+    e.preventDefault();
     return false;
   }
 });
-$('.nlpn').on("click", function () {
-  event.preventDefault();
+$('#sign-up').on("submit", function (e) {
+  var isValid = validateEmail($("#NLEmail").val());
+  if (!$.trim($('#NLName').val()).length) {
+    $("#namepop").removeClass("alert_hidden");
+    $("#namepop").addClass("alert_visible");
+    e.preventDefault();
+  }
+
+  if (!$.trim($('#NLEmail').val()).length || (isValid != true)) {
+    $("#emailpop").removeClass("alert_hidden");
+    $("#emailpop").addClass("alert_visible");
+    $('.newsletter-button').attr("disabled", true);
+    e.preventDefault();
+  }
+});
+$('.nlpn').on("click", function (e) {
+  e.preventDefault();
   $("#namepop").addClass("alert_hidden");
   $("#namepop").removeClass("alert_visible");
+  return false;
 });
-$('.nlpe').on("click", function () {
-  event.preventDefault();
+$('.nlpe').on("click", function (e) {
+  e.preventDefault();
   $("#emailpop").addClass("alert_hidden");
   $("#emailpop").removeClass("alert_visible");
+  $('.newsletter-button').attr("disabled", false);
+  return false;
 });

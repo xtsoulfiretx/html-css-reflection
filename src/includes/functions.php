@@ -4,7 +4,7 @@
 
 function getLatestArticles() {
     try {
-        include_once __DIR__ . "/connection.php";
+        require __DIR__ . "/connection.php";
 
         $result = $db->query("SELECT * FROM articles ORDER BY article_id ASC LIMIT 3");
         $result->execute();
@@ -58,13 +58,16 @@ return $output;
 
 
 //create a newsletter submission 
-function createSubscription(array $newsletterData) {
-  include __DIR__ . "/connection.php";
-  
+function createSubscription(array $newsletterData) {  
   $subscription = new NewsletterSubmission($newsletterData);
   
-  $subscription->submitForm();
-  return $subscription;
+  $emptyInput = [];
+  if ($subscription->hasEmptyFields()) {
+    $emptyInput = $subscription->hasEmptyFields();
+    return false;
+  } else {
+  return $subscription->submitForm();
+  }
 }
 
 //create an enquiry
